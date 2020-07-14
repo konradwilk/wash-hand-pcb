@@ -1,3 +1,7 @@
+/*
+# Copyright 2020, Konrad Rzeszutek Wilk
+# SPDX-License-Identifier: CC-BY-4.0
+*/ 
 #include "alpha.h"
 
 const int pinA = 0;
