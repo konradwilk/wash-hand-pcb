@@ -17,6 +17,8 @@ The project is under Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
 Quite simply it is to have a count-down timer for 20 seconds for washing hands.
 It is activated by a line sensor (which has infrared light) that plugs in the board.
 
+![](front.png =250x)
+
 # Future plans for hardware
 
 Which in no particular order are:
