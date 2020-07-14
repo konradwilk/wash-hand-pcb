@@ -19,7 +19,7 @@ It is activated by a line sensor (which has infrared light) that plugs in the bo
 
 ## PCB v1.2-routing
 
-The v1.2-routing is the stable release.  See the <a href="BOM.html">BOM</a> for the list of materials.
+The v1.2-routing is the stable release.  See the <a href="BOM.txt">BOM</a> for the list of materials.
 Note the missing line sensor which was <a href="https://www.aliexpress.com/item/32654587628.html">on AliExpress</a>
 
 <img src="front.png" width=250></img>
