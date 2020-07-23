@@ -5,12 +5,16 @@ The project is under Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
 # Libraries used for this project
 
  - adafruit
- - SparkFun-Capacitors
- - SparkFun-Connectors
- - SparkFun-Hardware
  - darnok\_common (https://github.com/konradwilk/eagle-libraries.git)
  - darnok\_led (https://github.com/konradwilk/eagle-libraries.git)
  - darnok\_usb (https://github.com/konradwilk/eagle-libraries.git)
+ - SparkFun-Aesthetics
+ - SparkFun-Capacitors
+ - SparkFun-Connectors
+ - SparkFun-Hardware
+ - SparkFun-Hardware
+ - SparkFun-IC-Microcontroller
+ - SparkFun-Jumpers
 
 # Purpose
 
