@@ -32,7 +32,6 @@ like it.
 Which in no particular order are:
 
  - Integrate the line-sensor logic in the board (a simple infrared light and a voltage comparison).
- - Use the SMD version of resistors and ATMEGA328P
  - Add a SD card
  - Fix the I2C lines missing resistors
  - Add 9V battery connection and line regulator
