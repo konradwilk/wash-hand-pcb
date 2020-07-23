@@ -320,7 +320,7 @@ uC used in the Arduino&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="darnok_misc">
+<library name="darnok_common">
 <packages>
 <package name="RESISTOR">
 <pad name="R_1" x="0" y="0" drill="0.762" diameter="1.778"/>
@@ -329,6 +329,42 @@ uC used in the Arduino&lt;br&gt;
 <text x="1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 <text x="1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+</packages>
+<symbols>
+<symbol name="RESISTOR">
+<wire x1="0" y1="0" x2="1.016" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.27" x2="2.032" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="2.032" y1="-0.762" x2="2.794" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.794" y1="1.27" x2="3.556" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="3.556" y1="-0.762" x2="4.318" y2="1.27" width="0.254" layer="94"/>
+<pin name="R_1" x="-5.08" y="0" visible="off" length="middle"/>
+<pin name="R_2" x="10.414" y="0" visible="off" length="middle" rot="R180"/>
+<text x="-1.016" y="1.524" size="1.27" layer="95">&gt;NAME</text>
+<text x="5.334" y="-1.27" size="1.016" layer="96">&gt;VALUE</text>
+<wire x1="4.318" y1="1.27" x2="5.334" y2="0" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RESISTOR">
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="-12.7" y="0"/>
+</gates>
+<devices>
+<device name="" package="RESISTOR">
+<connects>
+<connect gate="G$1" pin="R_1" pad="R_1"/>
+<connect gate="G$1" pin="R_2" pad="R_2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="darnok_usb">
+<packages>
 <package name="USB_MICROB_10118194_AMPHENOL">
 <smd name="P$1" x="-1" y="1.45" dx="1.5" dy="1.5" layer="1"/>
 <smd name="P$2" x="1" y="1.45" dx="1.5" dy="1.5" layer="1"/>
@@ -344,6 +380,46 @@ uC used in the Arduino&lt;br&gt;
 <wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.127" layer="49"/>
 <text x="0" y="-0.635" size="0.762" layer="49" ratio="12" align="center">PCB EDGE</text>
 </package>
+</packages>
+<symbols>
+<symbol name="USB_2.0_STD">
+<wire x1="-5.08" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<pin name="GND" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<pin name="D+" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="D-" x="5.08" y="-5.08" visible="off" length="short" rot="R180"/>
+<pin name="VCC" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
+<text x="0" y="2.54" size="1.27" layer="94" font="vector" align="center-right">VCC</text>
+<text x="0" y="0" size="1.27" layer="94" font="vector" align="center-right">GND</text>
+<text x="0" y="-2.54" size="1.27" layer="94" font="vector" align="center-right">D+</text>
+<text x="0" y="-5.08" size="1.27" layer="94" font="vector" align="center-right">D-</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="USB_MICROB_10118194_AMPHENOL">
+<gates>
+<gate name="G$1" symbol="USB_2.0_STD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="USB_MICROB_10118194_AMPHENOL">
+<connects>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="2"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="darnok_led">
+<packages>
 <package name="HDSP-B0XE">
 <description>HDSP-B0XE. 51mm x 19mm</description>
 <wire x1="25.5" y1="9.5" x2="-25.5" y2="9.5" width="0.127" layer="21"/>
@@ -367,32 +443,6 @@ uC used in the Arduino&lt;br&gt;
 </package>
 </packages>
 <symbols>
-<symbol name="RESISTOR">
-<wire x1="0" y1="0" x2="1.016" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.016" y1="1.27" x2="2.032" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="2.032" y1="-0.762" x2="2.794" y2="1.27" width="0.254" layer="94"/>
-<wire x1="2.794" y1="1.27" x2="3.556" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="3.556" y1="-0.762" x2="4.318" y2="1.27" width="0.254" layer="94"/>
-<pin name="R_1" x="-5.08" y="0" visible="off" length="middle"/>
-<pin name="R_2" x="10.414" y="0" visible="off" length="middle" rot="R180"/>
-<text x="-1.016" y="1.524" size="1.27" layer="95">&gt;NAME</text>
-<text x="5.334" y="-1.27" size="1.016" layer="96">&gt;VALUE</text>
-<wire x1="4.318" y1="1.27" x2="5.334" y2="0" width="0.254" layer="94"/>
-</symbol>
-<symbol name="USB_2.0_STD">
-<wire x1="-5.08" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<pin name="GND" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-<pin name="D+" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
-<pin name="D-" x="5.08" y="-5.08" visible="off" length="short" rot="R180"/>
-<pin name="VCC" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
-<text x="0" y="2.54" size="1.27" layer="94" font="vector" align="center-right">VCC</text>
-<text x="0" y="0" size="1.27" layer="94" font="vector" align="center-right">GND</text>
-<text x="0" y="-2.54" size="1.27" layer="94" font="vector" align="center-right">D+</text>
-<text x="0" y="-5.08" size="1.27" layer="94" font="vector" align="center-right">D-</text>
-</symbol>
 <symbol name="HDSP-B04E">
 <pin name="DIGIT_1" x="20.32" y="10.16" visible="pin" length="middle" direction="in" rot="R180"/>
 <pin name="DIGIT_2" x="20.32" y="5.08" visible="pin" length="middle" direction="in" rot="R180"/>
@@ -415,40 +465,6 @@ uC used in the Arduino&lt;br&gt;
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RESISTOR">
-<gates>
-<gate name="G$1" symbol="RESISTOR" x="-12.7" y="0"/>
-</gates>
-<devices>
-<device name="" package="RESISTOR">
-<connects>
-<connect gate="G$1" pin="R_1" pad="R_1"/>
-<connect gate="G$1" pin="R_2" pad="R_2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="USB_MICROB_10118194_AMPHENOL">
-<gates>
-<gate name="G$1" symbol="USB_2.0_STD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="USB_MICROB_10118194_AMPHENOL">
-<connects>
-<connect gate="G$1" pin="D+" pad="3"/>
-<connect gate="G$1" pin="D-" pad="2"/>
-<connect gate="G$1" pin="GND" pad="5"/>
-<connect gate="G$1" pin="VCC" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="HDSP-B04E">
 <description>7 Segment LED light 0.56"</description>
 <gates>
@@ -6922,9 +6938,9 @@ STAND-OFF</description>
 <part name="X_2" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="U$4" library="darnok_misc" deviceset="USB_MICROB_10118194_AMPHENOL" device=""/>
-<part name="U$5" library="darnok_misc" deviceset="HDSP-B04E" device=""/>
-<part name="R9" library="darnok_misc" deviceset="RESISTOR" device="" value="10K"/>
+<part name="U$4" library="darnok_usb" deviceset="USB_MICROB_10118194_AMPHENOL" device=""/>
+<part name="U$5" library="darnok_led" deviceset="HDSP-B04E" device=""/>
+<part name="R9" library="darnok_common" deviceset="RESISTOR" device="" value="10K"/>
 <part name="X_3" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="X_4" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
@@ -6934,14 +6950,14 @@ STAND-OFF</description>
 <part name="X_5" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
-<part name="R1" library="darnok_misc" deviceset="RESISTOR" device="" value="220K"/>
-<part name="R3" library="darnok_misc" deviceset="RESISTOR" device="" value="220K"/>
-<part name="R5" library="darnok_misc" deviceset="RESISTOR" device="" value="220K"/>
-<part name="R7" library="darnok_misc" deviceset="RESISTOR" device="" value="220K"/>
-<part name="R2" library="darnok_misc" deviceset="RESISTOR" device="" value="220K"/>
-<part name="R4" library="darnok_misc" deviceset="RESISTOR" device="" value="220K"/>
-<part name="R6" library="darnok_misc" deviceset="RESISTOR" device="" value="220K"/>
-<part name="R8" library="darnok_misc" deviceset="RESISTOR" device="" value="220K"/>
+<part name="R1" library="darnok_common" deviceset="RESISTOR" device="" value="220K"/>
+<part name="R3" library="darnok_common" deviceset="RESISTOR" device="" value="220K"/>
+<part name="R5" library="darnok_common" deviceset="RESISTOR" device="" value="220K"/>
+<part name="R7" library="darnok_common" deviceset="RESISTOR" device="" value="220K"/>
+<part name="R2" library="darnok_common" deviceset="RESISTOR" device="" value="220K"/>
+<part name="R4" library="darnok_common" deviceset="RESISTOR" device="" value="220K"/>
+<part name="R6" library="darnok_common" deviceset="RESISTOR" device="" value="220K"/>
+<part name="R8" library="darnok_common" deviceset="RESISTOR" device="" value="220K"/>
 <part name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1" value="SPI"/>
 <part name="H1" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" deviceset="STAND-OFF" device="" package3d_urn="urn:adsk.eagle:package:38630/1"/>
 <part name="H2" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" deviceset="STAND-OFF" device="" package3d_urn="urn:adsk.eagle:package:38630/1"/>
