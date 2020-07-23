@@ -11466,14 +11466,14 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="VALUE" x="50.419" y="136.144" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
 <instance part="X_1" gate="G$1" x="63.5" y="96.52" smashed="yes"/>
-<instance part="X_2" gate="G$1" x="195.58" y="99.06" smashed="yes"/>
+<instance part="X_2" gate="G$1" x="200.66" y="78.74" smashed="yes"/>
 <instance part="P+1" gate="VCC" x="60.96" y="177.8" smashed="yes">
 <attribute name="VALUE" x="58.42" y="175.26" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+2" gate="VCC" x="195.58" y="109.22" smashed="yes">
-<attribute name="VALUE" x="193.04" y="106.68" size="1.778" layer="96" rot="R90"/>
+<instance part="P+2" gate="VCC" x="200.66" y="96.52" smashed="yes">
+<attribute name="VALUE" x="198.12" y="93.98" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U$4" gate="G$1" x="182.88" y="101.6" smashed="yes"/>
+<instance part="U$4" gate="G$1" x="187.96" y="86.36" smashed="yes"/>
 <instance part="U$5" gate="G$1" x="198.12" y="124.46" smashed="yes">
 <attribute name="NAME" x="190.5" y="139.7" size="1.778" layer="95" display="both"/>
 <attribute name="VALUE" x="193.04" y="111.76" size="1.778" layer="96"/>
@@ -11620,9 +11620,9 @@ designed by Konrad Rzeszutek Wilk</text>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="VCC"/>
-<wire x1="187.96" y1="104.14" x2="195.58" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="88.9" x2="200.66" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
-<wire x1="195.58" y1="104.14" x2="195.58" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="88.9" x2="200.66" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="2"/>
@@ -11651,9 +11651,9 @@ designed by Konrad Rzeszutek Wilk</text>
 <net name="0" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="GND"/>
-<wire x1="187.96" y1="101.6" x2="195.58" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="86.36" x2="200.66" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="X_2" gate="G$1" pin="0"/>
-<wire x1="195.58" y1="101.6" x2="195.58" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="86.36" x2="200.66" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
