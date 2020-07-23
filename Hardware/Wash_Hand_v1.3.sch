@@ -11439,7 +11439,7 @@ OSHW_LOGO</description>
 <sheets>
 <sheet>
 <plain>
-<text x="109.22" y="185.42" size="1.778" layer="95">Physical location is important.
+<text x="109.22" y="185.42" size="1.778" layer="97">Physical location is important.
 Line sensor is D0, GND, VCC</text>
 <text x="160.02" y="53.34" size="2.54" layer="95">Hand Wash count down</text>
 <text x="223.52" y="53.34" size="1.778" layer="95">Copyright 2020 by
