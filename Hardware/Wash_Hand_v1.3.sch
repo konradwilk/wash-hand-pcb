@@ -11483,8 +11483,8 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="VALUE" x="68.58" y="162.56" size="1.27" layer="96" rot="R90"/>
 </instance>
 <instance part="X_3" gate="G$1" x="35.56" y="119.38" smashed="yes"/>
-<instance part="P+3" gate="VCC" x="109.22" y="175.26" smashed="yes">
-<attribute name="VALUE" x="106.68" y="172.72" size="1.778" layer="96" rot="R90"/>
+<instance part="P+3" gate="VCC" x="106.68" y="180.34" smashed="yes">
+<attribute name="VALUE" x="104.14" y="177.8" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="X_4" gate="G$1" x="116.84" y="167.64" smashed="yes"/>
 <instance part="J" gate="J$1" x="134.62" y="170.18" smashed="yes" rot="R180">
@@ -11630,11 +11630,6 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="J" gate="J$1" pin="1"/>
-<pinref part="P+3" gate="VCC" pin="VCC"/>
-<wire x1="127" y1="172.72" x2="109.22" y2="172.72" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="J5" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="180.34" x2="43.18" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
@@ -11645,6 +11640,12 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="223.52" y1="172.72" x2="228.6" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
 <wire x1="228.6" y1="172.72" x2="228.6" y2="177.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J" gate="J$1" pin="1"/>
+<wire x1="127" y1="172.72" x2="106.68" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="P+3" gate="VCC" pin="VCC"/>
+<wire x1="106.68" y1="172.72" x2="106.68" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="0" class="0">
