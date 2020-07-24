@@ -11411,14 +11411,14 @@ OSHW_LOGO</description>
 <part name="X_5" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
-<part name="R1" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220K"/>
-<part name="R3" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220K"/>
-<part name="R5" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220K"/>
-<part name="R7" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220K"/>
-<part name="R2" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220K"/>
-<part name="R4" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220K"/>
-<part name="R6" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220K"/>
-<part name="R8" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220K"/>
+<part name="R1" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
+<part name="R3" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
+<part name="R5" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
+<part name="R7" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
+<part name="R2" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
+<part name="R4" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
+<part name="R6" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
+<part name="R8" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
 <part name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1" value="SPI"/>
 <part name="H1" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" deviceset="STAND-OFF" device="" package3d_urn="urn:adsk.eagle:package:38630/1"/>
 <part name="H2" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" deviceset="STAND-OFF" device="" package3d_urn="urn:adsk.eagle:package:38630/1"/>
