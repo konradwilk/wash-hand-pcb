@@ -12,10 +12,10 @@ const int pinE = 4;
 const int pinF = 5;
 const int pinG = 6;
 const int pinDP = 7;
-const int D1 = A3; //PB0
-const int D2 = A2;
-const int D3 = A1;
-const int D4 = 8;
+const int D4 = A3; //PB0
+const int D3 = A2;
+const int D2 = A1;
+const int D1 = 8;
 
 
 const byte BUTTON = A0;
@@ -144,7 +144,7 @@ void write(char d1, char d2, char d3, char d4, unsigned int sleep) {
 #define DONE    1<<12
 #define DONE_STR   'D','O','N','E'
 
-#define TEST  1<<16
+#define TEST  1<<15
 #define TEST_STR  '1','2','3','4'
 
 #define STR_DELAY 5000

@@ -26,7 +26,8 @@ It is activated by a line sensor (which has infrared light) that plugs in the bo
 The v1.2-routing is the stable release.  See the <a href="BOM.txt">BOM</a> for the list of materials.
 Note the missing line sensor which was <a href="https://www.aliexpress.com/item/32654587628.html">on AliExpress</a>
 
-<img src="front.png" width=250></img>
+<img src="front.jpg" width=250></img>
+<img src="back.jpg" width=250></img>
 
 Note that the routing was done automatically with slight adjustments whenever the Design Rule Check did not
 like it.
