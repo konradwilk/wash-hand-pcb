@@ -97,19 +97,20 @@ void writeD4(char d4) {
   digitalWrite(D4, off);
   code(d4);
 }
+
 void write(char d1, char d2, char d3, char d4, unsigned int sleep) {
 
-  delay(sleep);
   writeD1(d1);
-
   delay(sleep);
+
   writeD2(d2);
-
   delay(sleep);
+
   writeD3(d3);
-
   delay(sleep);
+
   writeD4(d4);
+  delay(sleep);
 }
 
 
