@@ -115,40 +115,32 @@ void write(char d1, char d2, char d3, char d4, unsigned int sleep) {
 
 
 
-#define NOBODY  1<<0
+#define NOBODY  0
 #define NOBODY_STR  ' ',' ',' ',' '
 
-#define SOAP    1<<1
+#define SOAP    NOBODY+1
 #define SOAP_STR    'S','O','A','P'
 
-#define WASH_0  1<<2
-#define WASH_0_STR  'G','o','G','o'
+#define WASH	SOAP+1
+#define WASH_STR    'G','o','G','o'
 
-#define WASH_1  1<<3
+#define COUNT   WASH+1
+#define COUNT_MAX COUNT+20
 
-#define WAIT_1  1<<4
-#define WAIT_2  1<<5
-#define WAIT_3  1<<6
-#define WAIT_4  1<<7
+#define YAY	COUNT_MAX+1
+#define YAY_STR     'Y','A','Y',' '
 
+#define DONE    YAY+1
+#define DONE_STR    'D','O','N','E'
 
-#define WAIT_2_STR  'o','_','_','o'
-
-#define YAY   1<<11
-
-#define YAY_STR  'Y','A','Y',' '
-
-#define DONE    1<<12
-#define DONE_STR   'D','O','N','E'
-
-#define TEST  1<<15
-#define TEST_STR  '1','2','3','4'
+#define TEST	DONE+1
+#define TEST_STR    '1','2','3','4'
 
 #define STR_DELAY 5000
 #define SEC_DELAY 100
 
 
-unsigned int state = NOBODY;
+unsigned int state = 0;
 unsigned long s;
 
 unsigned int waitFor(unsigned long timeout, unsigned new_state)
@@ -164,11 +156,10 @@ unsigned int waitFor(unsigned long timeout, unsigned new_state)
 
 void loop() {
   int sensor = 0;
-  unsigned int i;
 
   sensor = analogRead(BUTTON);
   if (sensor < 500) {
-    if (state & NOBODY) {
+    if (state == NOBODY) {
         /* All of them cleared. */
         state = SOAP;
         s = millis();
@@ -182,27 +173,12 @@ void loop() {
       break;
     case SOAP:
       write(SOAP_STR, DELAY);
-      state = waitFor(STR_DELAY, WASH_0);
+      state = waitFor(STR_DELAY, WASH);
       break;
-    case WASH_0:
-      write(WASH_0_STR, DELAY);
-      state = waitFor(STR_DELAY, WASH_1);
-      break;
-    case WASH_1:
-      writeD4('1');
-      state=waitFor(SEC_DELAY, WAIT_1);
-      break;
-    case WAIT_1:
-      writeD4('2');
-      state = waitFor(SEC_DELAY, WAIT_2);
-      break;
-    case WAIT_2:
-      writeD4('3');
-      state = waitFor(SEC_DELAY, WAIT_3);
-      break;
-    case WAIT_3:
-      writeD4('4');
-      state = waitFor(SEC_DELAY, YAY);
+    case WASH:
+      write(WASH_STR, DELAY);
+      /* This ends up jumping to the default case */
+      state = waitFor(STR_DELAY, COUNT);
       break;
     case YAY:
       write(YAY_STR, DELAY);
@@ -213,9 +189,24 @@ void loop() {
       state = waitFor(STR_DELAY, NOBODY);
       break;
     case NOBODY:
-    default:
-      delay(DELAY);
       write(NOBODY_STR, 0);
+      break;
+    default:
+      if ((state >= COUNT) && (state < COUNT_MAX)) {
+	if (state < COUNT+10) {
+           writeD4('1' + state - COUNT);
+           state=waitFor(STR_DELAY, state + 1);
+        } else {
+	   writeD3('0');
+	   delay(DELAY);
+           writeD4('1' + state - COUNT);
+           state=waitFor(STR_DELAY, state + 1);
+        }
+      } else if (state == COUNT_MAX) {
+           state = YAY;
+      } else {
+      	   state = TEST;
+      }
       break;
   }
 }
