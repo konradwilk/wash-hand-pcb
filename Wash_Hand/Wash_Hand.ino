@@ -1,7 +1,7 @@
 /*
 # Copyright 2020, Konrad Rzeszutek Wilk
 # SPDX-License-Identifier: CC-BY-4.0
-*/ 
+*/
 #include "alpha.h"
 
 const int pinA = 0;
@@ -54,21 +54,19 @@ void code(char c) {
 
 
 void setup() {
-  
-                 
-  pinMode(pinA, OUTPUT);     
-  pinMode(pinB, OUTPUT);     
-  pinMode(pinC, OUTPUT);     
-  pinMode(pinD, OUTPUT);     
-  pinMode(pinE, OUTPUT);     
-  pinMode(pinF, OUTPUT);     
-  pinMode(pinG, OUTPUT);   
-  pinMode(D1, OUTPUT);  
-  pinMode(D2, OUTPUT);  
-  pinMode(D3, OUTPUT);  
-  pinMode(D4, OUTPUT);  
+  pinMode(pinA, OUTPUT);
+  pinMode(pinB, OUTPUT);
+  pinMode(pinC, OUTPUT);
+  pinMode(pinD, OUTPUT);
+  pinMode(pinE, OUTPUT);
+  pinMode(pinF, OUTPUT);
+  pinMode(pinG, OUTPUT);
+  pinMode(D1, OUTPUT);
+  pinMode(D2, OUTPUT);
+  pinMode(D3, OUTPUT);
+  pinMode(D4, OUTPUT);
   digit = 0;
- 
+
 }
 
 void writeD1(char d1) {
@@ -101,19 +99,17 @@ void writeD4(char d4) {
 }
 void write(char d1, char d2, char d3, char d4, unsigned int sleep) {
 
-
   delay(sleep);
   writeD1(d1);
-  
+
   delay(sleep);
   writeD2(d2);
 
   delay(sleep);
   writeD3(d3);
-  
+
   delay(sleep);
   writeD4(d4);
-  
 }
 
 
@@ -122,7 +118,7 @@ void write(char d1, char d2, char d3, char d4, unsigned int sleep) {
 #define NOBODY_STR  ' ',' ',' ',' '
 
 #define SOAP    1<<1
-#define SOAP_STR    'S','O','A','P' 
+#define SOAP_STR    'S','O','A','P'
 
 #define WASH_0  1<<2
 #define WASH_0_STR  'G','o','G','o'
@@ -157,18 +153,18 @@ unsigned long s;
 unsigned int waitFor(unsigned long timeout, unsigned new_state)
 {
   unsigned long e = millis();
-  
+
   if ((e - s) > timeout) {
     s = e;
     return new_state;
   }
   return state;
 }
-    
+
 void loop() {
   int sensor = 0;
   unsigned int i;
-  
+
   sensor = analogRead(BUTTON);
   if (sensor < 500) {
     if (state & NOBODY) {
@@ -219,6 +215,6 @@ void loop() {
     default:
       delay(DELAY);
       write(NOBODY_STR, 0);
-      break; 
+      break;
   }
 }
