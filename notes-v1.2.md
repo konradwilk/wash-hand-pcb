@@ -211,5 +211,5 @@ Programming mode off.
 Type 'C' when ready to continue with another chip ...
 </pre>
 
-All good.
+All good from that perspective, but still I cannot upload the sketch!
 
