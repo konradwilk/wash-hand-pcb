@@ -115,11 +115,13 @@ void loop() {
           writeD3('1');
           delay(DELAY);
           writeD4('0' + n - 9);
+          delay(DELAY);
           state=waitFor(SEC_DELAY, state + 1);
         } else if (n >= 19) {
           writeD3('2');
           delay(DELAY);
           writeD4('0'+ n - 19);
+          delay(DELAY);
           state = waitFor(SEC_DELAY, state + 1);
         } else
           debug_error(__LINE__);
