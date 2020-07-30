@@ -103,30 +103,32 @@ void loop() {
     case INIT:
       break;
     default:
-      if ((state >= COUNT) && (state < COUNT_MAX)) {
+      if ((state >= COUNT) && (state <= COUNT_MAX)) {
         unsigned int n = state - (COUNT);
 
         debug_print(n);
 
-	if (n < 9) {
+        if (n == 0) {
+          state = state + 1;
+        } else if (n <= 9) {
           writeD4('0' + n);
           state = waitFor(SEC_DELAY, state + 1);
-        } else if ((n >= 9) && (n < 19)) {
+        } else if ((n >= 10) && (n < 20)) {
           writeD3('1');
           delay(DELAY);
-          writeD4('0' + n - 9);
+          writeD4('0' + n - 10);
           delay(DELAY);
           state=waitFor(SEC_DELAY, state + 1);
-        } else if (n >= 19) {
+        } else if (n >= 20) {
           writeD3('2');
           delay(DELAY);
-          writeD4('0'+ n - 19);
+          writeD4('0'+ n - 20);
           delay(DELAY);
           state = waitFor(SEC_DELAY, state + 1);
         } else
           debug_error(__LINE__);
 
-      } else if (state == COUNT_MAX) {
+      } else if (state > COUNT_MAX) {
           state = YAY;
       } else {
           state = CLEAR;
