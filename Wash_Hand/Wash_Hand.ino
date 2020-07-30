@@ -24,7 +24,6 @@ void write(char d1, char d2, char d3, char d4, unsigned int sleep) {
 
 void setup(void) {
 
-  setupPorts();
 }
 
 #define INIT  0
@@ -72,6 +71,7 @@ void loop() {
   sensor = readSensor();
   if (sensor < 500) {
     if (state == INIT) {
+        setupPorts();
         /* All of them cleared. */
         state = SOAP;
         s = millis();
