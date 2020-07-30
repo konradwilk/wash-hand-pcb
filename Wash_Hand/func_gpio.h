@@ -18,10 +18,10 @@ const int D3 = A2;
 const int D2 = A1;
 const int D1 = 8;
 
-const byte BUTTON = A0;
-
 unsigned int on = LOW;
 unsigned int off = HIGH;
+
+const byte BUTTON = A0;
 
 const uint16_t char_to_port[] = {
     pinA,
@@ -95,3 +95,14 @@ void writeD4(char d4) {
   digitalWrite(D4, off);
   code(d4);
 }
+
+int readSensor(void) {
+
+  return analogRead(BUTTON);
+}
+
+void debug_begin(unsigned int val) {}
+void debug_end(void) { }
+void debug_print(unsigned int val) { }
+
+

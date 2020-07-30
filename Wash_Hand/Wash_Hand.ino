@@ -67,7 +67,7 @@ unsigned int waitFor(unsigned long timeout, unsigned new_state)
 void loop() {
   int sensor = 0;
 
-  sensor = analogRead(BUTTON);
+  sensor = readSensor();
   if (sensor < 500) {
     if (state == NOBODY) {
         /* All of them cleared. */
@@ -75,7 +75,7 @@ void loop() {
         s = millis();
     }
   }
-
+  debug_begin(state);
   switch (state) {
     case TEST:
       write(TEST_STR, 5);
@@ -99,11 +99,13 @@ void loop() {
       state = waitFor(STR_DELAY, NOBODY);
       break;
     case NOBODY:
-      write(NOBODY_STR, 0);
+      //write(NOBODY_STR, 0);
       break;
     default:
       if ((state >= COUNT) && (state < COUNT_MAX)) {
 	if (state < COUNT+10) {
+          debug_print(state);
+          debug_print('1' + state - COUNT);
            writeD4('1' + state - COUNT);
            state=waitFor(STR_DELAY, state + 1);
         } else {
@@ -119,4 +121,5 @@ void loop() {
       }
       break;
   }
+  debug_end();
 }
