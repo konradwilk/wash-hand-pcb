@@ -10,3 +10,8 @@ buspirate:
 
 upload:
 	avrdude -C/etc/avrdude/avrdude.conf -v -carduino -patmega328p -P/dev/ttyACM0 -b115200 -D -Uflash:w:Wash_Hand.ino.hex:i
+
+setup:
+	arduino-cli core update-index
+	arduino-cli core install arduino:avr
+
