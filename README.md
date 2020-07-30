@@ -40,6 +40,8 @@ Which in no particular order are:
  - Add a SD card
  - Add 9V battery connection and line regulator
  - Add switch to choose between 9V or 5V from USB
+ - Leave RX,TX alone.
+ - Don't use PIN DP on LED.
 
 # Future plans for software
 
