@@ -104,21 +104,30 @@ void loop() {
       break;
     default:
       if ((state >= COUNT) && (state < COUNT_MAX)) {
-	if (state < COUNT+10) {
-          debug_print(state);
-          debug_print('1' + state - COUNT);
-           writeD4('1' + state - COUNT);
-           state=waitFor(STR_DELAY, state + 1);
-        } else {
-	   writeD3('0');
-	   delay(DELAY);
-           writeD4('1' + state - COUNT);
-           state=waitFor(STR_DELAY, state + 1);
-        }
+        unsigned int n = state - (COUNT);
+
+        debug_print(n);
+
+	if (n < 9) {
+          writeD4('0' + n);
+          state = waitFor(SEC_DELAY, state + 1);
+        } else if ((n >= 9) && (n < 19)) {
+          writeD3('1');
+          delay(DELAY);
+          writeD4('0' + n - 9);
+          state=waitFor(SEC_DELAY, state + 1);
+        } else if (n >= 19) {
+          writeD3('2');
+          delay(DELAY);
+          writeD4('0'+ n - 19);
+          state = waitFor(SEC_DELAY, state + 1);
+        } else
+          debug_error(__LINE__);
+
       } else if (state == COUNT_MAX) {
           state = YAY;
       } else {
-      	   state = TEST;
+          state = TEST;
       }
       break;
   }
