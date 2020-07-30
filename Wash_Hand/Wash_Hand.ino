@@ -44,8 +44,8 @@ void setup(void) {
 #define DONE        (YAY+1)
 #define DONE_STR    'D','O','N','E'
 
-#define TEST        (DONE+1)
-#define TEST_STR    '1','2','3','4'
+#define CLEAR       (DONE+1)
+#define CLEAR_STR   ' ',' ',' ',' '
 
 #define  DELAY 5
 #define STR_DELAY 5000
@@ -79,10 +79,6 @@ void loop() {
   }
   debug_begin(state);
   switch (state) {
-    case TEST:
-      write(TEST_STR, 5);
-      state = waitFor(STR_DELAY, INIT);
-      break;
     case SOAP:
       write(SOAP_STR, DELAY);
       state = waitFor(STR_DELAY, WASH);
@@ -98,7 +94,11 @@ void loop() {
       break;
     case DONE:
       write(DONE_STR, DELAY);
-      state = waitFor(STR_DELAY, INIT);
+      state = waitFor(STR_DELAY, CLEAR);
+      break;
+    case CLEAR:
+      write(CLEAR_STR, 0);
+      state = waitFor(10, INIT);
       break;
     case INIT:
       break;
@@ -127,7 +127,7 @@ void loop() {
       } else if (state == COUNT_MAX) {
           state = YAY;
       } else {
-          state = TEST;
+          state = CLEAR;
       }
       break;
   }
