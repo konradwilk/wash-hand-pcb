@@ -27,10 +27,9 @@ void setup(void) {
   setupPorts();
 }
 
-#define NOBODY  0
-#define NOBODY_STR  ' ',' ',' ',' '
+#define INIT  0
 
-#define SOAP    NOBODY+1
+#define SOAP    INIT+1
 #define SOAP_STR    'S','O','A','P'
 
 #define WASH	SOAP+1
@@ -72,7 +71,7 @@ void loop() {
 
   sensor = readSensor();
   if (sensor < 500) {
-    if (state == NOBODY) {
+    if (state == INIT) {
         /* All of them cleared. */
         state = SOAP;
         s = millis();
@@ -82,7 +81,7 @@ void loop() {
   switch (state) {
     case TEST:
       write(TEST_STR, 5);
-      state = waitFor(STR_DELAY, NOBODY);
+      state = waitFor(STR_DELAY, INIT);
       break;
     case SOAP:
       write(SOAP_STR, DELAY);
@@ -99,10 +98,9 @@ void loop() {
       break;
     case DONE:
       write(DONE_STR, DELAY);
-      state = waitFor(STR_DELAY, NOBODY);
+      state = waitFor(STR_DELAY, INIT);
       break;
-    case NOBODY:
-      //write(NOBODY_STR, 0);
+    case INIT:
       break;
     default:
       if ((state >= COUNT) && (state < COUNT_MAX)) {
