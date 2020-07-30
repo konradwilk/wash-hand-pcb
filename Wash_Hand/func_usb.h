@@ -81,3 +81,8 @@ void debug_end(void) {
   _tickle = 0;
 }
 
+void debug_error(const char s[]) {
+
+  Serial.println(s);
+}
+

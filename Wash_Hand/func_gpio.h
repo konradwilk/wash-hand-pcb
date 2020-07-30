@@ -104,5 +104,4 @@ int readSensor(void) {
 void debug_begin(unsigned int val) {}
 void debug_end(void) { }
 void debug_print(unsigned int val) { }
-
-
+void debug_error(const char s[]) { }
