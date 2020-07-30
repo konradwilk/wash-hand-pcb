@@ -49,7 +49,7 @@ void setup(void) {
 
 #define  DELAY 5
 #define STR_DELAY 5000
-#define SEC_DELAY 100
+#define SEC_DELAY 1000
 
 
 unsigned int state = INIT;
