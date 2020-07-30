@@ -47,3 +47,4 @@ In particular order:
  - Fetch data from a SD-card (if attached), otherwise read from EEPROM (1K).
  - Format-type of the data type for above mechanism.
  - Utilize sleep operations to keep the CPU most of the time asleep.
+ - Utilize modulo for the numbers.
