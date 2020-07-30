@@ -29,22 +29,22 @@ void setup(void) {
 
 #define INIT  0
 
-#define SOAP    INIT+1
+#define SOAP        (INIT+1)
 #define SOAP_STR    'S','O','A','P'
 
-#define WASH	SOAP+1
+#define WASH        (SOAP+1)
 #define WASH_STR    'G','o','G','o'
 
-#define COUNT   WASH+1
-#define COUNT_MAX COUNT+20
+#define COUNT       (WASH+1)
+#define COUNT_MAX   (COUNT+20)
 
-#define YAY	COUNT_MAX+1
+#define YAY         (COUNT_MAX+1)
 #define YAY_STR     'Y','A','Y',' '
 
-#define DONE    YAY+1
+#define DONE        (YAY+1)
 #define DONE_STR    'D','O','N','E'
 
-#define TEST	DONE+1
+#define TEST        (DONE+1)
 #define TEST_STR    '1','2','3','4'
 
 #define  DELAY 5
@@ -52,7 +52,7 @@ void setup(void) {
 #define SEC_DELAY 100
 
 
-unsigned int state = 0;
+unsigned int state = INIT;
 unsigned long s;
 
 unsigned int waitFor(unsigned long timeout, unsigned new_state)
@@ -116,7 +116,7 @@ void loop() {
            state=waitFor(STR_DELAY, state + 1);
         }
       } else if (state == COUNT_MAX) {
-           state = YAY;
+          state = YAY;
       } else {
       	   state = TEST;
       }
