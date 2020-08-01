@@ -1120,8 +1120,8 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="1.27" y="20.32" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="U$4" library="darnok_usb" package="USB_MICROB_10118194_AMPHENOL" package3d_urn="urn:adsk.eagle:package:21769933/1" value="USB_MICROB_10118194_AMPHENOL" x="1.27" y="12.7" smashed="yes" rot="R270"/>
-<element name="U$5" library="darnok_led" package="HDSP-B0XE" package3d_urn="urn:adsk.eagle:package:21769930/1" value="HDSP-B04E" x="33.528" y="18.796" smashed="yes" rot="MR0">
-<attribute name="HDSP-B04E" value="" x="-5.842" y="8.636" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="U$5" library="darnok_led" package="HDSP-B0XE" package3d_urn="urn:adsk.eagle:package:21769930/1" value="HDSP-B04E" x="33.528" y="31.496" smashed="yes" rot="MR0">
+<attribute name="HDSP-B04E" value="" x="-5.842" y="21.336" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="U1" library="SparkFun-IC-Microcontroller" library_urn="urn:adsk.eagle:library:525" package="DIP28" package3d_urn="urn:adsk.eagle:package:38942/1" value="328P" x="33.528" y="31.496" smashed="yes">
 <attribute name="NAME" x="15.113" y="31.496" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
@@ -1266,42 +1266,42 @@ design rules under a new name.</description>
 <signal name="D1">
 <contactref element="U1" pad="14"/>
 <contactref element="U$5" pad="PIN12"/>
-<wire x1="38.608" y1="26.416" x2="50.038" y2="27.686" width="0" layer="19" extent="1-1"/>
+<wire x1="50.038" y1="27.686" x2="38.608" y2="39.116" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="A">
 <contactref element="R1" pad="2"/>
 <contactref element="U$5" pad="PIN$11"/>
-<wire x1="36.068" y1="26.416" x2="51.94" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="36.068" y1="39.116" x2="51.94" y2="25.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B">
 <contactref element="R2" pad="2"/>
 <contactref element="U$5" pad="PIN$7"/>
-<wire x1="25.908" y1="11.176" x2="18.92" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="18.92" y1="25.4" x2="25.908" y2="23.876" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D">
 <contactref element="R4" pad="2"/>
 <contactref element="U$5" pad="PIN$2"/>
-<wire x1="11.3" y1="25.4" x2="38.608" y2="11.176" width="0" layer="19" extent="1-1"/>
+<wire x1="11.3" y1="25.4" x2="38.608" y2="23.876" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="E">
 <contactref element="U$5" pad="PIN$1"/>
 <contactref element="R5" pad="2"/>
-<wire x1="44.32" y1="13.97" x2="41.148" y2="11.176" width="0" layer="19" extent="1-1"/>
+<wire x1="44.32" y1="13.97" x2="41.148" y2="23.876" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="F">
 <contactref element="R6" pad="2"/>
 <contactref element="U$5" pad="PIN$10"/>
-<wire x1="33.528" y1="26.416" x2="44.32" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="44.32" y1="25.4" x2="33.528" y2="39.116" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="G">
 <contactref element="U$5" pad="PIN$5"/>
 <contactref element="R7" pad="2"/>
-<wire x1="30.988" y1="11.176" x2="44.32" y2="19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="30.988" y1="23.876" x2="44.32" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DP">
 <contactref element="R8" pad="2"/>
 <contactref element="U$5" pad="PIN$3"/>
-<wire x1="36.068" y1="11.176" x2="51.94" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="36.068" y1="23.876" x2="51.94" y2="13.97" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$18">
 <contactref element="R8" pad="1"/>
@@ -1340,17 +1340,17 @@ design rules under a new name.</description>
 <signal name="D4">
 <contactref element="U1" pad="26"/>
 <contactref element="U$5" pad="PIN$6"/>
-<wire x1="28.448" y1="11.176" x2="22.098" y2="35.306" width="0" layer="19" extent="1-1"/>
+<wire x1="28.448" y1="23.876" x2="22.098" y2="35.306" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D3">
 <contactref element="U1" pad="25"/>
 <contactref element="U$5" pad="PIN$8"/>
-<wire x1="28.448" y1="26.416" x2="24.638" y2="35.306" width="0" layer="19" extent="1-1"/>
+<wire x1="24.638" y1="35.306" x2="28.448" y2="39.116" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D2">
 <contactref element="U1" pad="24"/>
 <contactref element="U$5" pad="PIN$9"/>
-<wire x1="30.988" y1="26.416" x2="27.178" y2="35.306" width="0" layer="19" extent="1-1"/>
+<wire x1="27.178" y1="35.306" x2="30.988" y2="39.116" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SS">
 <contactref element="U1" pad="16"/>
@@ -1365,7 +1365,7 @@ design rules under a new name.</description>
 <signal name="C">
 <contactref element="U$5" pad="PIN$4"/>
 <contactref element="R3" pad="2"/>
-<wire x1="33.528" y1="11.176" x2="51.94" y2="19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="33.528" y1="23.876" x2="51.94" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="INTERRUPT">
 <contactref element="U1" pad="4"/>
