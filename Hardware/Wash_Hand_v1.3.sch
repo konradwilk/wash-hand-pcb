@@ -466,8 +466,10 @@ uC used in the Arduino&lt;br&gt;
 </library>
 <library name="darnok_led">
 <packages>
-<package name="HDSP-B0XE" urn="urn:adsk.eagle:footprint:21769916/1">
-<description>HDSP-B0XE. 51mm x 19mm</description>
+<package name="HDSP-B0XE" urn="urn:adsk.eagle:footprint:21769916/1" locally_modified="yes">
+<description>HDSP-B0XE. 51mm x 19mm
+
+v2: Fixed the drill hole</description>
 <wire x1="25.5" y1="9.5" x2="-25.5" y2="9.5" width="0.127" layer="21"/>
 <wire x1="-25.5" y1="9.5" x2="-25.5" y2="-9.5" width="0.127" layer="21"/>
 <wire x1="-25.5" y1="-9.5" x2="25.5" y2="-9.5" width="0.127" layer="21"/>
