@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,19 +39,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -1961,6 +1961,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="1.397" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.397" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
+<package name="0402" urn="urn:adsk.eagle:footprint:37389/1" library_version="1">
+<description>&lt;p&gt;&lt;b&gt;Generic 1005 (0402) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-0.2704" y1="0.2286" x2="0.2704" y2="0.2286" width="0.1524" layer="51"/>
+<wire x1="0.2704" y1="-0.2286" x2="-0.2704" y2="-0.2286" width="0.1524" layer="51"/>
+<wire x1="-1.2" y1="0.65" x2="1.2" y2="0.65" width="0.0508" layer="39"/>
+<wire x1="1.2" y1="0.65" x2="1.2" y2="-0.65" width="0.0508" layer="39"/>
+<wire x1="1.2" y1="-0.65" x2="-1.2" y2="-0.65" width="0.0508" layer="39"/>
+<wire x1="-1.2" y1="-0.65" x2="-1.2" y2="0.65" width="0.0508" layer="39"/>
+<smd name="1" x="-0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
+<smd name="2" x="0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
+<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.3048" layer="51"/>
+<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.3048" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="0603" urn="urn:adsk.eagle:package:37414/1" type="box" library_version="1">
@@ -1989,6 +2006,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 0.2mm courtyard excess rounded to nearest 0.05mm.</description>
 <packageinstances>
 <packageinstance name="1210"/>
+</packageinstances>
+</package3d>
+<package3d name="0402" urn="urn:adsk.eagle:package:37413/1" type="box" library_version="1">
+<description>Generic 1005 (0402) package
+0.2mm courtyard excess rounded to nearest 0.05mm.</description>
+<packageinstances>
+<packageinstance name="0402"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2069,6 +2093,90 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technology name="">
 <attribute name="PROD_ID" value="CAP-09824"/>
 <attribute name="VALUE" value="10uF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1.0UF" urn="urn:adsk.eagle:component:37474/1" prefix="C" library_version="1">
+<description>&lt;h3&gt;1µF ceramic capacitors&lt;/h3&gt;
+&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603-16V-10%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:37414/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-00868"/>
+<attribute name="VALUE" value="1.0uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402-16V-10%" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:37413/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-12417"/>
+<attribute name="VALUE" value="1.0uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-0805-25V-(+80/-20%)" package="0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:37429/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-11625"/>
+<attribute name="VALUE" value="1.0uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-1206-50V-10%" package="1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:37426/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-09822"/>
+<attribute name="VALUE" value="1.0uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-0805-25V-10%" package="0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:37429/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08064"/>
+<attribute name="VALUE" value="1.0uF"/>
 </technology>
 </technologies>
 </device>
@@ -10815,6 +10923,8 @@ OSHW_LOGO</description>
 <part name="JP1" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_3_2-NC_PASTE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39294/1" value="NC"/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="OSHW-LOGO" device="M" package3d_urn="urn:adsk.eagle:package:37126/1"/>
+<part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="C3" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -10847,8 +10957,8 @@ designed by Konrad Rzeszutek Wilk</text>
 </instance>
 <instance part="X_1" gate="G$1" x="63.5" y="96.52" smashed="yes"/>
 <instance part="X_2" gate="G$1" x="200.66" y="78.74" smashed="yes"/>
-<instance part="P+1" gate="VCC" x="60.96" y="177.8" smashed="yes">
-<attribute name="VALUE" x="58.42" y="175.26" size="1.778" layer="96" rot="R90"/>
+<instance part="P+1" gate="VCC" x="60.96" y="165.1" smashed="yes">
+<attribute name="VALUE" x="58.42" y="162.56" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+2" gate="VCC" x="200.66" y="96.52" smashed="yes">
 <attribute name="VALUE" x="198.12" y="93.98" size="1.778" layer="96" rot="R90"/>
@@ -10950,6 +11060,13 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="VALUE" x="226.06" y="177.8" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="LOGO1" gate="G$1" x="139.7" y="33.02" smashed="yes"/>
+<instance part="P+7" gate="VCC" x="68.58" y="177.8" smashed="yes">
+<attribute name="VALUE" x="66.04" y="175.26" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C3" gate="G$1" x="40.64" y="157.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="37.719" y="159.004" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="42.799" y="159.004" size="1.778" layer="96" font="vector" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10958,34 +11075,13 @@ designed by Konrad Rzeszutek Wilk</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="PC6(/RESET)"/>
 <pinref part="R9" gate="G$1" pin="R_1"/>
-<pinref part="J2" gate="G$1" pin="5"/>
-<wire x1="127" y1="91.44" x2="30.48" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="91.44" x2="30.48" y2="157.48" width="0.1524" layer="91"/>
 <junction x="68.58" y="157.48"/>
+<wire x1="68.58" y1="157.48" x2="43.18" y2="157.48" width="0.1524" layer="91"/>
 <label x="50.8" y="157.48" size="1.778" layer="95"/>
-<wire x1="68.58" y1="157.48" x2="30.48" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="VCC" class="0">
-<segment>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
-<pinref part="U1" gate="G$1" pin="AVCC"/>
-<wire x1="68.58" y1="152.4" x2="60.96" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="152.4" x2="60.96" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="172.72" x2="60.96" y2="175.26" width="0.1524" layer="91"/>
-<junction x="60.96" y="152.4"/>
-<pinref part="U1" gate="G$1" pin="AREF"/>
-<wire x1="68.58" y1="142.24" x2="60.96" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="R_2"/>
-<wire x1="60.96" y1="142.24" x2="60.96" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="149.86" x2="60.96" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="172.974" x2="66.04" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="172.72" x2="60.96" y2="172.72" width="0.1524" layer="91"/>
-<junction x="60.96" y="172.72"/>
-<pinref part="U1" gate="G$1" pin="VCC"/>
-<wire x1="68.58" y1="149.86" x2="60.96" y2="149.86" width="0.1524" layer="91"/>
-<junction x="60.96" y="149.86"/>
-</segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="VCC"/>
 <wire x1="193.04" y1="88.9" x2="200.66" y2="88.9" width="0.1524" layer="91"/>
@@ -11014,6 +11110,25 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="127" y1="172.72" x2="106.68" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
 <wire x1="106.68" y1="172.72" x2="106.68" y2="177.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="R_2"/>
+<pinref part="P+7" gate="VCC" pin="VCC"/>
+<wire x1="68.58" y1="172.974" x2="68.58" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="AVCC"/>
+<wire x1="68.58" y1="152.4" x2="60.96" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="AREF"/>
+<wire x1="68.58" y1="142.24" x2="60.96" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="142.24" x2="60.96" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="149.86" x2="60.96" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="VCC"/>
+<wire x1="68.58" y1="149.86" x2="60.96" y2="149.86" width="0.1524" layer="91"/>
+<junction x="60.96" y="149.86"/>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
+<wire x1="60.96" y1="152.4" x2="60.96" y2="162.56" width="0.1524" layer="91"/>
+<junction x="60.96" y="152.4"/>
 </segment>
 </net>
 <net name="0" class="0">
@@ -11339,6 +11454,18 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="160.02" y1="116.84" x2="160.02" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="CATHODE_A"/>
 <wire x1="160.02" y1="134.62" x2="177.8" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DTR" class="0">
+<segment>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="157.48" x2="30.48" y2="157.48" width="0.1524" layer="91"/>
+<label x="30.48" y="157.48" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="5"/>
+<wire x1="127" y1="91.44" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
+<label x="116.84" y="91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
