@@ -10985,13 +10985,13 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="VALUE" x="200.66" y="197.866" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="200.66" y="187.452" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="J2" gate="G$1" x="129.54" y="83.82" smashed="yes" rot="R270">
-<attribute name="NAME" x="135.128" y="87.376" size="1.778" layer="95" font="vector" rot="R270"/>
-<attribute name="VALUE" x="123.698" y="87.122" size="1.778" layer="96" font="vector" rot="R270" align="top-left"/>
+<instance part="J2" gate="G$1" x="30.48" y="60.96" smashed="yes">
+<attribute name="NAME" x="26.924" y="66.548" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="27.178" y="55.118" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
-<instance part="X_5" gate="G$1" x="127" y="71.12" smashed="yes"/>
-<instance part="P+4" gate="VCC" x="142.24" y="78.74" smashed="yes">
-<attribute name="VALUE" x="139.7" y="76.2" size="1.778" layer="96" rot="R90"/>
+<instance part="X_5" gate="G$1" x="43.18" y="58.42" smashed="yes"/>
+<instance part="P+4" gate="VCC" x="43.18" y="66.04" smashed="yes">
+<attribute name="VALUE" x="40.64" y="63.5" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="FRAME1" gate="G$1" x="5.08" y="22.86" smashed="yes"/>
 <instance part="FRAME1" gate="G$2" x="152.4" y="22.86" smashed="yes">
@@ -11090,7 +11090,7 @@ designed by Konrad Rzeszutek Wilk</text>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="132.08" y1="76.2" x2="142.24" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="63.5" x2="43.18" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
@@ -11161,7 +11161,7 @@ designed by Konrad Rzeszutek Wilk</text>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="6"/>
-<wire x1="127" y1="76.2" x2="127" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="58.42" x2="43.18" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="X_5" gate="G$1" pin="0"/>
 </segment>
 <segment>
@@ -11246,9 +11246,8 @@ designed by Konrad Rzeszutek Wilk</text>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="4"/>
-<wire x1="144.78" y1="73.66" x2="129.54" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="73.66" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
-<label x="144.78" y="73.66" size="1.778" layer="95" xref="yes"/>
+<wire x1="43.18" y1="60.96" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
+<label x="43.18" y="60.96" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="3"/>
@@ -11330,8 +11329,8 @@ designed by Konrad Rzeszutek Wilk</text>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="132.08" y1="91.44" x2="132.08" y2="93.98" width="0.1524" layer="91"/>
-<label x="132.08" y="93.98" size="1.778" layer="95" xref="yes"/>
+<wire x1="22.86" y1="63.5" x2="20.32" y2="63.5" width="0.1524" layer="91"/>
+<label x="20.32" y="63.5" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="2"/>
@@ -11348,9 +11347,8 @@ designed by Konrad Rzeszutek Wilk</text>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="3"/>
-<wire x1="129.54" y1="91.44" x2="129.54" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="93.98" x2="124.46" y2="93.98" width="0.1524" layer="91"/>
-<label x="124.46" y="93.98" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="22.86" y1="60.96" x2="20.32" y2="60.96" width="0.1524" layer="91"/>
+<label x="20.32" y="60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="4"/>
@@ -11483,8 +11481,8 @@ designed by Konrad Rzeszutek Wilk</text>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="5"/>
-<wire x1="127" y1="91.44" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
-<label x="116.84" y="91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="22.86" y1="58.42" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
+<label x="20.32" y="58.42" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
