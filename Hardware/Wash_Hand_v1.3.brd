@@ -426,6 +426,71 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
+<package name="FTDI_BASIC" urn="urn:adsk.eagle:footprint:37639/1" library_version="1">
+<description>&lt;h3&gt;FTDI Basic &lt;/h3&gt;
+Includes tDocu labels for end pins that match the FTDI Basic connection.
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 6&lt;/li&gt;
+&lt;li&gt;Pin pitch: 0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;6_Pin_Serial_Cable&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="11.43" y1="0.635" x2="12.065" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="12.065" y1="1.27" x2="13.335" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="13.335" y1="1.27" x2="13.97" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="13.97" y1="-0.635" x2="13.335" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="13.335" y1="-1.27" x2="12.065" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="12.065" y1="-1.27" x2="11.43" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="6.985" y1="1.27" x2="8.255" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="8.255" y1="1.27" x2="8.89" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="8.89" y1="-0.635" x2="8.255" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="8.89" y1="0.635" x2="9.525" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="9.525" y1="1.27" x2="10.795" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="10.795" y1="1.27" x2="11.43" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="11.43" y1="-0.635" x2="10.795" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="10.795" y1="-1.27" x2="9.525" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="9.525" y1="-1.27" x2="8.89" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="6.985" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="8.255" y1="-1.27" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="13.97" y1="0.635" x2="13.97" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="DTR" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="RXI" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="TXO" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="VCC" x="7.62" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="CTS" x="10.16" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="GND" x="12.7" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="0.635" y="1.905" size="1.27" layer="51" font="vector" rot="R90">GRN</text>
+<text x="13.335" y="1.905" size="1.27" layer="51" font="vector" rot="R90">BLK</text>
+<text x="4.572" y="1.651" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="4.572" y="-2.159" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<rectangle x1="12.446" y1="-0.254" x2="12.954" y2="0.254" layer="51"/>
+<rectangle x1="9.906" y1="-0.254" x2="10.414" y2="0.254" layer="51"/>
+<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="1X03" urn="urn:adsk.eagle:package:38063/1" type="box" library_version="1">
@@ -478,6 +543,20 @@ CONN_04
 </description>
 <packageinstances>
 <packageinstance name="1X04"/>
+</packageinstances>
+</package3d>
+<package3d name="FTDI_BASIC" urn="urn:adsk.eagle:package:38027/1" type="box" library_version="1">
+<description>FTDI Basic 
+Includes tDocu labels for end pins that match the FTDI Basic connection.
+Specifications:
+Pin count: 6
+Pin pitch: 0.1"
+
+Example device(s):
+6_Pin_Serial_Cable
+</description>
+<packageinstances>
+<packageinstance name="FTDI_BASIC"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1147,6 +1226,10 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="CAP-09822" x="33.02" y="16.51" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="33.02" y="15.367" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
+<element name="J6" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="FTDI_BASIC" package3d_urn="urn:adsk.eagle:package:38027/1" value="6_PIN_SERIAL_CABLEPTH" x="2.54" y="-10.16" smashed="yes">
+<attribute name="NAME" x="7.112" y="-8.509" size="0.6096" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="7.112" y="-12.319" size="0.6096" layer="27" font="vector" ratio="20"/>
+</element>
 </elements>
 <signals>
 <signal name="RESET">
@@ -1183,6 +1266,8 @@ design rules under a new name.</description>
 <contactref element="U1" pad="22"/>
 <contactref element="U1" pad="8"/>
 <contactref element="C4" pad="1"/>
+<contactref element="J6" pad="CTS"/>
+<contactref element="J6" pad="GND"/>
 <wire x1="57.15" y1="7.62" x2="66.04" y2="8.89" width="0" layer="19" extent="1-1"/>
 <wire x1="31.62" y1="16.51" x2="57.15" y2="7.62" width="0" layer="19" extent="1-1"/>
 <wire x1="25.53" y1="16.51" x2="31.62" y2="16.51" width="0" layer="19" extent="1-1"/>
@@ -1190,6 +1275,8 @@ design rules under a new name.</description>
 <wire x1="34.798" y1="27.686" x2="25.53" y2="21.59" width="0" layer="19" extent="1-1"/>
 <wire x1="32.258" y1="35.306" x2="34.798" y2="27.686" width="0" layer="19" extent="1-1"/>
 <wire x1="21.59" y1="5.08" x2="25.53" y2="16.51" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="-10.16" x2="21.59" y2="5.08" width="0" layer="19" extent="1-1"/>
+<wire x1="12.7" y1="-10.16" x2="15.24" y2="-10.16" width="0" layer="19" extent="1-1"/>
 <wire x1="5.42" y1="11.4" x2="21.59" y2="5.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
@@ -1354,18 +1441,27 @@ design rules under a new name.</description>
 <signal name="DTR">
 <contactref element="C3" pad="1"/>
 <contactref element="J2" pad="5"/>
-<wire x1="3.81" y1="26.54" x2="57.15" y2="5.08" width="0" layer="19" extent="1-1"/>
+<contactref element="J6" pad="DTR"/>
+<wire x1="2.54" y1="-10.16" x2="57.15" y2="5.08" width="0" layer="19" extent="1-1"/>
+<wire x1="3.81" y1="26.54" x2="2.54" y2="-10.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TX">
 <contactref element="U1" pad="3"/>
+<contactref element="J6" pad="RXI"/>
+<wire x1="5.08" y1="-10.16" x2="22.098" y2="27.686" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RX">
 <contactref element="U1" pad="2"/>
+<contactref element="J6" pad="TXO"/>
+<wire x1="7.62" y1="-10.16" x2="19.558" y2="27.686" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="U1" pad="21"/>
 <contactref element="C4" pad="2"/>
 <wire x1="34.42" y1="16.51" x2="34.798" y2="35.306" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$13">
+<contactref element="J6" pad="VCC"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
