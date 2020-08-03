@@ -10925,6 +10925,8 @@ OSHW_LOGO</description>
 <part name="LOGO1" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="OSHW-LOGO" device="M" package3d_urn="urn:adsk.eagle:package:37126/1"/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="C3" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="0.1uF"/>
+<part name="C4" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="0.1uF"/>
+<part name="X_7" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11067,6 +11069,11 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="NAME" x="37.719" y="159.004" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="42.799" y="159.004" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
+<instance part="C4" gate="G$1" x="66.04" y="142.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="63.119" y="143.764" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="68.199" y="143.764" size="1.778" layer="96" font="vector" rot="R90"/>
+</instance>
+<instance part="X_7" gate="G$1" x="58.42" y="139.7" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -11119,13 +11126,9 @@ designed by Konrad Rzeszutek Wilk</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="AVCC"/>
 <wire x1="68.58" y1="152.4" x2="60.96" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="AREF"/>
-<wire x1="68.58" y1="142.24" x2="60.96" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="142.24" x2="60.96" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="149.86" x2="60.96" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VCC"/>
 <wire x1="68.58" y1="149.86" x2="60.96" y2="149.86" width="0.1524" layer="91"/>
-<junction x="60.96" y="149.86"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <wire x1="60.96" y1="152.4" x2="60.96" y2="162.56" width="0.1524" layer="91"/>
 <junction x="60.96" y="152.4"/>
@@ -11177,6 +11180,12 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="35.56" y1="177.8" x2="43.18" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="X_6" gate="G$1" pin="0"/>
 <wire x1="43.18" y1="177.8" x2="43.18" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="60.96" y1="142.24" x2="58.42" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="X_7" gate="G$1" pin="0"/>
+<wire x1="58.42" y1="139.7" x2="58.42" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
