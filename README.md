@@ -38,8 +38,6 @@ Which in no particular order are:
 
  - Integrate the line-sensor logic in the board (a simple infrared light and a voltage comparison).
  - Add a SD card
- - Add 9V battery connection and line regulator
- - Add switch to choose between 9V or 5V from USB
  - Leave RX,TX alone.
  - Don't use PIN DP on LED.
 
