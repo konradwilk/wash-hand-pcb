@@ -10918,8 +10918,8 @@ OSHW_LOGO</description>
 <part name="X_6" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="J5" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1" value="EXT_VCC"/>
 <part name="H6" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" deviceset="STAND-OFF" device="" package3d_urn="urn:adsk.eagle:package:38630/1"/>
-<part name="U$3" library="darnok_common" deviceset="RESISTOR" device="R1206" value="4.7K"/>
-<part name="U$1" library="darnok_common" deviceset="RESISTOR" device="R1206" value="4.7K"/>
+<part name="R10" library="darnok_common" deviceset="RESISTOR" device="R1206" value="4.7K"/>
+<part name="R11" library="darnok_common" deviceset="RESISTOR" device="R1206" value="4.7K"/>
 <part name="JP1" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_3_2-NC_PASTE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39294/1" value="NC"/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="OSHW-LOGO" device="M" package3d_urn="urn:adsk.eagle:package:37126/1"/>
@@ -11044,11 +11044,11 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="NAME" x="25.4" y="183.388" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="H6" gate="G$1" x="170.18" y="60.96" smashed="yes"/>
-<instance part="U$3" gate="G$1" x="205.74" y="177.8" smashed="yes" rot="R180">
+<instance part="R10" gate="G$1" x="205.74" y="177.8" smashed="yes" rot="R180">
 <attribute name="NAME" x="206.756" y="176.276" size="1.27" layer="95" rot="R180"/>
 <attribute name="VALUE" x="200.406" y="179.07" size="1.016" layer="96" rot="R180"/>
 </instance>
-<instance part="U$1" gate="G$1" x="200.66" y="167.64" smashed="yes">
+<instance part="R11" gate="G$1" x="200.66" y="167.64" smashed="yes">
 <attribute name="NAME" x="199.644" y="169.164" size="1.27" layer="95"/>
 <attribute name="VALUE" x="205.994" y="166.37" size="1.016" layer="96"/>
 </instance>
@@ -11218,7 +11218,7 @@ designed by Konrad Rzeszutek Wilk</text>
 <label x="124.46" y="147.32" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="R_2"/>
+<pinref part="R10" gate="G$1" pin="R_2"/>
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="182.88" y1="193.04" x2="190.5" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="177.8" x2="182.88" y2="193.04" width="0.1524" layer="91"/>
@@ -11232,11 +11232,11 @@ designed by Konrad Rzeszutek Wilk</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="PC5(ADC5/SCL)"/>
 <wire x1="124.46" y1="144.78" x2="116.84" y2="144.78" width="0.1524" layer="91"/>
-<label x="119.38" y="142.24" size="1.778" layer="95"/>
+<label x="119.38" y="144.78" size="1.778" layer="95"/>
 <label x="124.46" y="144.78" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="R_1"/>
+<pinref part="R11" gate="G$1" pin="R_1"/>
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="190.5" y1="190.5" x2="193.04" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="190.5" x2="190.5" y2="190.5" width="0.1524" layer="91"/>
@@ -11448,14 +11448,14 @@ designed by Konrad Rzeszutek Wilk</text>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="R_1"/>
+<pinref part="R10" gate="G$1" pin="R_1"/>
 <pinref part="JP1" gate="G$1" pin="3"/>
 <wire x1="210.82" y1="177.8" x2="218.44" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="R_2"/>
+<pinref part="R11" gate="G$1" pin="R_2"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="211.074" y1="167.64" x2="218.44" y2="167.64" width="0.1524" layer="91"/>
 </segment>

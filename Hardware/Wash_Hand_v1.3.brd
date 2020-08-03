@@ -1124,11 +1124,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="66.04" y="22.352" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="VALUE" x="66.04" y="18.288" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="U$3" library="darnok_common" package="1206" value="4.7K" x="48.26" y="6.35" smashed="yes" rot="MR270">
+<element name="R10" library="darnok_common" package="1206" value="4.7K" x="48.26" y="6.35" smashed="yes" rot="MR270">
 <attribute name="NAME" x="47.117" y="6.35" size="0.6096" layer="26" font="vector" ratio="20" rot="MR270" align="bottom-center"/>
 <attribute name="VALUE" x="49.403" y="6.35" size="0.6096" layer="28" font="vector" ratio="20" rot="MR270" align="top-center"/>
 </element>
-<element name="U$1" library="darnok_common" package="1206" value="4.7K" x="40.64" y="6.35" smashed="yes" rot="MR270">
+<element name="R11" library="darnok_common" package="1206" value="4.7K" x="40.64" y="6.35" smashed="yes" rot="MR270">
 <attribute name="NAME" x="39.497" y="6.35" size="0.6096" layer="26" font="vector" ratio="20" rot="MR0" align="bottom-center"/>
 <attribute name="VALUE" x="41.783" y="6.35" size="0.6096" layer="28" font="vector" ratio="20" rot="MR270" align="top-center"/>
 </element>
@@ -1209,14 +1209,14 @@ design rules under a new name.</description>
 <signal name="SDA">
 <contactref element="U1" pad="27"/>
 <contactref element="J1" pad="1"/>
-<contactref element="U$3" pad="2"/>
+<contactref element="R10" pad="2"/>
 <wire x1="11.43" y1="5.08" x2="19.558" y2="35.306" width="0" layer="19" extent="1-1"/>
 <wire x1="48.26" y1="4.95" x2="11.43" y2="5.08" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SCL">
 <contactref element="U1" pad="28"/>
 <contactref element="J1" pad="2"/>
-<contactref element="U$1" pad="1"/>
+<contactref element="R11" pad="1"/>
 <wire x1="13.97" y1="5.08" x2="17.018" y2="35.306" width="0" layer="19" extent="1-1"/>
 <wire x1="40.64" y1="7.75" x2="13.97" y2="5.08" width="0" layer="19" extent="16-16"/>
 </signal>
@@ -1322,12 +1322,12 @@ design rules under a new name.</description>
 <wire x1="47.12" y1="19.05" x2="44.958" y2="27.686" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
-<contactref element="U$3" pad="1"/>
+<contactref element="R10" pad="1"/>
 <contactref element="JP1" pad="3"/>
 <wire x1="43.6372" y1="6.35" x2="48.26" y2="7.75" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$6">
-<contactref element="U$1" pad="2"/>
+<contactref element="R11" pad="2"/>
 <contactref element="JP1" pad="1"/>
 <wire x1="40.64" y1="4.95" x2="45.2628" y2="6.35" width="0" layer="19" extent="16-16"/>
 </signal>
