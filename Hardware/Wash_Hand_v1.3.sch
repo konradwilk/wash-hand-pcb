@@ -11149,7 +11149,8 @@ designed by Konrad Rzeszutek Wilk</text>
 <junction x="35.56" y="124.46"/>
 <pinref part="X_1" gate="G$1" pin="0"/>
 <wire x1="63.5" y1="101.6" x2="63.5" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="134.62" x2="43.18" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="134.62" x2="43.18" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="124.46" x2="43.18" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="101.6" x2="63.5" y2="101.6" width="0.1524" layer="91"/>
 <junction x="43.18" y="134.62"/>
 <pinref part="U1" gate="G$1" pin="GND@2"/>
@@ -11158,6 +11159,7 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="68.58" y1="104.14" x2="63.5" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="104.14" x2="63.5" y2="101.6" width="0.1524" layer="91"/>
 <junction x="63.5" y="101.6"/>
+<junction x="43.18" y="124.46"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="6"/>
