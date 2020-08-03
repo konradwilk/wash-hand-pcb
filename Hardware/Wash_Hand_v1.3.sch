@@ -11213,30 +11213,38 @@ designed by Konrad Rzeszutek Wilk</text>
 <net name="SDA" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PC4(ADC4/SDA)"/>
-<wire x1="182.88" y1="147.32" x2="116.84" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="147.32" x2="116.84" y2="147.32" width="0.1524" layer="91"/>
 <label x="119.38" y="147.32" size="1.778" layer="95"/>
-<wire x1="182.88" y1="147.32" x2="182.88" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="177.8" x2="182.88" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="193.04" x2="190.5" y2="193.04" width="0.1524" layer="91"/>
+<label x="124.46" y="147.32" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
 <pinref part="U$3" gate="G$1" pin="R_2"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="182.88" y1="193.04" x2="190.5" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="177.8" x2="182.88" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="177.8" x2="195.326" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="177.8" x2="177.8" y2="177.8" width="0.1524" layer="91"/>
 <junction x="182.88" y="177.8"/>
+<label x="177.8" y="177.8" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PC5(ADC5/SCL)"/>
-<wire x1="187.96" y1="144.78" x2="116.84" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="144.78" x2="116.84" y2="144.78" width="0.1524" layer="91"/>
 <label x="119.38" y="142.24" size="1.778" layer="95"/>
+<label x="124.46" y="144.78" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="R_1"/>
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="190.5" y1="190.5" x2="193.04" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="190.5" x2="190.5" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="144.78" x2="187.96" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="R_1"/>
 <wire x1="187.96" y1="167.64" x2="187.96" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="167.64" x2="195.58" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="167.64" x2="177.8" y2="167.64" width="0.1524" layer="91"/>
 <junction x="187.96" y="167.64"/>
+<label x="177.8" y="167.64" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -11263,7 +11271,6 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="116.84" y1="111.76" x2="147.32" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="111.76" x2="147.32" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="142.24" x2="223.52" y2="142.24" width="0.1524" layer="91"/>
-<label x="167.64" y="147.32" size="1.778" layer="95"/>
 <pinref part="U$5" gate="G$1" pin="DIGIT_1"/>
 <wire x1="218.44" y1="134.62" x2="223.52" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="134.62" x2="223.52" y2="142.24" width="0.1524" layer="91"/>
