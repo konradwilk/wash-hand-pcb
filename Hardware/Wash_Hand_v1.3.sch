@@ -10964,9 +10964,9 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="VALUE" x="198.12" y="93.98" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U$4" gate="G$1" x="187.96" y="86.36" smashed="yes"/>
-<instance part="U$5" gate="G$1" x="198.12" y="124.46" smashed="yes">
-<attribute name="NAME" x="190.5" y="139.7" size="1.778" layer="95" display="both"/>
-<attribute name="VALUE" x="193.04" y="111.76" size="1.778" layer="96"/>
+<instance part="U$5" gate="G$1" x="180.34" y="124.46" smashed="yes">
+<attribute name="NAME" x="172.72" y="139.7" size="1.778" layer="95" display="both"/>
+<attribute name="VALUE" x="175.26" y="111.76" size="1.778" layer="96"/>
 </instance>
 <instance part="R9" gate="G$1" x="68.58" y="162.56" smashed="yes" rot="R90">
 <attribute name="NAME" x="66.04" y="165.1" size="1.27" layer="95" rot="R90"/>
@@ -11273,15 +11273,15 @@ designed by Konrad Rzeszutek Wilk</text>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="DIGIT_1"/>
-<wire x1="218.44" y1="134.62" x2="223.52" y2="134.62" width="0.1524" layer="91"/>
-<label x="223.52" y="134.62" size="1.778" layer="95" xref="yes"/>
+<wire x1="200.66" y1="134.62" x2="205.74" y2="134.62" width="0.1524" layer="91"/>
+<label x="205.74" y="134.62" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="R_2"/>
 <pinref part="U$5" gate="G$1" pin="CATHODE_D"/>
-<wire x1="139.954" y1="127" x2="177.8" y2="127" width="0.1524" layer="91"/>
+<wire x1="139.954" y1="127" x2="160.02" y2="127" width="0.1524" layer="91"/>
 <label x="154.94" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -11289,7 +11289,7 @@ designed by Konrad Rzeszutek Wilk</text>
 <segment>
 <pinref part="U$5" gate="G$1" pin="CATHODE_E"/>
 <pinref part="R5" gate="G$1" pin="R_2"/>
-<wire x1="177.8" y1="124.46" x2="134.874" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="124.46" x2="134.874" y2="124.46" width="0.1524" layer="91"/>
 <label x="154.94" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -11297,7 +11297,7 @@ designed by Konrad Rzeszutek Wilk</text>
 <segment>
 <pinref part="R6" gate="G$1" pin="R_2"/>
 <pinref part="U$5" gate="G$1" pin="CATHODE_F"/>
-<wire x1="139.954" y1="121.92" x2="177.8" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="139.954" y1="121.92" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
 <label x="154.94" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -11305,7 +11305,7 @@ designed by Konrad Rzeszutek Wilk</text>
 <segment>
 <pinref part="U$5" gate="G$1" pin="CATHODE_G"/>
 <pinref part="R7" gate="G$1" pin="R_2"/>
-<wire x1="177.8" y1="119.38" x2="134.874" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="119.38" x2="134.874" y2="119.38" width="0.1524" layer="91"/>
 <label x="154.94" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -11370,39 +11370,36 @@ designed by Konrad Rzeszutek Wilk</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="PC3(ADC3)"/>
 <wire x1="116.84" y1="149.86" x2="137.16" y2="149.86" width="0.1524" layer="91"/>
-<label x="167.64" y="165.1" size="1.778" layer="95"/>
 <label x="137.16" y="149.86" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="DIGIT_4"/>
-<wire x1="223.52" y1="119.38" x2="218.44" y2="119.38" width="0.1524" layer="91"/>
-<label x="223.52" y="119.38" size="1.778" layer="95" xref="yes"/>
+<wire x1="205.74" y1="119.38" x2="200.66" y2="119.38" width="0.1524" layer="91"/>
+<label x="205.74" y="119.38" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D3" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PC2(ADC2)"/>
 <wire x1="116.84" y1="152.4" x2="137.16" y2="152.4" width="0.1524" layer="91"/>
-<label x="167.64" y="160.02" size="1.778" layer="95"/>
 <label x="137.16" y="152.4" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="DIGIT_3"/>
-<wire x1="218.44" y1="124.46" x2="223.52" y2="124.46" width="0.1524" layer="91"/>
-<label x="223.52" y="124.46" size="1.778" layer="95" xref="yes"/>
+<wire x1="200.66" y1="124.46" x2="205.74" y2="124.46" width="0.1524" layer="91"/>
+<label x="205.74" y="124.46" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D2" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PC1(ADC1)"/>
 <wire x1="137.16" y1="154.94" x2="116.84" y2="154.94" width="0.1524" layer="91"/>
-<label x="167.64" y="154.94" size="1.778" layer="95"/>
 <label x="137.16" y="154.94" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="DIGIT_2"/>
-<wire x1="223.52" y1="129.54" x2="218.44" y2="129.54" width="0.1524" layer="91"/>
-<label x="223.52" y="129.54" size="1.778" layer="95" xref="yes"/>
+<wire x1="205.74" y1="129.54" x2="200.66" y2="129.54" width="0.1524" layer="91"/>
+<label x="205.74" y="129.54" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SS" class="0">
@@ -11428,11 +11425,11 @@ designed by Konrad Rzeszutek Wilk</text>
 <net name="C" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="CATHODE_C"/>
-<wire x1="177.8" y1="129.54" x2="152.4" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="129.54" x2="152.4" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="129.54" x2="152.4" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="R_2"/>
 <wire x1="152.4" y1="109.22" x2="139.954" y2="109.22" width="0.1524" layer="91"/>
-<label x="152.4" y="129.54" size="1.778" layer="95"/>
+<label x="154.94" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -11466,10 +11463,11 @@ designed by Konrad Rzeszutek Wilk</text>
 <net name="B" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="CATHODE_B"/>
-<wire x1="177.8" y1="132.08" x2="142.24" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="132.08" x2="142.24" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="132.08" x2="142.24" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="R_2"/>
 <wire x1="142.24" y1="129.54" x2="137.414" y2="129.54" width="0.1524" layer="91"/>
+<label x="154.94" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -11482,10 +11480,11 @@ designed by Konrad Rzeszutek Wilk</text>
 <net name="A" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="R_2"/>
-<wire x1="142.494" y1="116.84" x2="160.02" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="116.84" x2="160.02" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="142.494" y1="116.84" x2="149.86" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="116.84" x2="149.86" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="CATHODE_A"/>
-<wire x1="160.02" y1="134.62" x2="177.8" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="134.62" x2="160.02" y2="134.62" width="0.1524" layer="91"/>
+<label x="154.94" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DTR" class="0">
