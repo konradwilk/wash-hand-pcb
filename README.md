@@ -38,8 +38,6 @@ Which in no particular order are:
 
  - Integrate the line-sensor logic in the board (a simple infrared light and a voltage comparison).
  - Add a SD card
- - Leave RX,TX alone.
- - Don't use PIN DP on LED.
 
 # Future plans for software
 
