@@ -81,7 +81,10 @@
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="117" name="PM_Ref" color="7" fill="1" visible="no" active="no"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="119" name="PF_Ref" color="7" fill="1" visible="no" active="no"/>
+<layer number="120" name="WFL_Ref" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -6823,6 +6826,71 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 <smd name="3" x="0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 </package>
+<package name="SMT-JUMPER_2_NO_NO-SILK" urn="urn:adsk.eagle:footprint:39252/1" library_version="1">
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+</package>
+<package name="SMT-JUMPER_2_NO_NO-SILK_ROUND" urn="urn:adsk.eagle:footprint:39253/1" library_version="1">
+<smd name="1" x="-1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R270" stop="no" thermals="no" cream="no"/>
+<smd name="2" x="1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R90" stop="no" thermals="no" cream="no"/>
+<text x="0" y="1.9685" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.9685" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<polygon width="0.00508125" layer="1">
+<vertex x="0.111125" y="-1.42875" curve="85"/>
+<vertex x="1.381125" y="0" curve="85"/>
+<vertex x="0.111125" y="1.42875"/>
+</polygon>
+<polygon width="0.00508125" layer="1">
+<vertex x="-0.111125" y="1.42875"/>
+<vertex x="-0.111125" y="-1.42875" curve="-85"/>
+<vertex x="-1.381125" y="0" curve="-85"/>
+</polygon>
+<polygon width="0.2032" layer="29">
+<vertex x="0" y="1.42875" curve="-90"/>
+<vertex x="1.42875" y="0" curve="-90"/>
+<vertex x="0" y="-1.42875" curve="-90"/>
+<vertex x="-1.42875" y="0" curve="-90"/>
+</polygon>
+</package>
+<package name="SMT-JUMPER_2_NO_SILK" urn="urn:adsk.eagle:footprint:39254/1" library_version="1">
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="0.8636" y1="-1.016" x2="-0.8636" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="0.8636" y1="1.016" x2="1.1176" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.1176" y1="0.762" x2="-0.8636" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.1176" y1="-0.762" x2="-0.8636" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="0.8636" y1="-1.016" x2="1.1176" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.1176" y1="-0.762" x2="1.1176" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.1176" y1="-0.762" x2="-1.1176" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-0.8636" y1="1.016" x2="0.8636" y2="1.016" width="0.1524" layer="21"/>
+<smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+</package>
+<package name="SMT-JUMPER_2_NO_SILK_ROUND" urn="urn:adsk.eagle:footprint:39255/1" library_version="1">
+<smd name="1" x="-1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R270" stop="no" thermals="no" cream="no"/>
+<smd name="2" x="1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R90" stop="no" thermals="no" cream="no"/>
+<text x="0" y="1.9685" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.9685" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<polygon width="0.00508125" layer="1">
+<vertex x="0.111125" y="-1.42875" curve="85"/>
+<vertex x="1.381125" y="0" curve="85"/>
+<vertex x="0.111125" y="1.42875"/>
+</polygon>
+<polygon width="0.00508125" layer="1">
+<vertex x="-0.111125" y="1.42875"/>
+<vertex x="-0.111125" y="-1.42875" curve="-85"/>
+<vertex x="-1.381125" y="0" curve="-85"/>
+</polygon>
+<polygon width="0.2032" layer="29">
+<vertex x="0" y="1.42875" curve="-90"/>
+<vertex x="1.42875" y="0" curve="-90"/>
+<vertex x="0" y="-1.42875" curve="-90"/>
+<vertex x="-1.42875" y="0" curve="-90"/>
+</polygon>
+<circle x="0" y="0" radius="1.74625" width="0.2032" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SMT-JUMPER_3_2-NC_PASTE_SILK" urn="urn:adsk.eagle:package:39294/1" type="box" library_version="1">
@@ -6843,6 +6911,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <package3d name="SMT-JUMPER_3_1-NC_PASTE_SILK" urn="urn:adsk.eagle:package:39293/1" type="box" library_version="1">
 <packageinstances>
 <packageinstance name="SMT-JUMPER_3_1-NC_PASTE_SILK"/>
+</packageinstances>
+</package3d>
+<package3d name="SMT-JUMPER_2_NO_NO-SILK" urn="urn:adsk.eagle:package:39277/1" type="box" library_version="1">
+<packageinstances>
+<packageinstance name="SMT-JUMPER_2_NO_NO-SILK"/>
+</packageinstances>
+</package3d>
+<package3d name="SMT-JUMPER_2_NO_NO-SILK_ROUND" urn="urn:adsk.eagle:package:39278/1" type="box" library_version="1">
+<packageinstances>
+<packageinstance name="SMT-JUMPER_2_NO_NO-SILK_ROUND"/>
+</packageinstances>
+</package3d>
+<package3d name="SMT-JUMPER_2_NO_SILK" urn="urn:adsk.eagle:package:39279/1" type="box" library_version="1">
+<packageinstances>
+<packageinstance name="SMT-JUMPER_2_NO_SILK"/>
+</packageinstances>
+</package3d>
+<package3d name="SMT-JUMPER_2_NO_SILK_ROUND" urn="urn:adsk.eagle:package:39280/1" type="box" library_version="1">
+<packageinstances>
+<packageinstance name="SMT-JUMPER_2_NO_SILK_ROUND"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -6886,6 +6974,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="1.524" y="-1.524"/>
 <vertex x="1.524" y="0.762"/>
 </polygon>
+</symbol>
+<symbol name="SMT-JUMPER_2_NO" urn="urn:adsk.eagle:symbol:39251/1" library_version="1">
+<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6952,6 +7050,68 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:39293/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JUMPER-SMT_2_NO" urn="urn:adsk.eagle:component:39297/1" prefix="JP" library_version="1">
+<description>&lt;h3&gt;Normally open jumper&lt;/h3&gt;
+&lt;p&gt;This jumper has two pads in close proximity to each other. Apply solder to close the connection.&lt;/p&gt;
+
+&lt;p&gt;Round pads are easier to solder for beginners, but are a lot larger.&lt;/p&gt;
+&lt;p&gt;SparkFun Product that uses the round pads:
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12781"&gt;SparkFun EL Sequencer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SMT-JUMPER_2_NO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_NO-SILK" package="SMT-JUMPER_2_NO_NO-SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39277/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_NO-SILK_ROUND" package="SMT-JUMPER_2_NO_NO-SILK_ROUND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39278/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SILK" package="SMT-JUMPER_2_NO_SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39279/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SILK_ROUND" package="SMT-JUMPER_2_NO_SILK_ROUND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39280/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -11247,6 +11407,174 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Sensors">
+<description>&lt;h3&gt;SparkFun Sensors&lt;/h3&gt;
+This library contains sensors- accelerometers, gyros, compasses, magnetometers, light sensors, imagers, temp sensors, etc.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application.
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="QRE1113">
+<description>&lt;h3&gt;QRE1113, QRE1113GR SMD Reflective Object Sensor&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/SMD/QRE1113.GR.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;
+&lt;li&gt;Pin Count: 4&lt;/li&gt;
+&lt;li&gt;Dimensions: 3.2 x 2.5 x 1.5 mm&lt;/li&gt;
+&lt;li&gt;Pitch: 1.8 mm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Devices Using:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;QRE1113&lt;/li&gt;
+&lt;/ul&gt;</description>
+<wire x1="1.35" y1="1.7" x2="-1.35" y2="1.7" width="0.127" layer="51"/>
+<wire x1="-1.35" y1="1.7" x2="-1.35" y2="-1.7" width="0.127" layer="51"/>
+<wire x1="-1.35" y1="-1.7" x2="1.35" y2="-1.7" width="0.127" layer="51"/>
+<wire x1="1.35" y1="-1.7" x2="1.35" y2="1.7" width="0.127" layer="51"/>
+<wire x1="-1.427" y1="1.4365" x2="-1.427" y2="1.827" width="0.2032" layer="21"/>
+<wire x1="-1.427" y1="1.827" x2="1.4635" y2="1.827" width="0.2032" layer="21"/>
+<wire x1="1.4635" y1="1.827" x2="1.4635" y2="1.4635" width="0.2032" layer="21"/>
+<wire x1="-1.624" y1="-1.424" x2="-1.227" y2="-1.827" width="0.2032" layer="21"/>
+<wire x1="-1.227" y1="-1.827" x2="1.4635" y2="-1.827" width="0.2032" layer="21"/>
+<wire x1="1.4635" y1="-1.827" x2="1.4635" y2="-1.4365" width="0.2032" layer="21"/>
+<smd name="1" x="-1.8" y="-0.9" dx="1.2" dy="0.6" layer="1"/>
+<smd name="2" x="1.8" y="-0.9" dx="1.2" dy="0.6" layer="1"/>
+<smd name="3" x="1.8" y="0.9" dx="1.2" dy="0.6" layer="1"/>
+<smd name="4" x="-1.8" y="0.9" dx="1.2" dy="0.6" layer="1"/>
+<text x="0" y="1.905" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.905" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<circle x="-1.8415" y="-1.651" radius="0.254" width="0" layer="21"/>
+</package>
+<package name="QRE1113-W">
+<description>&lt;h3&gt;QRE1113, QRE1113GR SMD Reflective Object Sensor (Wide Pin footprint)&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/SMD/QRE1113.GR.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;
+&lt;li&gt;Pin Count: 4&lt;/li&gt;
+&lt;li&gt;Dimensions: 3.2 x 2.5 x 1.5 mm&lt;/li&gt;
+&lt;li&gt;Pitch: 1.8 mm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Devices Using:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;QRE1113&lt;/li&gt;
+&lt;/ul&gt;</description>
+<smd name="1" x="-1.927" y="-0.9" dx="1.778" dy="0.762" layer="1"/>
+<smd name="2" x="1.927" y="-0.9" dx="1.778" dy="0.762" layer="1"/>
+<smd name="3" x="1.927" y="0.9" dx="1.778" dy="0.762" layer="1"/>
+<smd name="4" x="-1.927" y="0.9" dx="1.778" dy="0.762" layer="1"/>
+<text x="0" y="1.905" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.905" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="1.35" y1="1.7" x2="-1.35" y2="1.7" width="0.127" layer="51"/>
+<wire x1="-1.35" y1="1.7" x2="-1.35" y2="-1.7" width="0.127" layer="51"/>
+<wire x1="-1.35" y1="-1.7" x2="1.35" y2="-1.7" width="0.127" layer="51"/>
+<wire x1="1.35" y1="-1.7" x2="1.35" y2="1.7" width="0.127" layer="51"/>
+<wire x1="-1.427" y1="1.5" x2="-1.427" y2="1.827" width="0.2032" layer="21"/>
+<wire x1="-1.427" y1="1.827" x2="1.4635" y2="1.827" width="0.2032" layer="21"/>
+<wire x1="1.4635" y1="1.827" x2="1.4635" y2="1.527" width="0.2032" layer="21"/>
+<wire x1="-1.5605" y1="-1.4875" x2="-1.227" y2="-1.827" width="0.2032" layer="21"/>
+<wire x1="-1.227" y1="-1.827" x2="1.4635" y2="-1.827" width="0.2032" layer="21"/>
+<wire x1="1.4635" y1="-1.827" x2="1.4635" y2="-1.5" width="0.2032" layer="21"/>
+<text x="0" y="1.905" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<circle x="-1.8415" y="-1.7145" radius="0.254" width="0" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="QRE1113">
+<description>&lt;h3&gt;QRE1113 Reflective Object Sensor&lt;/h3&gt;
+&lt;p&gt;The QRE1113 is a small IR reflectance sensor. This sensor is often used in line following robots because, if it can sense if a surface is white or black.&lt;/p&gt;</description>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.524" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="-4.064" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="6.604" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="-4.064" x2="-0.508" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="-4.064" x2="-1.524" y2="-3.048" width="0.254" layer="94"/>
+<pin name="A" x="5.08" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="E" x="-2.54" y="-7.62" visible="off" length="short" rot="R90"/>
+<pin name="C" x="-2.54" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="K" x="5.08" y="-7.62" visible="off" length="short" rot="R90"/>
+<polygon width="0.254" layer="94">
+<vertex x="5.08" y="-2.54"/>
+<vertex x="6.604" y="-1.016"/>
+<vertex x="3.81" y="-1.016"/>
+<vertex x="4.826" y="-2.032"/>
+</polygon>
+<text x="-5.334" y="-5.08" size="1.778" layer="95" font="vector" rot="R90">&gt;Name</text>
+<text x="7.874" y="-5.08" size="1.778" layer="96" font="vector" rot="R90" align="top-left">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="QRE1113" prefix="U" uservalue="yes">
+<description>&lt;h3&gt;QRE1113 Reflective Object Sensor&lt;/h3&gt;
+&lt;p&gt;The QRE1113 is a small IR reflectance sensor. This sensor is often used in line following robots because, if it can sense if a surface is white or black.&lt;/p&gt;
+&lt;p&gt;There are four pins on the QRE1113 - two control the IR emitting LED while the other two are the collector and emitter of a phototransistor. The IR diode has a max forward current of 50mA and operates at 940nm.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Components/SMD/QRE1113.GR.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9542"&gt;IR Reflectance Sensor - QRE1113&lt;/a&gt; (COM-09542)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9453"&gt;SparkFun Line Sensor Breakout - QRE1113 (Analog)&lt;/a&gt; (ROB-09453)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9454"&gt;SparkFun Line Sensor Breakout - QRE1113 (Digital)&lt;/a&gt; (ROB-09454)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11769"&gt;SparkFun RedBot Sensor - Line Follower&lt;/a&gt; (SEN-11769)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12617"&gt;SparkFun RedBot Sensor - Wheel Encoder&lt;/a&gt; (SEN-12617)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13582"&gt;SparkFun Line Follower Array&lt;/a&gt; (SEN-13582)&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="&gt;NAME" symbol="QRE1113" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QRE1113">
+<connects>
+<connect gate="&gt;NAME" pin="A" pad="1"/>
+<connect gate="&gt;NAME" pin="C" pad="3"/>
+<connect gate="&gt;NAME" pin="E" pad="4"/>
+<connect gate="&gt;NAME" pin="K" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09357"/>
+<attribute name="SF_ID" value="COM-09542"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-W" package="QRE1113-W">
+<connects>
+<connect gate="&gt;NAME" pin="A" pad="1"/>
+<connect gate="&gt;NAME" pin="C" pad="3"/>
+<connect gate="&gt;NAME" pin="E" pad="4"/>
+<connect gate="&gt;NAME" pin="K" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09357"/>
+<attribute name="SF_ID" value="COM-09542"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11295,7 +11623,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="H6" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" deviceset="STAND-OFF" device="" package3d_urn="urn:adsk.eagle:package:38630/1"/>
 <part name="R10" library="darnok_common" deviceset="RESISTOR" device="R1206" value="4.7K"/>
 <part name="R11" library="darnok_common" deviceset="RESISTOR" device="R1206" value="4.7K"/>
-<part name="JP1" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_3_2-NC_PASTE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39294/1" value="NC"/>
+<part name="JP1" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_3_2-NC_PASTE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39294/1" value="SPI_JUMPER"/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="OSHW-LOGO" device="M" package3d_urn="urn:adsk.eagle:package:37126/1"/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
@@ -11314,13 +11642,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="X_12" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="J4" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
 <part name="X_13" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="JP2" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39293/1"/>
+<part name="JP2" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39293/1" value="9V_JUMPER"/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="JP3" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK_ROUND" package3d_urn="urn:adsk.eagle:package:39278/1" value="D0_JUMPER"/>
+<part name="JP4" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK_ROUND" package3d_urn="urn:adsk.eagle:package:39278/1" value="VCC_JUMPER"/>
+<part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="U3" library="SparkFun-Sensors" deviceset="QRE1113" device="SMD-W"/>
+<part name="U$1" library="darnok_common" deviceset="RESISTOR" device="R1206" value="100"/>
+<part name="U$2" library="darnok_common" deviceset="RESISTOR" device="R1206" value="10K"/>
+<part name="X_14" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="X_15" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="114.3" y="167.64" size="1.778" layer="97">Physical location is important.
+<text x="213.36" y="187.96" size="1.778" layer="97">Physical location is important.
 Line sensor is D0, GND, VCC</text>
 <text x="160.02" y="53.34" size="2.54" layer="95">Hand Wash count down</text>
 <text x="223.52" y="53.34" size="1.778" layer="95">Copyright 2020 by
@@ -11328,6 +11664,12 @@ Konrad Rzeszutek Wilk</text>
 <text x="243.84" y="30.48" size="1.778" layer="95">v1.3</text>
 <text x="157.48" y="48.26" size="1.778" layer="95">Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) 
 designed by Konrad Rzeszutek Wilk</text>
+<wire x1="142.24" y1="203.2" x2="251.46" y2="203.2" width="0.1524" layer="97"/>
+<wire x1="251.46" y1="203.2" x2="251.46" y2="144.78" width="0.1524" layer="97"/>
+<wire x1="251.46" y1="144.78" x2="142.24" y2="144.78" width="0.1524" layer="97"/>
+<wire x1="142.24" y1="144.78" x2="142.24" y2="203.2" width="0.1524" layer="97"/>
+<text x="38.1" y="172.72" size="1.778" layer="97">The jumper is if you want to use USB or 9V.
+By default USB is used.</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="91.44" y="116.84" smashed="yes">
@@ -11347,11 +11689,11 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="VALUE" x="50.419" y="120.904" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
 <instance part="X_1" gate="G$1" x="63.5" y="96.52" smashed="yes"/>
-<instance part="X_2" gate="G$1" x="132.08" y="185.42" smashed="yes"/>
+<instance part="X_2" gate="G$1" x="111.76" y="187.96" smashed="yes"/>
 <instance part="P+1" gate="VCC" x="60.96" y="149.86" smashed="yes">
 <attribute name="VALUE" x="58.42" y="147.32" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U$4" gate="G$1" x="119.38" y="193.04" smashed="yes"/>
+<instance part="U$4" gate="G$1" x="99.06" y="195.58" smashed="yes"/>
 <instance part="U$5" gate="G$1" x="180.34" y="109.22" smashed="yes">
 <attribute name="NAME" x="172.72" y="124.46" size="1.778" layer="95" display="both"/>
 <attribute name="VALUE" x="175.26" y="96.52" size="1.778" layer="96"/>
@@ -11361,17 +11703,17 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="VALUE" x="71.12" y="147.32" size="1.27" layer="96" rot="R90"/>
 </instance>
 <instance part="X_3" gate="G$1" x="35.56" y="104.14" smashed="yes"/>
-<instance part="P+3" gate="VCC" x="106.68" y="167.64" smashed="yes">
-<attribute name="VALUE" x="104.14" y="165.1" size="1.778" layer="96" rot="R90"/>
+<instance part="P+3" gate="VCC" x="205.74" y="187.96" smashed="yes">
+<attribute name="VALUE" x="203.2" y="185.42" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="X_4" gate="G$1" x="116.84" y="152.4" smashed="yes"/>
-<instance part="J" gate="J$1" x="134.62" y="154.94" smashed="yes" rot="R180">
-<attribute name="VALUE" x="137.16" y="162.306" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="137.16" y="149.352" size="1.778" layer="95" font="vector" rot="R180"/>
+<instance part="X_4" gate="G$1" x="208.28" y="172.72" smashed="yes"/>
+<instance part="J" gate="J$1" x="233.68" y="175.26" smashed="yes" rot="R180">
+<attribute name="VALUE" x="236.22" y="182.626" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="236.22" y="169.672" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="J1" gate="G$1" x="215.9" y="198.12" smashed="yes" rot="R180">
-<attribute name="VALUE" x="218.44" y="202.946" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="218.44" y="192.532" size="1.778" layer="95" font="vector" rot="R180"/>
+<instance part="J1" gate="G$1" x="213.36" y="88.9" smashed="yes" rot="R180">
+<attribute name="VALUE" x="215.9" y="93.726" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="215.9" y="83.312" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="J2" gate="G$1" x="30.48" y="60.96" smashed="yes">
 <attribute name="NAME" x="26.924" y="66.548" size="1.778" layer="95" font="vector"/>
@@ -11432,20 +11774,20 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="NAME" x="27.94" y="43.688" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="H6" gate="G$1" x="170.18" y="60.96" smashed="yes"/>
-<instance part="R10" gate="G$1" x="223.52" y="187.96" smashed="yes" rot="R180">
-<attribute name="NAME" x="224.536" y="186.436" size="1.27" layer="95" rot="R180"/>
-<attribute name="VALUE" x="218.186" y="189.23" size="1.016" layer="96" rot="R180"/>
+<instance part="R10" gate="G$1" x="220.98" y="78.74" smashed="yes" rot="R180">
+<attribute name="NAME" x="221.996" y="77.216" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="215.646" y="80.01" size="1.016" layer="96" rot="R180"/>
 </instance>
-<instance part="R11" gate="G$1" x="218.44" y="177.8" smashed="yes">
-<attribute name="NAME" x="217.424" y="179.324" size="1.27" layer="95"/>
-<attribute name="VALUE" x="223.774" y="176.53" size="1.016" layer="96"/>
+<instance part="R11" gate="G$1" x="215.9" y="68.58" smashed="yes">
+<attribute name="NAME" x="214.884" y="70.104" size="1.27" layer="95"/>
+<attribute name="VALUE" x="221.234" y="67.31" size="1.016" layer="96"/>
 </instance>
-<instance part="JP1" gate="G$1" x="236.22" y="182.88" smashed="yes" rot="R180">
-<attribute name="NAME" x="233.68" y="182.499" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="233.68" y="183.261" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+<instance part="JP1" gate="G$1" x="233.68" y="73.66" smashed="yes" rot="R180">
+<attribute name="NAME" x="231.14" y="73.279" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="231.14" y="74.041" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
 </instance>
-<instance part="P+6" gate="VCC" x="246.38" y="190.5" smashed="yes">
-<attribute name="VALUE" x="243.84" y="187.96" size="1.778" layer="96" rot="R90"/>
+<instance part="P+6" gate="VCC" x="243.84" y="81.28" smashed="yes">
+<attribute name="VALUE" x="241.3" y="78.74" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="LOGO1" gate="G$1" x="139.7" y="33.02" smashed="yes"/>
 <instance part="P+7" gate="VCC" x="68.58" y="162.56" smashed="yes">
@@ -11465,38 +11807,63 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="NAME" x="104.14" y="66.548" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="X_8" gate="G$1" x="127" y="60.96" smashed="yes"/>
-<instance part="U2" gate="U1" x="40.64" y="185.42" smashed="yes">
-<attribute name="NAME" x="33.02" y="193.294" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="33.02" y="177.292" size="1.778" layer="96" font="vector" align="top-left"/>
+<instance part="U2" gate="U1" x="40.64" y="190.5" smashed="yes">
+<attribute name="NAME" x="33.02" y="198.374" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="33.02" y="182.372" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
-<instance part="C5" gate="G$1" x="20.32" y="182.88" smashed="yes">
-<attribute name="NAME" x="21.844" y="185.801" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="21.844" y="180.721" size="1.778" layer="96" font="vector"/>
+<instance part="C5" gate="G$1" x="20.32" y="187.96" smashed="yes">
+<attribute name="NAME" x="21.844" y="190.881" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="21.844" y="185.801" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="C6" gate="G$1" x="55.88" y="185.42" smashed="yes">
-<attribute name="NAME" x="57.404" y="188.341" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="57.404" y="183.261" size="1.778" layer="96" font="vector"/>
+<instance part="C6" gate="G$1" x="55.88" y="190.5" smashed="yes">
+<attribute name="NAME" x="57.404" y="193.421" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="57.404" y="188.341" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="C7" gate="G$1" x="66.04" y="185.42" smashed="yes">
-<attribute name="NAME" x="67.564" y="188.341" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="67.564" y="183.261" size="1.778" layer="96" font="vector"/>
+<instance part="C7" gate="G$1" x="66.04" y="190.5" smashed="yes">
+<attribute name="NAME" x="67.564" y="193.421" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="67.564" y="188.341" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="X_9" gate="G$1" x="20.32" y="172.72" smashed="yes"/>
-<instance part="X_10" gate="G$1" x="27.94" y="172.72" smashed="yes"/>
-<instance part="X_11" gate="G$1" x="55.88" y="177.8" smashed="yes"/>
-<instance part="X_12" gate="G$1" x="66.04" y="177.8" smashed="yes"/>
+<instance part="X_9" gate="G$1" x="20.32" y="177.8" smashed="yes"/>
+<instance part="X_10" gate="G$1" x="27.94" y="177.8" smashed="yes"/>
+<instance part="X_11" gate="G$1" x="55.88" y="182.88" smashed="yes"/>
+<instance part="X_12" gate="G$1" x="66.04" y="182.88" smashed="yes"/>
 <instance part="J4" gate="G$1" x="81.28" y="38.1" smashed="yes">
 <attribute name="VALUE" x="78.74" y="33.274" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="78.74" y="43.688" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="X_13" gate="G$1" x="99.06" y="35.56" smashed="yes"/>
-<instance part="JP2" gate="G$1" x="81.28" y="190.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="80.899" y="193.04" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="81.661" y="193.04" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
+<instance part="JP2" gate="G$1" x="83.82" y="185.42" smashed="yes">
+<attribute name="NAME" x="86.36" y="185.801" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="86.36" y="185.039" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
-<instance part="P+2" gate="VCC" x="88.9" y="185.42" smashed="yes">
-<attribute name="VALUE" x="86.36" y="182.88" size="1.778" layer="96" rot="R90"/>
+<instance part="P+2" gate="VCC" x="78.74" y="193.04" smashed="yes">
+<attribute name="VALUE" x="76.2" y="190.5" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="JP3" gate="G$1" x="160.02" y="170.18" smashed="yes" rot="R180">
+<attribute name="NAME" x="162.56" y="167.64" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="162.56" y="172.72" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+</instance>
+<instance part="JP4" gate="G$1" x="160.02" y="187.96" smashed="yes">
+<attribute name="NAME" x="157.48" y="190.5" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="157.48" y="185.42" size="1.778" layer="96" font="vector" align="top-left"/>
+</instance>
+<instance part="P+8" gate="VCC" x="152.4" y="198.12" smashed="yes">
+<attribute name="VALUE" x="149.86" y="195.58" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="U3" gate="&gt;NAME" x="185.42" y="162.56" smashed="yes">
+<attribute name="NAME" x="180.086" y="157.48" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="193.294" y="157.48" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
+</instance>
+<instance part="U$1" gate="G$1" x="190.5" y="175.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="188.976" y="174.244" size="1.27" layer="95" rot="R90"/>
+<attribute name="VALUE" x="191.77" y="180.594" size="1.016" layer="96" rot="R90"/>
+</instance>
+<instance part="U$2" gate="G$1" x="183.388" y="175.006" smashed="yes" rot="R90">
+<attribute name="NAME" x="181.864" y="173.99" size="1.27" layer="95" rot="R90"/>
+<attribute name="VALUE" x="184.658" y="180.34" size="1.016" layer="96" rot="R90"/>
+</instance>
+<instance part="X_14" gate="G$1" x="182.88" y="152.4" smashed="yes"/>
+<instance part="X_15" gate="G$1" x="190.5" y="152.4" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -11525,15 +11892,15 @@ designed by Konrad Rzeszutek Wilk</text>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="182.88" x2="246.38" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="73.66" x2="243.84" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
-<wire x1="246.38" y1="182.88" x2="246.38" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="73.66" x2="243.84" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J" gate="J$1" pin="1"/>
-<wire x1="127" y1="157.48" x2="106.68" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="177.8" x2="205.74" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
-<wire x1="106.68" y1="157.48" x2="106.68" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="177.8" x2="205.74" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="R_2"/>
@@ -11552,18 +11919,22 @@ designed by Konrad Rzeszutek Wilk</text>
 </segment>
 <segment>
 <pinref part="JP2" gate="G$1" pin="2"/>
-<wire x1="81.28" y1="185.42" x2="81.28" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="180.34" x2="88.9" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="180.34" x2="88.9" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="185.42" x2="78.74" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="P+8" gate="VCC" pin="VCC"/>
+<pinref part="JP4" gate="G$1" pin="1"/>
+<wire x1="152.4" y1="195.58" x2="152.4" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="187.96" x2="154.94" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="0" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="GND"/>
-<wire x1="124.46" y1="193.04" x2="132.08" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="195.58" x2="111.76" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="X_2" gate="G$1" pin="0"/>
-<wire x1="132.08" y1="193.04" x2="132.08" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="195.58" x2="111.76" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
@@ -11595,9 +11966,9 @@ designed by Konrad Rzeszutek Wilk</text>
 </segment>
 <segment>
 <pinref part="J" gate="J$1" pin="2"/>
-<wire x1="127" y1="154.94" x2="116.84" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="175.26" x2="208.28" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="X_4" gate="G$1" pin="0"/>
-<wire x1="116.84" y1="154.94" x2="116.84" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="175.26" x2="208.28" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="1"/>
@@ -11624,25 +11995,35 @@ designed by Konrad Rzeszutek Wilk</text>
 </segment>
 <segment>
 <pinref part="U2" gate="U1" pin="GND"/>
-<wire x1="30.48" y1="180.34" x2="27.94" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="180.34" x2="27.94" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="185.42" x2="27.94" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="185.42" x2="27.94" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="X_10" gate="G$1" pin="0"/>
 </segment>
 <segment>
 <pinref part="X_11" gate="G$1" pin="0"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="177.8" x2="55.88" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="182.88" x2="55.88" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X_12" gate="G$1" pin="0"/>
 <pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="177.8" x2="66.04" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="182.88" x2="66.04" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="40.64" x2="99.06" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="40.64" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="X_13" gate="G$1" pin="0"/>
+</segment>
+<segment>
+<pinref part="U3" gate="&gt;NAME" pin="K"/>
+<pinref part="X_15" gate="G$1" pin="0"/>
+<wire x1="190.5" y1="154.94" x2="190.5" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X_14" gate="G$1" pin="0"/>
+<pinref part="U3" gate="&gt;NAME" pin="E"/>
+<wire x1="182.88" y1="152.4" x2="182.88" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -11671,9 +12052,18 @@ designed by Konrad Rzeszutek Wilk</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="PC0(ADC0)"/>
 <wire x1="116.84" y1="142.24" x2="127" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="J" gate="J$1" pin="3"/>
-<wire x1="127" y1="152.4" x2="127" y2="142.24" width="0.1524" layer="91"/>
 <label x="119.38" y="142.24" size="1.778" layer="95"/>
+<label x="127" y="142.24" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J" gate="J$1" pin="3"/>
+<wire x1="226.06" y1="172.72" x2="223.52" y2="172.72" width="0.1524" layer="91"/>
+<label x="223.52" y="172.72" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="2"/>
+<wire x1="154.94" y1="170.18" x2="149.86" y2="170.18" width="0.1524" layer="91"/>
+<label x="149.86" y="170.18" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -11686,12 +12076,12 @@ designed by Konrad Rzeszutek Wilk</text>
 <segment>
 <pinref part="R10" gate="G$1" pin="R_2"/>
 <pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="200.66" y1="198.12" x2="208.28" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="187.96" x2="200.66" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="187.96" x2="213.106" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="187.96" x2="195.58" y2="187.96" width="0.1524" layer="91"/>
-<junction x="200.66" y="187.96"/>
-<label x="195.58" y="187.96" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="198.12" y1="88.9" x2="205.74" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="78.74" x2="198.12" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="78.74" x2="210.566" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="78.74" x2="193.04" y2="78.74" width="0.1524" layer="91"/>
+<junction x="198.12" y="78.74"/>
+<label x="193.04" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -11704,12 +12094,12 @@ designed by Konrad Rzeszutek Wilk</text>
 <segment>
 <pinref part="R11" gate="G$1" pin="R_1"/>
 <pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="205.74" y1="195.58" x2="208.28" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="177.8" x2="205.74" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="177.8" x2="213.36" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="177.8" x2="195.58" y2="177.8" width="0.1524" layer="91"/>
-<junction x="205.74" y="177.8"/>
-<label x="195.58" y="177.8" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="203.2" y1="86.36" x2="205.74" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="68.58" x2="203.2" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="68.58" x2="210.82" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="68.58" x2="193.04" y2="68.58" width="0.1524" layer="91"/>
+<junction x="203.2" y="68.58"/>
+<label x="193.04" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -11915,14 +12305,14 @@ designed by Konrad Rzeszutek Wilk</text>
 <segment>
 <pinref part="R10" gate="G$1" pin="R_1"/>
 <pinref part="JP1" gate="G$1" pin="3"/>
-<wire x1="228.6" y1="187.96" x2="236.22" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="78.74" x2="233.68" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="R_2"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="228.854" y1="177.8" x2="236.22" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="226.314" y1="68.58" x2="233.68" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="B" class="0">
@@ -12008,23 +12398,23 @@ designed by Konrad Rzeszutek Wilk</text>
 </net>
 <net name="9V" class="0">
 <segment>
-<wire x1="10.16" y1="180.34" x2="10.16" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="190.5" x2="20.32" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="185.42" x2="10.16" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="195.58" x2="20.32" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="180.34" x2="20.32" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="185.42" x2="20.32" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="180.34" x2="20.32" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="190.5" x2="20.32" y2="187.96" width="0.1524" layer="91"/>
-<junction x="20.32" y="187.96"/>
+<wire x1="20.32" y1="185.42" x2="20.32" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="195.58" x2="20.32" y2="193.04" width="0.1524" layer="91"/>
+<junction x="20.32" y="193.04"/>
 <pinref part="U2" gate="U1" pin="IN"/>
-<wire x1="20.32" y1="190.5" x2="27.94" y2="190.5" width="0.1524" layer="91"/>
-<junction x="20.32" y="190.5"/>
+<wire x1="20.32" y1="195.58" x2="27.94" y2="195.58" width="0.1524" layer="91"/>
+<junction x="20.32" y="195.58"/>
 <pinref part="U2" gate="U1" pin="EN"/>
-<wire x1="27.94" y1="190.5" x2="30.48" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="185.42" x2="27.94" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="185.42" x2="27.94" y2="190.5" width="0.1524" layer="91"/>
-<junction x="27.94" y="190.5"/>
-<label x="10.16" y="180.34" size="1.778" layer="95" rot="R270" xref="yes"/>
+<wire x1="27.94" y1="195.58" x2="30.48" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="190.5" x2="27.94" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="190.5" x2="27.94" y2="195.58" width="0.1524" layer="91"/>
+<junction x="27.94" y="195.58"/>
+<label x="10.16" y="185.42" size="1.778" layer="95" rot="R270" xref="yes"/>
 <pinref part="X_9" gate="G$1" pin="0"/>
 </segment>
 <segment>
@@ -12037,25 +12427,58 @@ designed by Konrad Rzeszutek Wilk</text>
 <segment>
 <pinref part="U2" gate="U1" pin="OUT"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="190.5" x2="55.88" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="195.58" x2="55.88" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="190.5" x2="55.88" y2="190.5" width="0.1524" layer="91"/>
-<junction x="55.88" y="190.5"/>
-<wire x1="66.04" y1="190.5" x2="76.2" y2="190.5" width="0.1524" layer="91"/>
-<junction x="66.04" y="190.5"/>
+<wire x1="66.04" y1="195.58" x2="55.88" y2="195.58" width="0.1524" layer="91"/>
+<junction x="55.88" y="195.58"/>
+<wire x1="66.04" y1="195.58" x2="83.82" y2="195.58" width="0.1524" layer="91"/>
+<junction x="66.04" y="195.58"/>
 <pinref part="JP2" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="195.58" x2="83.82" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="USB_VCC" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="VCC"/>
-<wire x1="124.46" y1="195.58" x2="132.08" y2="195.58" width="0.1524" layer="91"/>
-<label x="132.08" y="195.58" size="1.778" layer="95" xref="yes"/>
+<wire x1="104.14" y1="198.12" x2="111.76" y2="198.12" width="0.1524" layer="91"/>
+<label x="111.76" y="198.12" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="G$1" pin="3"/>
-<wire x1="86.36" y1="190.5" x2="88.9" y2="190.5" width="0.1524" layer="91"/>
-<label x="88.9" y="190.5" size="1.778" layer="95" xref="yes"/>
+<wire x1="83.82" y1="180.34" x2="91.44" y2="180.34" width="0.1524" layer="91"/>
+<label x="91.44" y="180.34" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U3" gate="&gt;NAME" pin="C"/>
+<pinref part="U$2" gate="G$1" pin="R_1"/>
+<wire x1="182.88" y1="167.64" x2="182.88" y2="169.926" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="169.926" x2="183.388" y2="169.926" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="G$1" pin="1"/>
+<wire x1="183.388" y1="169.926" x2="183.388" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="183.388" y1="170.18" x2="165.1" y2="170.18" width="0.1524" layer="91"/>
+<junction x="183.388" y="169.926"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="R_1"/>
+<pinref part="U3" gate="&gt;NAME" pin="A"/>
+<wire x1="190.5" y1="170.18" x2="190.5" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="JP4" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="187.96" x2="182.88" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="R_2"/>
+<wire x1="183.388" y1="187.96" x2="190.5" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="187.96" x2="190.5" y2="185.674" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="R_2"/>
+<wire x1="183.388" y1="185.42" x2="183.388" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="183.388" y1="187.96" x2="182.88" y2="187.96" width="0.1524" layer="91"/>
+<junction x="182.88" y="187.96"/>
 </segment>
 </net>
 </nets>

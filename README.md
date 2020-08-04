@@ -36,7 +36,6 @@ like it.
 
 Which in no particular order are:
 
- - Integrate the line-sensor logic in the board (a simple infrared light and a voltage comparison).
  - Add a SD card
 
 # Future plans for software
