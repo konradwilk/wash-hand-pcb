@@ -33,11 +33,17 @@ Note the missing line sensor which was <a href="https://www.aliexpress.com/item/
 Note that the routing was done automatically with slight adjustments whenever the Design Rule Check did not
 like it.
 
-# Future plans for hardware
+## PCB v1.3
 
-Which in no particular order are:
+Like v1.2, but has:
 
- - Add a SD card
+ - Reworked connectors for programming via FTDI USB,
+ - Built in line sensor,
+ - Built in SD card for various texts,
+ - SMD resistors and capacitors,
+ - Test points,
+ - 9V or 5V USB power option.
+
 
 # Future plans for software
 
