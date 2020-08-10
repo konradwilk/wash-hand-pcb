@@ -12380,10 +12380,10 @@ Based on the following sources:
 <part name="X_7" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="J6" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="6_PIN_SERIAL_CABLE" device="PTH" package3d_urn="urn:adsk.eagle:package:38027/1"/>
 <part name="X_8" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="U2" library="SparkFun-IC-Power" library_urn="urn:adsk.eagle:library:526" deviceset="V_REG_MIC5205" device="5V" package3d_urn="urn:adsk.eagle:package:39060/1" value="5V"/>
-<part name="C5" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="10pF"/>
-<part name="C6" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="10pF"/>
-<part name="C7" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="1.0uF"/>
+<part name="MIC5205" library="SparkFun-IC-Power" library_urn="urn:adsk.eagle:library:526" deviceset="V_REG_MIC5205" device="5V" package3d_urn="urn:adsk.eagle:package:39060/1" value="5V"/>
+<part name="C5" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="1uF"/>
+<part name="C6" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="2.2uF"/>
+<part name="C7" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="1uF"/>
 <part name="X_9" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_10" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_11" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
@@ -12426,6 +12426,8 @@ Based on the following sources:
 <part name="R8" library="darnok_common" deviceset="RESISTOR" device="R1206" value="100K"/>
 <part name="C10" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="0.01uF"/>
 <part name="X_25" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="C11" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="470pF"/>
+<part name="X_26" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13038,9 +13040,11 @@ Line sensor is D0, GND, VCC</text>
 <wire x1="241.3" y1="177.8" x2="241.3" y2="119.38" width="0.1524" layer="97"/>
 <wire x1="241.3" y1="119.38" x2="119.38" y2="119.38" width="0.1524" layer="97"/>
 <wire x1="119.38" y1="119.38" x2="119.38" y2="177.8" width="0.1524" layer="97"/>
-<text x="160.02" y="78.74" size="1.778" layer="97">The jumper is if you want to use USB or 9V.
+<text x="187.96" y="78.74" size="1.778" layer="97">The jumper is if you want to use USB or 9V.
 By default USB is used.</text>
 <text x="238.76" y="7.62" size="1.778" layer="95">v1.3</text>
+<text x="172.72" y="101.6" size="1.778" layer="97">C6, 2.2uF tantalum
+</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -13089,7 +13093,7 @@ By default USB is used.</text>
 </instance>
 <instance part="X_2" gate="G$1" x="172.72" y="50.8" smashed="yes"/>
 <instance part="U$4" gate="G$1" x="160.02" y="58.42" smashed="yes"/>
-<instance part="U2" gate="U1" x="162.56" y="96.52" smashed="yes">
+<instance part="MIC5205" gate="U1" x="162.56" y="96.52" smashed="yes">
 <attribute name="NAME" x="154.94" y="104.394" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="154.94" y="88.392" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
@@ -13198,6 +13202,11 @@ By default USB is used.</text>
 <attribute name="VALUE" x="44.704" y="142.621" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="X_25" gate="G$1" x="43.18" y="139.7" smashed="yes"/>
+<instance part="C11" gate="G$1" x="170.18" y="83.82" smashed="yes">
+<attribute name="NAME" x="171.704" y="86.741" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="171.704" y="81.661" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="X_26" gate="G$1" x="170.18" y="78.74" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -13261,7 +13270,7 @@ By default USB is used.</text>
 <wire x1="172.72" y1="58.42" x2="172.72" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U1" pin="GND"/>
+<pinref part="MIC5205" gate="U1" pin="GND"/>
 <wire x1="152.4" y1="91.44" x2="149.86" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="91.44" x2="149.86" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="X_10" gate="G$1" pin="0"/>
@@ -13339,6 +13348,11 @@ By default USB is used.</text>
 <wire x1="43.18" y1="142.24" x2="43.18" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="X_25" gate="G$1" pin="0"/>
 </segment>
+<segment>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="170.18" y1="81.28" x2="170.18" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="X_26" gate="G$1" pin="0"/>
+</segment>
 </net>
 <net name="D0" class="0">
 <segment>
@@ -13412,10 +13426,10 @@ By default USB is used.</text>
 <wire x1="142.24" y1="91.44" x2="142.24" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="101.6" x2="142.24" y2="99.06" width="0.1524" layer="91"/>
 <junction x="142.24" y="99.06"/>
-<pinref part="U2" gate="U1" pin="IN"/>
+<pinref part="MIC5205" gate="U1" pin="IN"/>
 <wire x1="142.24" y1="101.6" x2="149.86" y2="101.6" width="0.1524" layer="91"/>
 <junction x="142.24" y="101.6"/>
-<pinref part="U2" gate="U1" pin="EN"/>
+<pinref part="MIC5205" gate="U1" pin="EN"/>
 <wire x1="149.86" y1="101.6" x2="152.4" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="96.52" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="96.52" x2="149.86" y2="101.6" width="0.1524" layer="91"/>
@@ -13426,7 +13440,7 @@ By default USB is used.</text>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="U2" gate="U1" pin="OUT"/>
+<pinref part="MIC5205" gate="U1" pin="OUT"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="101.6" x2="177.8" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
@@ -13581,6 +13595,13 @@ By default USB is used.</text>
 <pinref part="IC2" gate="G$1" pin="BYP"/>
 <wire x1="43.18" y1="152.4" x2="43.18" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="MIC5205" gate="U1" pin="BP"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="91.44" x2="170.18" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
