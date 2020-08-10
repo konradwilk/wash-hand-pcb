@@ -12423,7 +12423,9 @@ Based on the following sources:
 <part name="C8" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="2.2uF"/>
 <part name="C9" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="1uF"/>
 <part name="X_24" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="U$8" library="darnok_common" deviceset="RESISTOR" device="R1206" value="100K"/>
+<part name="R8" library="darnok_common" deviceset="RESISTOR" device="R1206" value="100K"/>
+<part name="C10" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="0.01uF"/>
+<part name="X_25" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13178,19 +13180,24 @@ By default USB is used.</text>
 <instance part="X_19" gate="G$1" x="81.28" y="73.66" smashed="yes"/>
 <instance part="X_22" gate="G$1" x="93.98" y="66.04" smashed="yes"/>
 <instance part="X_23" gate="G$1" x="111.76" y="73.66" smashed="yes"/>
-<instance part="C8" gate="G$1" x="48.26" y="152.4" smashed="yes">
-<attribute name="NAME" x="49.784" y="155.321" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="49.784" y="150.241" size="1.778" layer="96" font="vector"/>
+<instance part="C8" gate="G$1" x="53.34" y="152.4" smashed="yes">
+<attribute name="NAME" x="54.864" y="155.321" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="54.864" y="150.241" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="C9" gate="G$1" x="7.62" y="147.32" smashed="yes">
 <attribute name="NAME" x="9.144" y="150.241" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="9.144" y="145.161" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="X_24" gate="G$1" x="48.26" y="142.24" smashed="yes"/>
-<instance part="U$8" gate="G$1" x="45.72" y="111.76" smashed="yes" rot="R90">
+<instance part="X_24" gate="G$1" x="53.34" y="142.24" smashed="yes"/>
+<instance part="R8" gate="G$1" x="45.72" y="111.76" smashed="yes" rot="R90">
 <attribute name="NAME" x="44.196" y="110.744" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="46.99" y="117.094" size="1.016" layer="96" rot="R90"/>
 </instance>
+<instance part="C10" gate="G$1" x="43.18" y="144.78" smashed="yes">
+<attribute name="NAME" x="44.704" y="147.701" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="44.704" y="142.621" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="X_25" gate="G$1" x="43.18" y="139.7" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -13324,8 +13331,13 @@ By default USB is used.</text>
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="149.86" x2="48.26" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="149.86" x2="53.34" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="X_24" gate="G$1" pin="0"/>
+</segment>
+<segment>
+<pinref part="C10" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="142.24" x2="43.18" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="X_25" gate="G$1" pin="0"/>
 </segment>
 </net>
 <net name="D0" class="0">
@@ -13458,7 +13470,7 @@ By default USB is used.</text>
 <pinref part="IC3" gate="A" pin="I"/>
 <wire x1="45.72" y1="106.68" x2="48.26" y2="106.68" width="0.1524" layer="91"/>
 <label x="48.26" y="106.68" size="1.778" layer="95" xref="yes"/>
-<pinref part="U$8" gate="G$1" pin="R_1"/>
+<pinref part="R8" gate="G$1" pin="R_1"/>
 <junction x="45.72" y="106.68"/>
 </segment>
 </net>
@@ -13501,16 +13513,16 @@ By default USB is used.</text>
 <net name="VDD" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="VOUT"/>
-<wire x1="43.18" y1="162.56" x2="48.26" y2="162.56" width="0.1524" layer="91"/>
-<label x="50.8" y="162.56" size="1.778" layer="95" xref="yes"/>
-<wire x1="48.26" y1="162.56" x2="50.8" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="162.56" x2="53.34" y2="162.56" width="0.1524" layer="91"/>
+<label x="55.88" y="162.56" size="1.778" layer="95" xref="yes"/>
+<wire x1="53.34" y1="162.56" x2="55.88" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="162.56" x2="43.18" y2="172.72" width="0.1524" layer="91"/>
 <junction x="43.18" y="162.56"/>
 <pinref part="TP7" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="172.72" x2="50.8" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="157.48" x2="48.26" y2="162.56" width="0.1524" layer="91"/>
-<junction x="48.26" y="162.56"/>
+<wire x1="53.34" y1="157.48" x2="53.34" y2="162.56" width="0.1524" layer="91"/>
+<junction x="53.34" y="162.56"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="P" pin="VDD"/>
@@ -13524,9 +13536,9 @@ By default USB is used.</text>
 <label x="76.2" y="144.78" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$8" gate="G$1" pin="R_2"/>
-<wire x1="45.72" y1="122.174" x2="45.72" y2="129.54" width="0.1524" layer="91"/>
-<label x="45.72" y="129.54" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="R8" gate="G$1" pin="R_2"/>
+<wire x1="45.72" y1="122.174" x2="45.72" y2="124.46" width="0.1524" layer="91"/>
+<label x="45.72" y="124.46" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -13562,6 +13574,13 @@ By default USB is used.</text>
 <pinref part="IC3" gate="A" pin="O"/>
 <wire x1="25.4" y1="106.68" x2="22.86" y2="106.68" width="0.1524" layer="91"/>
 <label x="22.86" y="106.68" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="BYP"/>
+<wire x1="43.18" y1="152.4" x2="43.18" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
