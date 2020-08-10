@@ -1760,6 +1760,10 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="CAP-09822" x="48.514" y="44.45" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="49.657" y="44.45" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
+<element name="U$8" library="darnok_common" package="1206" value="100K" x="22.86" y="44.45" smashed="yes" rot="MR90">
+<attribute name="NAME" x="24.003" y="44.45" size="0.6096" layer="26" font="vector" ratio="20" rot="MR90" align="bottom-center"/>
+<attribute name="VALUE" x="21.717" y="44.45" size="0.6096" layer="28" font="vector" ratio="20" rot="MR90" align="top-center"/>
+</element>
 </elements>
 <signals>
 <signal name="RESET">
@@ -2123,6 +2127,8 @@ design rules under a new name.</description>
 <contactref element="IC3" pad="1"/>
 <contactref element="C8" pad="1"/>
 <contactref element="U$7" pad="4"/>
+<contactref element="U$8" pad="2"/>
+<wire x1="22.606" y1="45.72" x2="22.86" y2="45.85" width="0" layer="19" extent="1-16"/>
 <wire x1="16.637" y1="45.7454" x2="22.606" y2="45.72" width="0" layer="19" extent="1-1"/>
 <wire x1="13.396" y1="46.004" x2="16.637" y2="45.7454" width="0" layer="19" extent="1-16"/>
 <wire x1="8.382" y1="43.05" x2="13.396" y2="46.004" width="0" layer="19" extent="16-16"/>
@@ -2131,6 +2137,8 @@ design rules under a new name.</description>
 <signal name="SD_D_OUT">
 <contactref element="U$7" pad="7"/>
 <contactref element="IC3" pad="3"/>
+<contactref element="U$8" pad="1"/>
+<wire x1="14.097" y1="45.7454" x2="22.86" y2="43.05" width="0" layer="19" extent="1-16"/>
 <wire x1="6.378" y1="33.922" x2="14.097" y2="45.7454" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SD_D_IN">

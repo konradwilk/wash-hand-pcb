@@ -12423,6 +12423,7 @@ Based on the following sources:
 <part name="C8" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="2.2uF"/>
 <part name="C9" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="1uF"/>
 <part name="X_24" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="U$8" library="darnok_common" deviceset="RESISTOR" device="R1206" value="100K"/>
 </parts>
 <sheets>
 <sheet>
@@ -13134,21 +13135,21 @@ By default USB is used.</text>
 <attribute name="NAME" x="27.94" y="170.18" size="1.778" layer="95"/>
 <attribute name="VALUE" x="27.94" y="144.78" size="1.778" layer="96"/>
 </instance>
-<instance part="IC3" gate="A" x="35.56" y="121.92" smashed="yes" rot="R180">
-<attribute name="NAME" x="33.02" y="118.745" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="33.02" y="127" size="1.778" layer="96" rot="R180"/>
+<instance part="IC3" gate="A" x="35.56" y="106.68" smashed="yes" rot="R180">
+<attribute name="NAME" x="33.02" y="103.505" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="33.02" y="111.76" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="IC3" gate="B" x="35.56" y="106.68" smashed="yes">
-<attribute name="NAME" x="38.1" y="109.855" size="1.778" layer="95"/>
-<attribute name="VALUE" x="38.1" y="101.6" size="1.778" layer="96"/>
-</instance>
-<instance part="IC3" gate="C" x="35.56" y="91.44" smashed="yes">
+<instance part="IC3" gate="B" x="35.56" y="91.44" smashed="yes">
 <attribute name="NAME" x="38.1" y="94.615" size="1.778" layer="95"/>
 <attribute name="VALUE" x="38.1" y="86.36" size="1.778" layer="96"/>
 </instance>
-<instance part="IC3" gate="D" x="35.56" y="76.2" smashed="yes">
+<instance part="IC3" gate="C" x="35.56" y="76.2" smashed="yes">
 <attribute name="NAME" x="38.1" y="79.375" size="1.778" layer="95"/>
 <attribute name="VALUE" x="38.1" y="71.12" size="1.778" layer="96"/>
+</instance>
+<instance part="IC3" gate="D" x="35.56" y="60.96" smashed="yes">
+<attribute name="NAME" x="38.1" y="64.135" size="1.778" layer="95"/>
+<attribute name="VALUE" x="38.1" y="55.88" size="1.778" layer="96"/>
 </instance>
 <instance part="IC3" gate="E" x="93.98" y="76.2" smashed="yes">
 <attribute name="NAME" x="96.52" y="79.375" size="1.778" layer="95"/>
@@ -13186,6 +13187,10 @@ By default USB is used.</text>
 <attribute name="VALUE" x="9.144" y="145.161" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="X_24" gate="G$1" x="48.26" y="142.24" smashed="yes"/>
+<instance part="U$8" gate="G$1" x="45.72" y="111.76" smashed="yes" rot="R90">
+<attribute name="NAME" x="44.196" y="110.744" size="1.27" layer="95" rot="R90"/>
+<attribute name="VALUE" x="46.99" y="117.094" size="1.016" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -13451,8 +13456,10 @@ By default USB is used.</text>
 </segment>
 <segment>
 <pinref part="IC3" gate="A" pin="I"/>
-<wire x1="45.72" y1="121.92" x2="48.26" y2="121.92" width="0.1524" layer="91"/>
-<label x="48.26" y="121.92" size="1.778" layer="95" xref="yes"/>
+<wire x1="45.72" y1="106.68" x2="48.26" y2="106.68" width="0.1524" layer="91"/>
+<label x="48.26" y="106.68" size="1.778" layer="95" xref="yes"/>
+<pinref part="U$8" gate="G$1" pin="R_1"/>
+<junction x="45.72" y="106.68"/>
 </segment>
 </net>
 <net name="SD_D_IN" class="0">
@@ -13463,8 +13470,8 @@ By default USB is used.</text>
 </segment>
 <segment>
 <pinref part="IC3" gate="B" pin="O"/>
-<wire x1="45.72" y1="106.68" x2="48.26" y2="106.68" width="0.1524" layer="91"/>
-<label x="48.26" y="106.68" size="1.778" layer="95" xref="yes"/>
+<wire x1="45.72" y1="91.44" x2="48.26" y2="91.44" width="0.1524" layer="91"/>
+<label x="48.26" y="91.44" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SD_SCLK" class="0">
@@ -13475,8 +13482,8 @@ By default USB is used.</text>
 </segment>
 <segment>
 <pinref part="IC3" gate="C" pin="O"/>
-<wire x1="45.72" y1="91.44" x2="48.26" y2="91.44" width="0.1524" layer="91"/>
-<label x="48.26" y="91.44" size="1.778" layer="95" xref="yes"/>
+<wire x1="45.72" y1="76.2" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
+<label x="48.26" y="76.2" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SD_CS" class="0">
@@ -13487,8 +13494,8 @@ By default USB is used.</text>
 </segment>
 <segment>
 <pinref part="IC3" gate="D" pin="O"/>
-<wire x1="45.72" y1="76.2" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
-<label x="48.26" y="76.2" size="1.778" layer="95" xref="yes"/>
+<wire x1="45.72" y1="60.96" x2="48.26" y2="60.96" width="0.1524" layer="91"/>
+<label x="48.26" y="60.96" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VDD" class="0">
@@ -13516,6 +13523,11 @@ By default USB is used.</text>
 <wire x1="81.28" y1="144.78" x2="76.2" y2="144.78" width="0.1524" layer="91"/>
 <label x="76.2" y="144.78" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$8" gate="G$1" pin="R_2"/>
+<wire x1="45.72" y1="122.174" x2="45.72" y2="129.54" width="0.1524" layer="91"/>
+<label x="45.72" y="129.54" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="N$17" class="0">
 <segment>
@@ -13527,29 +13539,29 @@ By default USB is used.</text>
 <net name="SS" class="0">
 <segment>
 <pinref part="IC3" gate="D" pin="I"/>
-<wire x1="25.4" y1="76.2" x2="22.86" y2="76.2" width="0.1524" layer="91"/>
-<label x="22.86" y="76.2" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="25.4" y1="60.96" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
+<label x="22.86" y="60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SCK" class="0">
 <segment>
 <pinref part="IC3" gate="C" pin="I"/>
-<wire x1="25.4" y1="91.44" x2="22.86" y2="91.44" width="0.1524" layer="91"/>
-<label x="22.86" y="91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="25.4" y1="76.2" x2="22.86" y2="76.2" width="0.1524" layer="91"/>
+<label x="22.86" y="76.2" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
 <pinref part="IC3" gate="B" pin="I"/>
-<wire x1="25.4" y1="106.68" x2="22.86" y2="106.68" width="0.1524" layer="91"/>
-<label x="22.86" y="106.68" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="25.4" y1="91.44" x2="22.86" y2="91.44" width="0.1524" layer="91"/>
+<label x="22.86" y="91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MISO" class="0">
 <segment>
 <pinref part="IC3" gate="A" pin="O"/>
-<wire x1="25.4" y1="121.92" x2="22.86" y2="121.92" width="0.1524" layer="91"/>
-<label x="22.86" y="121.92" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="25.4" y1="106.68" x2="22.86" y2="106.68" width="0.1524" layer="91"/>
+<label x="22.86" y="106.68" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
