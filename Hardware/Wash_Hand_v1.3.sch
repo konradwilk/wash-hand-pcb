@@ -12428,6 +12428,7 @@ Based on the following sources:
 <part name="X_25" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="C11" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="470pF"/>
 <part name="X_26" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="TP8" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1" value="T_CD2"/>
 </parts>
 <sheets>
 <sheet>
@@ -13217,9 +13218,9 @@ By default USB is used.</text>
 <instance part="U$7" gate="G$1" x="99.06" y="154.94" smashed="yes"/>
 <instance part="X_17" gate="G$1" x="76.2" y="127" smashed="yes"/>
 <instance part="X_18" gate="G$1" x="15.24" y="142.24" smashed="yes"/>
-<instance part="TP6" gate="G$1" x="73.66" y="172.72" smashed="yes" rot="R180">
-<attribute name="NAME" x="76.2" y="170.18" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="76.2" y="175.26" size="1.778" layer="96" font="vector" rot="R180"/>
+<instance part="TP6" gate="G$1" x="73.66" y="175.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="73.66" y="172.72" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="76.2" y="172.72" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
 <instance part="TP7" gate="G$1" x="50.8" y="172.72" smashed="yes">
 <attribute name="NAME" x="48.26" y="175.26" size="1.778" layer="95" font="vector"/>
@@ -13256,6 +13257,10 @@ By default USB is used.</text>
 <attribute name="VALUE" x="171.704" y="81.661" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="X_26" gate="G$1" x="170.18" y="78.74" smashed="yes"/>
+<instance part="TP8" gate="G$1" x="66.04" y="175.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="63.5" y="172.72" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="68.58" y="172.72" size="1.778" layer="96" font="vector" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -13604,13 +13609,6 @@ By default USB is used.</text>
 <label x="45.72" y="124.46" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="TP6" gate="G$1" pin="1"/>
-<pinref part="U$7" gate="G$1" pin="CARD_DETECT"/>
-<wire x1="73.66" y1="172.72" x2="81.28" y2="172.72" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="SS" class="0">
 <segment>
 <pinref part="IC3" gate="D" pin="I"/>
@@ -13651,6 +13649,22 @@ By default USB is used.</text>
 <pinref part="MIC5205" gate="U1" pin="BP"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="91.44" x2="170.18" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U$7" gate="G$1" pin="CARD_DETECT"/>
+<wire x1="81.28" y1="172.72" x2="73.66" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="TP6" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="172.72" x2="73.66" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U$7" gate="G$1" pin="CARD_DETECT1"/>
+<wire x1="81.28" y1="170.18" x2="66.04" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="TP8" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="170.18" x2="66.04" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
