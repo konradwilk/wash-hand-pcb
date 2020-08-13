@@ -203,81 +203,6 @@ IC needs to have legs bent before insertion.</description>
 <text x="-18.415" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
 <text x="19.05" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;VALUE</text>
 </package>
-<package name="TQFP32-08" urn="urn:adsk.eagle:footprint:38853/1" library_version="1">
-<description>&lt;B&gt;Thin Plasic Quad Flat Package&lt;/B&gt; Grid 0.8 mm</description>
-<wire x1="3.505" y1="3.505" x2="3.505" y2="-3.505" width="0.2032" layer="21"/>
-<wire x1="3.505" y1="-3.505" x2="-3.505" y2="-3.505" width="0.2032" layer="21"/>
-<wire x1="-3.505" y1="-3.505" x2="-3.505" y2="3.15" width="0.2032" layer="21"/>
-<wire x1="-3.15" y1="3.505" x2="3.505" y2="3.505" width="0.2032" layer="21"/>
-<wire x1="-3.15" y1="3.505" x2="-3.505" y2="3.15" width="0.2032" layer="21"/>
-<circle x="-3.6576" y="3.683" radius="0.1524" width="0.2032" layer="21"/>
-<smd name="1" x="-4.2926" y="2.8" dx="1.27" dy="0.5588" layer="1"/>
-<smd name="2" x="-4.2926" y="2" dx="1.27" dy="0.5588" layer="1"/>
-<smd name="3" x="-4.2926" y="1.2" dx="1.27" dy="0.5588" layer="1"/>
-<smd name="4" x="-4.2926" y="0.4" dx="1.27" dy="0.5588" layer="1"/>
-<smd name="5" x="-4.2926" y="-0.4" dx="1.27" dy="0.5588" layer="1"/>
-<smd name="6" x="-4.2926" y="-1.2" dx="1.27" dy="0.5588" layer="1"/>
-<smd name="7" x="-4.2926" y="-2" dx="1.27" dy="0.5588" layer="1"/>
-<smd name="8" x="-4.2926" y="-2.8" dx="1.27" dy="0.5588" layer="1"/>
-<smd name="9" x="-2.8" y="-4.2926" dx="0.5588" dy="1.27" layer="1"/>
-<smd name="10" x="-2" y="-4.2926" dx="0.5588" dy="1.27" layer="1"/>
-<smd name="11" x="-1.2" y="-4.2926" dx="0.5588" dy="1.27" layer="1"/>
-<smd name="12" x="-0.4" y="-4.2926" dx="0.5588" dy="1.27" layer="1"/>
-<smd name="13" x="0.4" y="-4.2926" dx="0.5588" dy="1.27" layer="1"/>
-<smd name="14" x="1.2" y="-4.2926" dx="0.5588" dy="1.27" layer="1"/>
-<smd name="15" x="2" y="-4.2926" dx="0.5588" dy="1.27" layer="1"/>
-<smd name="16" x="2.8" y="-4.2926" dx="0.5588" dy="1.27" layer="1"/>
-<smd name="17" x="4.2926" y="-2.8" dx="1.27" dy="0.5588" layer="1"/>
-<smd name="18" x="4.2926" y="-2" dx="1.27" dy="0.5588" layer="1"/>
-<smd name="19" x="4.2926" y="-1.2" dx="1.27" dy="0.5588" layer="1"/>
-<smd name="20" x="4.2926" y="-0.4" dx="1.27" dy="0.5588" layer="1"/>
-<smd name="21" x="4.2926" y="0.4" dx="1.27" dy="0.5588" layer="1"/>
-<smd name="22" x="4.2926" y="1.2" dx="1.27" dy="0.5588" layer="1"/>
-<smd name="23" x="4.2926" y="2" dx="1.27" dy="0.5588" layer="1"/>
-<smd name="24" x="4.2926" y="2.8" dx="1.27" dy="0.5588" layer="1"/>
-<smd name="25" x="2.8" y="4.2926" dx="0.5588" dy="1.27" layer="1"/>
-<smd name="26" x="2" y="4.2926" dx="0.5588" dy="1.27" layer="1"/>
-<smd name="27" x="1.2" y="4.2926" dx="0.5588" dy="1.27" layer="1"/>
-<smd name="28" x="0.4" y="4.2926" dx="0.5588" dy="1.27" layer="1"/>
-<smd name="29" x="-0.4" y="4.2926" dx="0.5588" dy="1.27" layer="1"/>
-<smd name="30" x="-1.2" y="4.2926" dx="0.5588" dy="1.27" layer="1"/>
-<smd name="31" x="-2" y="4.2926" dx="0.5588" dy="1.27" layer="1"/>
-<smd name="32" x="-2.8" y="4.2926" dx="0.5588" dy="1.27" layer="1"/>
-<rectangle x1="-4.5466" y1="2.5714" x2="-3.556" y2="3.0286" layer="51"/>
-<rectangle x1="-4.5466" y1="1.7714" x2="-3.556" y2="2.2286" layer="51"/>
-<rectangle x1="-4.5466" y1="0.9714" x2="-3.556" y2="1.4286" layer="51"/>
-<rectangle x1="-4.5466" y1="0.1714" x2="-3.556" y2="0.6286" layer="51"/>
-<rectangle x1="-4.5466" y1="-0.6286" x2="-3.556" y2="-0.1714" layer="51"/>
-<rectangle x1="-4.5466" y1="-1.4286" x2="-3.556" y2="-0.9714" layer="51"/>
-<rectangle x1="-4.5466" y1="-2.2286" x2="-3.556" y2="-1.7714" layer="51"/>
-<rectangle x1="-4.5466" y1="-3.0286" x2="-3.556" y2="-2.5714" layer="51"/>
-<rectangle x1="-3.0286" y1="-4.5466" x2="-2.5714" y2="-3.556" layer="51"/>
-<rectangle x1="-2.2286" y1="-4.5466" x2="-1.7714" y2="-3.556" layer="51"/>
-<rectangle x1="-1.4286" y1="-4.5466" x2="-0.9714" y2="-3.556" layer="51"/>
-<rectangle x1="-0.6286" y1="-4.5466" x2="-0.1714" y2="-3.556" layer="51"/>
-<rectangle x1="0.1714" y1="-4.5466" x2="0.6286" y2="-3.556" layer="51"/>
-<rectangle x1="0.9714" y1="-4.5466" x2="1.4286" y2="-3.556" layer="51"/>
-<rectangle x1="1.7714" y1="-4.5466" x2="2.2286" y2="-3.556" layer="51"/>
-<rectangle x1="2.5714" y1="-4.5466" x2="3.0286" y2="-3.556" layer="51"/>
-<rectangle x1="3.556" y1="-3.0286" x2="4.5466" y2="-2.5714" layer="51"/>
-<rectangle x1="3.556" y1="-2.2286" x2="4.5466" y2="-1.7714" layer="51"/>
-<rectangle x1="3.556" y1="-1.4286" x2="4.5466" y2="-0.9714" layer="51"/>
-<rectangle x1="3.556" y1="-0.6286" x2="4.5466" y2="-0.1714" layer="51"/>
-<rectangle x1="3.556" y1="0.1714" x2="4.5466" y2="0.6286" layer="51"/>
-<rectangle x1="3.556" y1="0.9714" x2="4.5466" y2="1.4286" layer="51"/>
-<rectangle x1="3.556" y1="1.7714" x2="4.5466" y2="2.2286" layer="51"/>
-<rectangle x1="3.556" y1="2.5714" x2="4.5466" y2="3.0286" layer="51"/>
-<rectangle x1="2.5714" y1="3.556" x2="3.0286" y2="4.5466" layer="51"/>
-<rectangle x1="1.7714" y1="3.556" x2="2.2286" y2="4.5466" layer="51"/>
-<rectangle x1="0.9714" y1="3.556" x2="1.4286" y2="4.5466" layer="51"/>
-<rectangle x1="0.1714" y1="3.556" x2="0.6286" y2="4.5466" layer="51"/>
-<rectangle x1="-0.6286" y1="3.556" x2="-0.1714" y2="4.5466" layer="51"/>
-<rectangle x1="-1.4286" y1="3.556" x2="-0.9714" y2="4.5466" layer="51"/>
-<rectangle x1="-2.2286" y1="3.556" x2="-1.7714" y2="4.5466" layer="51"/>
-<rectangle x1="-3.0286" y1="3.556" x2="-2.5714" y2="4.5466" layer="51"/>
-<text x="0" y="5.715" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-6.35" size="0.6096" layer="27" font="vector" ratio="20" align="bottom-center">&gt;VALUE</text>
-</package>
 </packages>
 <packages3d>
 <package3d name="DIP28" urn="urn:adsk.eagle:package:38942/1" type="box" library_version="1">
@@ -285,12 +210,6 @@ IC needs to have legs bent before insertion.</description>
 IC needs to have legs bent before insertion.</description>
 <packageinstances>
 <packageinstance name="DIP28"/>
-</packageinstances>
-</package3d>
-<package3d name="TQFP32-08" urn="urn:adsk.eagle:package:38945/1" type="box" library_version="1">
-<description>Thin Plasic Quad Flat Package Grid 0.8 mm</description>
-<packageinstances>
-<packageinstance name="TQFP32-08"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -331,46 +250,6 @@ IC needs to have legs bent before insertion.</description>
 <pin name="PC1(ADC1)" x="25.4" y="22.86" length="middle" rot="R180"/>
 <pin name="PC0(ADC0)" x="25.4" y="25.4" length="middle" rot="R180"/>
 <pin name="PC6(/RESET)" x="-22.86" y="25.4" length="middle" function="dot"/>
-</symbol>
-<symbol name="ATMEGAXX8-32PIN_NOPAD" urn="urn:adsk.eagle:symbol:38897/1" library_version="1">
-<wire x1="-20.32" y1="33.02" x2="17.78" y2="33.02" width="0.254" layer="94"/>
-<wire x1="17.78" y1="33.02" x2="17.78" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-30.48" x2="-20.32" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="-30.48" x2="-20.32" y2="33.02" width="0.254" layer="94"/>
-<text x="-20.32" y="33.782" size="1.778" layer="95">&gt;NAME</text>
-<text x="-20.32" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="PB5(SCK)" x="22.86" y="-27.94" length="middle" rot="R180"/>
-<pin name="PB7(XTAL2/TOSC2)" x="-25.4" y="0" length="middle"/>
-<pin name="PB6(XTAL1/TOSC1)" x="-25.4" y="5.08" length="middle"/>
-<pin name="GND@3" x="-25.4" y="-22.86" length="middle"/>
-<pin name="GND@5" x="-25.4" y="-25.4" length="middle"/>
-<pin name="VCC@4" x="-25.4" y="22.86" length="middle"/>
-<pin name="VCC@6" x="-25.4" y="20.32" length="middle"/>
-<pin name="AGND" x="-25.4" y="-20.32" length="middle"/>
-<pin name="AREF" x="-25.4" y="15.24" length="middle"/>
-<pin name="AVCC" x="-25.4" y="25.4" length="middle"/>
-<pin name="PB4(MISO)" x="22.86" y="-25.4" length="middle" rot="R180"/>
-<pin name="PB3(MOSI/OC2)" x="22.86" y="-22.86" length="middle" rot="R180"/>
-<pin name="PB2(SS/OC1B)" x="22.86" y="-20.32" length="middle" rot="R180"/>
-<pin name="PB1(OC1A)" x="22.86" y="-17.78" length="middle" rot="R180"/>
-<pin name="PB0(ICP)" x="22.86" y="-15.24" length="middle" rot="R180"/>
-<pin name="PD7(AIN1)" x="22.86" y="-10.16" length="middle" rot="R180"/>
-<pin name="PD6(AIN0)" x="22.86" y="-7.62" length="middle" rot="R180"/>
-<pin name="PD5(T1)" x="22.86" y="-5.08" length="middle" rot="R180"/>
-<pin name="PD4(XCK/T0)" x="22.86" y="-2.54" length="middle" rot="R180"/>
-<pin name="PD3(INT1)" x="22.86" y="0" length="middle" rot="R180"/>
-<pin name="PD2(INT0)" x="22.86" y="2.54" length="middle" rot="R180"/>
-<pin name="PD1(TXD)" x="22.86" y="5.08" length="middle" rot="R180"/>
-<pin name="PD0(RXD)" x="22.86" y="7.62" length="middle" rot="R180"/>
-<pin name="ADC7" x="22.86" y="12.7" length="middle" rot="R180"/>
-<pin name="ADC6" x="22.86" y="15.24" length="middle" rot="R180"/>
-<pin name="PC5(ADC5/SCL)" x="22.86" y="17.78" length="middle" rot="R180"/>
-<pin name="PC4(ADC4/SDA)" x="22.86" y="20.32" length="middle" rot="R180"/>
-<pin name="PC3(ADC3)" x="22.86" y="22.86" length="middle" rot="R180"/>
-<pin name="PC2(ADC2)" x="22.86" y="25.4" length="middle" rot="R180"/>
-<pin name="PC1(ADC1)" x="22.86" y="27.94" length="middle" rot="R180"/>
-<pin name="PC0(ADC0)" x="22.86" y="30.48" length="middle" rot="R180"/>
-<pin name="PC6(/RESET)" x="-25.4" y="30.48" length="middle" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -437,98 +316,6 @@ uC used in the Arduino&lt;br&gt;
 <technology name="">
 <attribute name="PROD_ID" value="IC-09136" constant="no"/>
 <attribute name="VALUE" value="328P" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ATMEGA328P_TQFP" urn="urn:adsk.eagle:component:38974/1" prefix="U" library_version="1">
-<description>&lt;h3&gt;Popular 328P in QFP&lt;/h3&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/13448"&gt;Storefront component: ATmega328 - TQFP&lt;/a&gt; (COM-13448)&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Components/SMD/ATMega328.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;SparkFun Products&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12757"&gt;SparkFun RedBoard - Programmed with Arduino&lt;/a&gt; (DEV-12757)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11113"&gt;Arduino Pro Mini 328 - 5V/16MHz&lt;/a&gt; (DEV-11113)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11114"&gt;Arduino Pro Mini 328 - 3.3V/8MHz&lt;/a&gt; (DEV-11114)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13712"&gt;SparkFun OpenLog&lt;/a&gt; (DEV-13712)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12923"&gt;SparkFun MicroView - OLED Arduino Module&lt;/a&gt; (DEV-12923)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12651"&gt;SparkFun Digital Sandbox&lt;/a&gt; (DEV-12651)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11888"&gt;SparkFun PicoBoard&lt;/a&gt; (WIG-11888)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10116"&gt;Arduino Fio&lt;/a&gt; (DEV-10116)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13342"&gt;LilyPad Arduino 328 Main Board&lt;/a&gt; (DEV-13342)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13741"&gt;SparkFun RedStick&lt;/a&gt; (DEV-13741)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11013"&gt;LilyPad MP3&lt;/a&gt; (DEV-11013)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10941"&gt;LilyPad Arduino SimpleSnap&lt;/a&gt; (DEV-10941)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13899"&gt;SparkFun Stepoko&lt;/a&gt; (ROB-13899)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11345"&gt;SparkFun Geiger Counter&lt;/a&gt; (SEN-11345)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12781"&gt;SparkFun EL Sequencer&lt;/a&gt; (COM-12781)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10915"&gt;Arduino Pro 328 - 5V/16MHz&lt;/a&gt; (DEV-10915)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12773"&gt;CryptoCape&lt;/a&gt; (DEV-12773)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10740"&gt;SparkFun IR Thermometer Evaluation Board - MLX90614&lt;/a&gt; (SEN-10740)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12097"&gt;SparkFun RedBot Mainboard&lt;/a&gt; (ROB-12097)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10914"&gt;Arduino Pro 328 - 3.3V/8MHz&lt;/a&gt; (DEV-10914)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13036"&gt;SparkFun Block for Intel® Edison - Arduino&lt;/a&gt; (DEV-13036)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10935"&gt;SparkFun Simon Says - Surface Mount Soldering Kit&lt;/a&gt; (KIT-10935)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11441"&gt;SparkFun 7-Segment Serial Display - Red&lt;/a&gt; (COM-11441)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11629"&gt;SparkFun 7-Segment Serial Display - White&lt;/a&gt; (COM-11629)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11443"&gt;SparkFun 7-Segment Serial Display - Yellow&lt;/a&gt; (COM-11443)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11440"&gt;SparkFun 7-Segment Serial Display - Kelly Green&lt;/a&gt; (COM-11440)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11442"&gt;SparkFun 7-Segment Serial Display - Blue&lt;/a&gt; (COM-11442)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11647"&gt;SparkFun OpenSegment Serial Display - 20mm (Blue)&lt;/a&gt; (COM-11647)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11646"&gt;SparkFun OpenSegment Serial Display - 20mm (Green)&lt;/a&gt; (COM-11646)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11648"&gt;SparkFun OpenSegment Serial Display - 20mm (White)&lt;/a&gt; (COM-11648)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11644"&gt;SparkFun OpenSegment Serial Display - 20mm (Red)&lt;/a&gt; (COM-11644)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11645"&gt;SparkFun OpenSegment Serial Display - 20mm (Yellow)&lt;/a&gt; (COM-11645)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13190"&gt;SparkFun OpenSegment Shield&lt;/a&gt; (DEV-13190)&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="U$1" symbol="ATMEGAXX8-32PIN_NOPAD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TQFP32-08">
-<connects>
-<connect gate="U$1" pin="ADC6" pad="19"/>
-<connect gate="U$1" pin="ADC7" pad="22"/>
-<connect gate="U$1" pin="AGND" pad="21"/>
-<connect gate="U$1" pin="AREF" pad="20"/>
-<connect gate="U$1" pin="AVCC" pad="18"/>
-<connect gate="U$1" pin="GND@3" pad="3"/>
-<connect gate="U$1" pin="GND@5" pad="5"/>
-<connect gate="U$1" pin="PB0(ICP)" pad="12"/>
-<connect gate="U$1" pin="PB1(OC1A)" pad="13"/>
-<connect gate="U$1" pin="PB2(SS/OC1B)" pad="14"/>
-<connect gate="U$1" pin="PB3(MOSI/OC2)" pad="15"/>
-<connect gate="U$1" pin="PB4(MISO)" pad="16"/>
-<connect gate="U$1" pin="PB5(SCK)" pad="17"/>
-<connect gate="U$1" pin="PB6(XTAL1/TOSC1)" pad="7"/>
-<connect gate="U$1" pin="PB7(XTAL2/TOSC2)" pad="8"/>
-<connect gate="U$1" pin="PC0(ADC0)" pad="23"/>
-<connect gate="U$1" pin="PC1(ADC1)" pad="24"/>
-<connect gate="U$1" pin="PC2(ADC2)" pad="25"/>
-<connect gate="U$1" pin="PC3(ADC3)" pad="26"/>
-<connect gate="U$1" pin="PC4(ADC4/SDA)" pad="27"/>
-<connect gate="U$1" pin="PC5(ADC5/SCL)" pad="28"/>
-<connect gate="U$1" pin="PC6(/RESET)" pad="29"/>
-<connect gate="U$1" pin="PD0(RXD)" pad="30"/>
-<connect gate="U$1" pin="PD1(TXD)" pad="31"/>
-<connect gate="U$1" pin="PD2(INT0)" pad="32"/>
-<connect gate="U$1" pin="PD3(INT1)" pad="1"/>
-<connect gate="U$1" pin="PD4(XCK/T0)" pad="2"/>
-<connect gate="U$1" pin="PD5(T1)" pad="9"/>
-<connect gate="U$1" pin="PD6(AIN0)" pad="10"/>
-<connect gate="U$1" pin="PD7(AIN1)" pad="11"/>
-<connect gate="U$1" pin="VCC@4" pad="4"/>
-<connect gate="U$1" pin="VCC@6" pad="6"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:38945/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-09069" constant="no"/>
-<attribute name="VALUE" value="ATMEGA328P_TQFP" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -12642,7 +12429,6 @@ https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/114-00841-68.pdf"&gt
 <part name="C11" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="470pF"/>
 <part name="X_26" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="TP8" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1" value="T_CD2"/>
-<part name="U2" library="SparkFun-IC-Microcontroller" library_urn="urn:adsk.eagle:library:525" deviceset="ATMEGA328P_TQFP" device="" package3d_urn="urn:adsk.eagle:package:38945/1" value="ATMEGA328P_TQFP"/>
 <part name="X_27" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="MICROSD" library="darnok_microsd" deviceset="114-00841-68" device=""/>
 </parts>
@@ -12774,10 +12560,6 @@ but for this design lets keep both in.</text>
 <attribute name="NAME" x="78.74" y="43.688" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="X_13" gate="G$1" x="91.44" y="33.02" smashed="yes"/>
-<instance part="U2" gate="U$1" x="162.56" y="127" smashed="yes">
-<attribute name="NAME" x="142.24" y="160.782" size="1.778" layer="95"/>
-<attribute name="VALUE" x="142.24" y="93.98" size="1.778" layer="96"/>
-</instance>
 <instance part="X_27" gate="G$1" x="134.62" y="96.52" smashed="yes"/>
 </instances>
 <busses>
@@ -12797,7 +12579,6 @@ but for this design lets keep both in.</text>
 <label x="27.94" y="160.02" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PC6(/RESET)"/>
 <wire x1="137.16" y1="157.48" x2="134.62" y2="157.48" width="0.1524" layer="91"/>
 <label x="134.62" y="157.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -12840,12 +12621,9 @@ but for this design lets keep both in.</text>
 <label x="185.42" y="187.96" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="AVCC"/>
 <wire x1="137.16" y1="152.4" x2="134.62" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="U2" gate="U$1" pin="VCC@6"/>
 <wire x1="137.16" y1="147.32" x2="134.62" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="147.32" x2="134.62" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="U2" gate="U$1" pin="VCC@4"/>
 <wire x1="134.62" y1="149.86" x2="134.62" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="149.86" x2="134.62" y2="149.86" width="0.1524" layer="91"/>
 <junction x="134.62" y="149.86"/>
@@ -12911,7 +12689,6 @@ but for this design lets keep both in.</text>
 <wire x1="43.18" y1="58.42" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="AGND"/>
 <wire x1="137.16" y1="106.68" x2="134.62" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="106.68" x2="134.62" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="X_27" gate="G$1" pin="0"/>
@@ -12925,7 +12702,6 @@ but for this design lets keep both in.</text>
 <label x="91.44" y="160.02" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PC0(ADC0)"/>
 <wire x1="185.42" y1="157.48" x2="187.96" y2="157.48" width="0.1524" layer="91"/>
 <label x="187.96" y="157.48" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -12948,7 +12724,6 @@ but for this design lets keep both in.</text>
 <label x="134.62" y="187.96" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PC4(ADC4/SDA)"/>
 <wire x1="185.42" y1="147.32" x2="187.96" y2="147.32" width="0.1524" layer="91"/>
 <label x="187.96" y="147.32" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -12971,7 +12746,6 @@ but for this design lets keep both in.</text>
 <label x="134.62" y="177.8" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PC5(ADC5/SCL)"/>
 <wire x1="185.42" y1="144.78" x2="187.96" y2="144.78" width="0.1524" layer="91"/>
 <label x="187.96" y="144.78" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -12994,7 +12768,6 @@ but for this design lets keep both in.</text>
 <label x="78.74" y="60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PB3(MOSI/OC2)"/>
 <wire x1="185.42" y1="104.14" x2="187.96" y2="104.14" width="0.1524" layer="91"/>
 <label x="187.96" y="104.14" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -13011,7 +12784,6 @@ but for this design lets keep both in.</text>
 <label x="101.6" y="157.48" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PC1(ADC1)"/>
 <wire x1="185.42" y1="154.94" x2="187.96" y2="154.94" width="0.1524" layer="91"/>
 <label x="187.96" y="154.94" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -13066,7 +12838,6 @@ but for this design lets keep both in.</text>
 <label x="78.74" y="63.5" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PB4(MISO)"/>
 <wire x1="185.42" y1="101.6" x2="187.96" y2="101.6" width="0.1524" layer="91"/>
 <label x="187.96" y="101.6" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -13089,7 +12860,6 @@ but for this design lets keep both in.</text>
 <label x="78.74" y="58.42" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PB5(SCK)"/>
 <wire x1="185.42" y1="99.06" x2="187.96" y2="99.06" width="0.1524" layer="91"/>
 <label x="187.96" y="99.06" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -13106,7 +12876,6 @@ but for this design lets keep both in.</text>
 <label x="101.6" y="111.76" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PB1(OC1A)"/>
 <wire x1="185.42" y1="109.22" x2="187.96" y2="109.22" width="0.1524" layer="91"/>
 <label x="187.96" y="109.22" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -13123,7 +12892,6 @@ but for this design lets keep both in.</text>
 <label x="101.6" y="152.4" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PC3(ADC3)"/>
 <wire x1="185.42" y1="149.86" x2="187.96" y2="149.86" width="0.1524" layer="91"/>
 <label x="187.96" y="149.86" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -13140,7 +12908,6 @@ but for this design lets keep both in.</text>
 <label x="101.6" y="154.94" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PC2(ADC2)"/>
 <wire x1="185.42" y1="152.4" x2="187.96" y2="152.4" width="0.1524" layer="91"/>
 <label x="187.96" y="152.4" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -13158,7 +12925,6 @@ but for this design lets keep both in.</text>
 <label x="78.74" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PB2(SS/OC1B)"/>
 <wire x1="185.42" y1="106.68" x2="187.96" y2="106.68" width="0.1524" layer="91"/>
 <label x="187.96" y="106.68" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -13231,7 +12997,6 @@ but for this design lets keep both in.</text>
 <label x="119.38" y="53.34" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PD1(TXD)"/>
 <wire x1="185.42" y1="132.08" x2="187.96" y2="132.08" width="0.1524" layer="91"/>
 <label x="187.96" y="132.08" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -13248,7 +13013,6 @@ but for this design lets keep both in.</text>
 <label x="119.38" y="55.88" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PD0(RXD)"/>
 <wire x1="185.42" y1="134.62" x2="187.96" y2="134.62" width="0.1524" layer="91"/>
 <label x="187.96" y="134.62" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -13265,7 +13029,6 @@ but for this design lets keep both in.</text>
 <label x="27.94" y="144.78" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="AREF"/>
 <wire x1="137.16" y1="142.24" x2="134.62" y2="142.24" width="0.1524" layer="91"/>
 <label x="134.62" y="142.24" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -13293,7 +13056,6 @@ but for this design lets keep both in.</text>
 <label x="35.56" y="182.88" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PB7(XTAL2/TOSC2)"/>
 <wire x1="137.16" y1="127" x2="134.62" y2="127" width="0.1524" layer="91"/>
 <label x="134.62" y="127" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -13314,7 +13076,6 @@ but for this design lets keep both in.</text>
 <label x="35.56" y="193.04" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PB6(XTAL1/TOSC1)"/>
 <wire x1="137.16" y1="132.08" x2="134.62" y2="132.08" width="0.1524" layer="91"/>
 <label x="134.62" y="132.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -13331,7 +13092,6 @@ but for this design lets keep both in.</text>
 <label x="83.82" y="127" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PD4(XCK/T0)"/>
 <wire x1="185.42" y1="124.46" x2="187.96" y2="124.46" width="0.1524" layer="91"/>
 <label x="187.96" y="124.46" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -13348,7 +13108,6 @@ but for this design lets keep both in.</text>
 <label x="83.82" y="132.08" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PD2(INT0)"/>
 <wire x1="185.42" y1="129.54" x2="187.96" y2="129.54" width="0.1524" layer="91"/>
 <label x="187.96" y="129.54" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -13365,7 +13124,6 @@ but for this design lets keep both in.</text>
 <label x="83.82" y="129.54" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PD3(INT1)"/>
 <wire x1="185.42" y1="127" x2="187.96" y2="127" width="0.1524" layer="91"/>
 <label x="187.96" y="127" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -13382,7 +13140,6 @@ but for this design lets keep both in.</text>
 <label x="83.82" y="124.46" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PD5(T1)"/>
 <wire x1="185.42" y1="121.92" x2="187.96" y2="121.92" width="0.1524" layer="91"/>
 <label x="187.96" y="121.92" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -13399,7 +13156,6 @@ but for this design lets keep both in.</text>
 <label x="83.82" y="121.92" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PD6(AIN0)"/>
 <wire x1="185.42" y1="119.38" x2="187.96" y2="119.38" width="0.1524" layer="91"/>
 <label x="187.96" y="119.38" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -13416,7 +13172,6 @@ but for this design lets keep both in.</text>
 <label x="83.82" y="119.38" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PD7(AIN1)"/>
 <wire x1="185.42" y1="116.84" x2="187.96" y2="116.84" width="0.1524" layer="91"/>
 <label x="187.96" y="116.84" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -13433,32 +13188,27 @@ but for this design lets keep both in.</text>
 <label x="83.82" y="114.3" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U$1" pin="PB0(ICP)"/>
 <wire x1="185.42" y1="111.76" x2="187.96" y2="111.76" width="0.1524" layer="91"/>
 <label x="187.96" y="111.76" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="U2" gate="U$1" pin="GND@5"/>
 <wire x1="137.16" y1="101.6" x2="134.62" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="U2" gate="U$1" pin="GND@3"/>
 <wire x1="137.16" y1="104.14" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$35" class="0">
 <segment>
-<pinref part="U2" gate="U$1" pin="ADC7"/>
 <wire x1="185.42" y1="139.7" x2="187.96" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$36" class="0">
 <segment>
-<pinref part="U2" gate="U$1" pin="ADC6"/>
 <wire x1="185.42" y1="142.24" x2="187.96" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
