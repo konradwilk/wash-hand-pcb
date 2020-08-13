@@ -8,7 +8,8 @@ The project is under Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
  - darnok\_common (https://github.com/konradwilk/eagle-libraries.git)
  - darnok\_led (https://github.com/konradwilk/eagle-libraries.git)
  - darnok\_usb (https://github.com/konradwilk/eagle-libraries.git)
- - darnok\_sensoors (https://github.com/konradwilk/eagle-libraries.git)
+ - darnok\_sensors (https://github.com/konradwilk/eagle-libraries.git)
+ - darnok\_microsd (https://github.com/konradwilk/eagle-libraries.git)
  - SparkFun-Aesthetics
  - SparkFun-Capacitors
  - SparkFun-Connectors

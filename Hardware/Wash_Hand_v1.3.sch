@@ -1641,38 +1641,6 @@ package type OT</description>
 <rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
 <rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
 </package>
-<package name="MICROSD" urn="urn:adsk.eagle:footprint:6240077/1" library_version="2">
-<wire x1="13" y1="-15.14" x2="14" y2="-15.14" width="0.127" layer="21"/>
-<wire x1="14" y1="-15.14" x2="14" y2="-0.04" width="0.127" layer="21"/>
-<wire x1="14" y1="-0.04" x2="0" y2="-0.04" width="0.127" layer="21"/>
-<wire x1="0" y1="-0.04" x2="0" y2="-14.44" width="0.127" layer="21"/>
-<wire x1="0" y1="-14.44" x2="1" y2="-14.44" width="0.127" layer="21"/>
-<wire x1="1" y1="-14.44" x2="1.7" y2="-13.54" width="0.127" layer="21" curve="-90"/>
-<wire x1="1.7" y1="-13.54" x2="11.4" y2="-13.54" width="0.127" layer="21"/>
-<wire x1="11.4" y1="-13.54" x2="13" y2="-15.14" width="0.127" layer="21" curve="-90"/>
-<wire x1="0.4" y1="-14.7" x2="1.6" y2="-15.9" width="0.127" layer="21" curve="90"/>
-<wire x1="1.6" y1="-15.9" x2="10.8" y2="-15.9" width="0.127" layer="21"/>
-<wire x1="10.8" y1="-15.9" x2="12.1" y2="-14.8" width="0.127" layer="21" curve="90"/>
-<wire x1="0.4" y1="-15.6" x2="1.6" y2="-16.8" width="0.127" layer="21" curve="90"/>
-<wire x1="1.6" y1="-16.8" x2="10.8" y2="-16.8" width="0.127" layer="21"/>
-<wire x1="10.8" y1="-16.8" x2="12.1" y2="-15.7" width="0.127" layer="21" curve="90"/>
-<wire x1="0.4" y1="-19.4" x2="1.6" y2="-20.6" width="0.127" layer="21" curve="90"/>
-<wire x1="1.6" y1="-20.6" x2="10.8" y2="-20.6" width="0.127" layer="21"/>
-<wire x1="10.8" y1="-20.6" x2="12.1" y2="-19.5" width="0.127" layer="21" curve="90"/>
-<smd name="MT1" x="0.4" y="-13.54" dx="1.4" dy="1.9" layer="1"/>
-<smd name="MT2" x="13.6" y="-14.44" dx="1.4" dy="1.9" layer="1"/>
-<smd name="CD1" x="2" y="-0.44" dx="1.4" dy="1.8" layer="1" rot="R90"/>
-<smd name="CD2" x="8" y="-0.44" dx="1.4" dy="1.8" layer="1" rot="R90"/>
-<smd name="8" x="1.3" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
-<smd name="7" x="2.4" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
-<smd name="6" x="3.5" y="-11.04" dx="0.7" dy="1.5" layer="1"/>
-<smd name="5" x="4.6" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
-<smd name="4" x="5.7" y="-11.04" dx="0.7" dy="1.5" layer="1"/>
-<smd name="3" x="6.8" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
-<smd name="2" x="7.9" y="-10.24" dx="0.7" dy="1.5" layer="1"/>
-<smd name="1" x="9" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
-<text x="3.7" y="-3.94" size="1.27" layer="25">&gt;NAME</text>
-</package>
 </packages>
 <packages3d>
 <package3d name="HC49/S" urn="urn:adsk.eagle:package:6240901/1" type="box" library_version="2">
@@ -1819,11 +1787,6 @@ package type OT</description>
 <packageinstance name="SOT23-5L"/>
 </packageinstances>
 </package3d>
-<package3d name="MICROSD" urn="urn:adsk.eagle:package:6240723/1" type="box" library_version="2">
-<packageinstances>
-<packageinstance name="MICROSD"/>
-</packageinstances>
-</package3d>
 </packages3d>
 <symbols>
 <symbol name="Q" urn="urn:adsk.eagle:symbol:6239651/1" library_version="2">
@@ -1871,31 +1834,6 @@ package type OT</description>
 <pin name="GND" x="0" y="-15.24" length="middle" rot="R90"/>
 <pin name="EN" x="5.08" y="-15.24" length="middle" rot="R90"/>
 <pin name="BYP" x="5.08" y="10.16" length="middle" rot="R270"/>
-</symbol>
-<symbol name="TRANSFLASH" urn="urn:adsk.eagle:symbol:6239544/1" library_version="2">
-<wire x1="-15.24" y1="20.32" x2="-15.24" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-25.4" x2="10.16" y2="20.32" width="0.254" layer="94"/>
-<wire x1="10.16" y1="20.32" x2="-15.24" y2="20.32" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-22.86" x2="-5.08" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-22.86" x2="-2.54" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-25.4" x2="0" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="0" y1="-25.4" x2="0" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="0" y1="-22.86" x2="2.54" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-22.86" x2="2.54" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-25.4" x2="10.16" y2="-25.4" width="0.254" layer="94"/>
-<text x="-7.62" y="-10.16" size="2.1844" layer="94">SD &amp; MMC</text>
-<pin name="CS" x="-17.78" y="0" length="short" direction="in"/>
-<pin name="DATA_IN" x="-17.78" y="5.08" length="short" direction="in"/>
-<pin name="VSS" x="-17.78" y="-12.7" length="short" direction="sup"/>
-<pin name="VDD" x="-17.78" y="-10.16" length="short" direction="sup"/>
-<pin name="SCLK" x="-17.78" y="2.54" length="short" direction="in"/>
-<pin name="DATA_OUT" x="-17.78" y="7.62" length="short" direction="out"/>
-<pin name="DAT1" x="-17.78" y="-2.54" length="short"/>
-<pin name="DAT2" x="-17.78" y="-5.08" length="short"/>
-<pin name="CARD_DETECT" x="-17.78" y="17.78" length="short" direction="pas"/>
-<pin name="GND" x="-17.78" y="-20.32" length="short" direction="sup"/>
-<pin name="GND1" x="-17.78" y="-17.78" length="short" direction="sup"/>
-<pin name="CARD_DETECT1" x="-17.78" y="15.24" length="short" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2314,39 +2252,6 @@ package type OT</description>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:6240724/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MICROSD" urn="urn:adsk.eagle:component:6241033/1" library_version="2">
-<description>&lt;b&gt;Micro-SD / Transflash card holder with SPI pinout&lt;/b&gt;
-&lt;p&gt;
-For the 3M # 2908-05WB-MG and/or 4UCON #19656&lt;br&gt;
-push-push type</description>
-<gates>
-<gate name="G$1" symbol="TRANSFLASH" x="5.08" y="10.16"/>
-</gates>
-<devices>
-<device name="" package="MICROSD">
-<connects>
-<connect gate="G$1" pin="CARD_DETECT" pad="CD1"/>
-<connect gate="G$1" pin="CARD_DETECT1" pad="CD2"/>
-<connect gate="G$1" pin="CS" pad="2"/>
-<connect gate="G$1" pin="DAT1" pad="8"/>
-<connect gate="G$1" pin="DAT2" pad="1"/>
-<connect gate="G$1" pin="DATA_IN" pad="3"/>
-<connect gate="G$1" pin="DATA_OUT" pad="7"/>
-<connect gate="G$1" pin="GND" pad="MT1"/>
-<connect gate="G$1" pin="GND1" pad="MT2"/>
-<connect gate="G$1" pin="SCLK" pad="5"/>
-<connect gate="G$1" pin="VDD" pad="4"/>
-<connect gate="G$1" pin="VSS" pad="6"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6240723/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -12542,6 +12447,102 @@ Based on the following sources:
 </deviceset>
 </devicesets>
 </library>
+<library name="darnok_microsd">
+<description>Common MicroSD.
+&lt;br&gt;
+&lt;p&gt;
+Licensed under the Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+&lt;br&gt;
+Copyright 2020 by Konrad Rzeszutek Wilk &amp;lt;konrad@darnok.org&amp;gt;&lt;/p&gt;</description>
+<packages>
+<package name="114-00841-68">
+<smd name="CD_SW_1" x="5.57" y="4.96" dx="1" dy="1.55" layer="1"/>
+<wire x1="5.97" y1="5.76" x2="5.97" y2="-9.59" width="0.127" layer="21"/>
+<smd name="GND$2" x="5.57" y="-5.74" dx="1.5" dy="1.5" layer="1"/>
+<smd name="GND$1" x="5.97" y="2.61" dx="0.8" dy="1.4" layer="1"/>
+<wire x1="5.97" y1="5.76" x2="-5.98" y2="5.76" width="0.127" layer="21"/>
+<wire x1="-5.98" y1="5.76" x2="-5.98" y2="-7.04" width="0.127" layer="21"/>
+<smd name="GND$3" x="-5.88" y="-5.74" dx="1.5" dy="1.5" layer="1"/>
+<smd name="DATA_1" x="-4.58" y="-5.89" dx="0.7" dy="1.75" layer="1"/>
+<smd name="DATA_OUT" x="-3.48" y="-5.89" dx="0.7" dy="1.75" layer="1"/>
+<smd name="VSS" x="-2.38" y="-5.89" dx="0.7" dy="1.75" layer="1"/>
+<smd name="SCLK" x="-1.28" y="-5.89" dx="0.7" dy="1.75" layer="1"/>
+<smd name="VDD" x="-0.18" y="-5.89" dx="0.7" dy="1.75" layer="1"/>
+<smd name="DATA_IN" x="0.92" y="-5.89" dx="0.7" dy="1.75" layer="1"/>
+<smd name="CS" x="2.02" y="-5.89" dx="0.7" dy="1.75" layer="1"/>
+<smd name="DATA_2" x="3.12" y="-5.89" dx="0.7" dy="1.75" layer="1"/>
+<smd name="GND$4" x="-5.98" y="1.86" dx="0.8" dy="1.5" layer="1"/>
+<smd name="CD_SW_2" x="-5.63" y="3.36" dx="1.55" dy="1" layer="1"/>
+<rectangle x1="-4.83" y1="-0.44" x2="3.62" y2="1.06" layer="39"/>
+<rectangle x1="-1.88" y1="3.36" x2="0.62" y2="4.86" layer="39"/>
+<wire x1="-5.98" y1="-7.04" x2="-5.98" y2="-9.54" width="0.127" layer="21"/>
+<wire x1="-5.98" y1="-9.54" x2="-5.68" y2="-9.84" width="0.127" layer="21" curve="90"/>
+<wire x1="-5.68" y1="-9.84" x2="5.72" y2="-9.84" width="0.127" layer="21"/>
+<wire x1="5.72" y1="-9.84" x2="5.97" y2="-9.59" width="0.127" layer="21" curve="90"/>
+<wire x1="-5.98" y1="-7.04" x2="5.92" y2="-7.04" width="0.127" layer="21"/>
+<text x="-2.92" y="-1.86" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.92" y="-4.4" size="1.016" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="MICROSD">
+<wire x1="-12.7" y1="22.86" x2="-12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="10.16" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-22.86" x2="10.16" y2="22.86" width="0.254" layer="94"/>
+<wire x1="10.16" y1="22.86" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
+<pin name="CARD_DETECT_1" x="-17.78" y="20.32" visible="pin" length="middle" direction="out"/>
+<pin name="CARD_DETECT_2" x="-17.78" y="17.78" visible="pin" length="middle"/>
+<pin name="DATA_OUT" x="-17.78" y="12.7" visible="pin" length="middle"/>
+<pin name="DATA_IN" x="-17.78" y="10.16" visible="pin" length="middle"/>
+<pin name="SCLK" x="-17.78" y="7.62" visible="pin" length="middle"/>
+<pin name="CS" x="-17.78" y="5.08" visible="pin" length="middle"/>
+<pin name="DATA_1" x="-17.78" y="2.54" visible="pin" length="middle"/>
+<pin name="DATA_2" x="-17.78" y="0" visible="pin" length="middle"/>
+<pin name="VDD" x="-17.78" y="-5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="VSS" x="-17.78" y="-7.62" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND$1" x="-17.78" y="-12.7" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND$2" x="-17.78" y="-15.24" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND$3" x="-17.78" y="-17.78" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND$4" x="-17.78" y="-20.32" visible="pin" length="middle" direction="pwr"/>
+<text x="-5.08" y="25.4" size="1.778" layer="95" ratio="14">&gt;NAME</text>
+<text x="-5.08" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="114-00841-68">
+<description>&lt;h3&gt;Amphenol MicroSD Push Pull&lt;/h3&gt;
+
+Data sheet is available at &lt;a href="
+https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/114-00841-68.pdf"&gt;here&lt;/a&gt;.</description>
+<gates>
+<gate name="A" symbol="MICROSD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="114-00841-68">
+<connects>
+<connect gate="A" pin="CARD_DETECT_1" pad="CD_SW_1"/>
+<connect gate="A" pin="CARD_DETECT_2" pad="CD_SW_2"/>
+<connect gate="A" pin="CS" pad="CS"/>
+<connect gate="A" pin="DATA_1" pad="DATA_1"/>
+<connect gate="A" pin="DATA_2" pad="DATA_2"/>
+<connect gate="A" pin="DATA_IN" pad="DATA_IN"/>
+<connect gate="A" pin="DATA_OUT" pad="DATA_OUT"/>
+<connect gate="A" pin="GND$1" pad="GND$1"/>
+<connect gate="A" pin="GND$2" pad="GND$2"/>
+<connect gate="A" pin="GND$3" pad="GND$3"/>
+<connect gate="A" pin="GND$4" pad="GND$4"/>
+<connect gate="A" pin="SCLK" pad="SCLK"/>
+<connect gate="A" pin="VDD" pad="VDD"/>
+<connect gate="A" pin="VSS" pad="VSS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12623,7 +12624,6 @@ Based on the following sources:
 <part name="TP5" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1" value="T_9V_VCC"/>
 <part name="IC2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LP298X" device="S" package3d_urn="urn:adsk.eagle:package:6240724/1"/>
 <part name="IC3" library="40xx" library_urn="urn:adsk.eagle:library:80" deviceset="4050" device="D" package3d_urn="urn:adsk.eagle:package:821/2"/>
-<part name="U$7" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="MICROSD" device="" package3d_urn="urn:adsk.eagle:package:6240723/1"/>
 <part name="X_17" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_18" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="TP6" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1" value="T_CD"/>
@@ -12644,6 +12644,7 @@ Based on the following sources:
 <part name="TP8" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1" value="T_CD2"/>
 <part name="U2" library="SparkFun-IC-Microcontroller" library_urn="urn:adsk.eagle:library:525" deviceset="ATMEGA328P_TQFP" device="" package3d_urn="urn:adsk.eagle:package:38945/1" value="ATMEGA328P_TQFP"/>
 <part name="X_27" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="MICROSD" library="darnok_microsd" deviceset="114-00841-68" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13601,7 +13602,6 @@ By default USB is used.</text>
 <attribute name="NAME" x="96.52" y="114.935" size="1.778" layer="95"/>
 <attribute name="VALUE" x="96.52" y="106.68" size="1.778" layer="96"/>
 </instance>
-<instance part="U$7" gate="G$1" x="99.06" y="154.94" smashed="yes"/>
 <instance part="X_17" gate="G$1" x="76.2" y="127" smashed="yes"/>
 <instance part="X_18" gate="G$1" x="15.24" y="142.24" smashed="yes"/>
 <instance part="TP6" gate="G$1" x="73.66" y="175.26" smashed="yes" rot="R90">
@@ -13646,6 +13646,10 @@ By default USB is used.</text>
 <instance part="TP8" gate="G$1" x="66.04" y="175.26" smashed="yes" rot="R90">
 <attribute name="NAME" x="63.5" y="172.72" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="68.58" y="172.72" size="1.778" layer="96" font="vector" rot="R90"/>
+</instance>
+<instance part="MICROSD" gate="A" x="99.06" y="152.4" smashed="yes">
+<attribute name="NAME" x="93.98" y="177.8" size="1.778" layer="95" ratio="14"/>
+<attribute name="VALUE" x="93.98" y="127" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -13748,18 +13752,26 @@ By default USB is used.</text>
 <wire x1="81.28" y1="111.76" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="GND"/>
-<wire x1="81.28" y1="134.62" x2="76.2" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="134.62" x2="76.2" y2="127" width="0.1524" layer="91"/>
 <pinref part="X_17" gate="G$1" pin="0"/>
-<junction x="76.2" y="134.62"/>
-<wire x1="76.2" y1="142.24" x2="76.2" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="VSS"/>
+<wire x1="76.2" y1="144.78" x2="76.2" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="MICROSD" gate="A" pin="VSS"/>
+<wire x1="76.2" y1="139.7" x2="76.2" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="137.16" x2="76.2" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="142.24" x2="76.2" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="GND1"/>
+<wire x1="76.2" y1="134.62" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="132.08" x2="76.2" y2="127" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="144.78" x2="76.2" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="MICROSD" gate="A" pin="GND$1"/>
+<wire x1="81.28" y1="139.7" x2="76.2" y2="139.7" width="0.1524" layer="91"/>
+<junction x="76.2" y="139.7"/>
+<pinref part="MICROSD" gate="A" pin="GND$2"/>
 <wire x1="81.28" y1="137.16" x2="76.2" y2="137.16" width="0.1524" layer="91"/>
 <junction x="76.2" y="137.16"/>
+<pinref part="MICROSD" gate="A" pin="GND$3"/>
+<wire x1="81.28" y1="134.62" x2="76.2" y2="134.62" width="0.1524" layer="91"/>
+<junction x="76.2" y="134.62"/>
+<pinref part="MICROSD" gate="A" pin="GND$4"/>
+<wire x1="81.28" y1="132.08" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
+<junction x="76.2" y="132.08"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="E" pin="I"/>
@@ -13916,52 +13928,52 @@ By default USB is used.</text>
 </net>
 <net name="SD_D_OUT" class="0">
 <segment>
-<pinref part="U$7" gate="G$1" pin="DATA_OUT"/>
-<wire x1="81.28" y1="162.56" x2="78.74" y2="162.56" width="0.1524" layer="91"/>
-<label x="78.74" y="162.56" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="IC3" gate="A" pin="I"/>
 <wire x1="45.72" y1="106.68" x2="48.26" y2="106.68" width="0.1524" layer="91"/>
 <label x="48.26" y="106.68" size="1.778" layer="95" xref="yes"/>
 <pinref part="R8" gate="G$1" pin="R_1"/>
 <junction x="45.72" y="106.68"/>
 </segment>
+<segment>
+<pinref part="MICROSD" gate="A" pin="DATA_OUT"/>
+<wire x1="81.28" y1="165.1" x2="78.74" y2="165.1" width="0.1524" layer="91"/>
+<label x="78.74" y="165.1" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SD_D_IN" class="0">
-<segment>
-<pinref part="U$7" gate="G$1" pin="DATA_IN"/>
-<wire x1="81.28" y1="160.02" x2="78.74" y2="160.02" width="0.1524" layer="91"/>
-<label x="78.74" y="160.02" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="IC3" gate="B" pin="O"/>
 <wire x1="45.72" y1="91.44" x2="48.26" y2="91.44" width="0.1524" layer="91"/>
 <label x="48.26" y="91.44" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="MICROSD" gate="A" pin="DATA_IN"/>
+<wire x1="81.28" y1="162.56" x2="78.74" y2="162.56" width="0.1524" layer="91"/>
+<label x="78.74" y="162.56" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SD_SCLK" class="0">
-<segment>
-<pinref part="U$7" gate="G$1" pin="SCLK"/>
-<wire x1="81.28" y1="157.48" x2="78.74" y2="157.48" width="0.1524" layer="91"/>
-<label x="78.74" y="157.48" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="IC3" gate="C" pin="O"/>
 <wire x1="45.72" y1="76.2" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
 <label x="48.26" y="76.2" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="MICROSD" gate="A" pin="SCLK"/>
+<wire x1="81.28" y1="160.02" x2="78.74" y2="160.02" width="0.1524" layer="91"/>
+<label x="78.74" y="160.02" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SD_CS" class="0">
-<segment>
-<pinref part="U$7" gate="G$1" pin="CS"/>
-<wire x1="81.28" y1="154.94" x2="78.74" y2="154.94" width="0.1524" layer="91"/>
-<label x="78.74" y="154.94" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="IC3" gate="D" pin="O"/>
 <wire x1="45.72" y1="60.96" x2="48.26" y2="60.96" width="0.1524" layer="91"/>
 <label x="48.26" y="60.96" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="MICROSD" gate="A" pin="CS"/>
+<wire x1="81.28" y1="157.48" x2="78.74" y2="157.48" width="0.1524" layer="91"/>
+<label x="78.74" y="157.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="VDD" class="0">
@@ -13985,14 +13997,14 @@ By default USB is used.</text>
 <label x="96.52" y="88.9" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="VDD"/>
-<wire x1="81.28" y1="144.78" x2="76.2" y2="144.78" width="0.1524" layer="91"/>
-<label x="76.2" y="144.78" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R8" gate="G$1" pin="R_2"/>
 <wire x1="45.72" y1="122.174" x2="45.72" y2="124.46" width="0.1524" layer="91"/>
 <label x="45.72" y="124.46" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="MICROSD" gate="A" pin="VDD"/>
+<wire x1="81.28" y1="147.32" x2="78.74" y2="147.32" width="0.1524" layer="91"/>
+<label x="78.74" y="147.32" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SS" class="0">
@@ -14039,18 +14051,18 @@ By default USB is used.</text>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="U$7" gate="G$1" pin="CARD_DETECT"/>
-<wire x1="81.28" y1="172.72" x2="73.66" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="TP6" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="172.72" x2="73.66" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="MICROSD" gate="A" pin="CARD_DETECT_1"/>
+<wire x1="81.28" y1="172.72" x2="73.66" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U$7" gate="G$1" pin="CARD_DETECT1"/>
-<wire x1="81.28" y1="170.18" x2="66.04" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="TP8" gate="G$1" pin="1"/>
 <wire x1="66.04" y1="170.18" x2="66.04" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="MICROSD" gate="A" pin="CARD_DETECT_2"/>
+<wire x1="81.28" y1="170.18" x2="66.04" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
