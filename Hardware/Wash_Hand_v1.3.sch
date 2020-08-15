@@ -12429,6 +12429,7 @@ https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/114-00841-68.pdf"&gt
 <part name="C11" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="470pF"/>
 <part name="X_26" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="TP8" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1" value="T_CD2"/>
+<part name="X_27" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="MICROSD" library="darnok_microsd" deviceset="114-00841-68" device=""/>
 </parts>
 <sheets>
@@ -12440,6 +12441,8 @@ Konrad Rzeszutek Wilk</text>
 <text x="243.84" y="30.48" size="1.778" layer="95">v1.3</text>
 <text x="157.48" y="48.26" size="1.778" layer="95">Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) 
 designed by Konrad Rzeszutek Wilk</text>
+<text x="139.7" y="162.56" size="1.778" layer="97">This will replace the DIP28 ATMEGA328P
+but for this design lets keep both in.</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="55.88" y="134.62" smashed="yes">
@@ -12557,6 +12560,7 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="NAME" x="78.74" y="43.688" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="X_13" gate="G$1" x="91.44" y="33.02" smashed="yes"/>
+<instance part="X_27" gate="G$1" x="134.62" y="96.52" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -12573,6 +12577,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="U1" gate="G$1" pin="PC6(/RESET)"/>
 <wire x1="33.02" y1="160.02" x2="27.94" y2="160.02" width="0.1524" layer="91"/>
 <label x="27.94" y="160.02" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="137.16" y1="157.48" x2="134.62" y2="157.48" width="0.1524" layer="91"/>
+<label x="134.62" y="157.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -12611,6 +12619,17 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="180.34" y1="182.88" x2="185.42" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="182.88" x2="185.42" y2="187.96" width="0.1524" layer="91"/>
 <label x="185.42" y="187.96" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<wire x1="137.16" y1="152.4" x2="134.62" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="147.32" x2="134.62" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="147.32" x2="134.62" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="149.86" x2="134.62" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="149.86" x2="134.62" y2="149.86" width="0.1524" layer="91"/>
+<junction x="134.62" y="149.86"/>
+<wire x1="134.62" y1="152.4" x2="132.08" y2="152.4" width="0.1524" layer="91"/>
+<junction x="134.62" y="152.4"/>
+<label x="132.08" y="152.4" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="0" class="0">
@@ -12669,6 +12688,11 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="X_5" gate="G$1" pin="0"/>
 <wire x1="43.18" y1="58.42" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="137.16" y1="106.68" x2="134.62" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="106.68" x2="134.62" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="X_27" gate="G$1" pin="0"/>
+</segment>
 </net>
 <net name="D0" class="0">
 <segment>
@@ -12676,6 +12700,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="81.28" y1="160.02" x2="91.44" y2="160.02" width="0.1524" layer="91"/>
 <label x="83.82" y="160.02" size="1.778" layer="95"/>
 <label x="91.44" y="160.02" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="185.42" y1="157.48" x2="187.96" y2="157.48" width="0.1524" layer="91"/>
+<label x="187.96" y="157.48" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -12695,6 +12723,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <junction x="139.7" y="187.96"/>
 <label x="134.62" y="187.96" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="185.42" y1="147.32" x2="187.96" y2="147.32" width="0.1524" layer="91"/>
+<label x="187.96" y="147.32" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -12712,6 +12744,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="144.78" y1="177.8" x2="134.62" y2="177.8" width="0.1524" layer="91"/>
 <junction x="144.78" y="177.8"/>
 <label x="134.62" y="177.8" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="185.42" y1="144.78" x2="187.96" y2="144.78" width="0.1524" layer="91"/>
+<label x="187.96" y="144.78" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -12731,6 +12767,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="78.74" y1="60.96" x2="81.28" y2="60.96" width="0.1524" layer="91"/>
 <label x="78.74" y="60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="185.42" y1="104.14" x2="187.96" y2="104.14" width="0.1524" layer="91"/>
+<label x="187.96" y="104.14" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="D1" class="0">
 <segment>
@@ -12742,6 +12782,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="U1" gate="G$1" pin="PC1(ADC1)"/>
 <wire x1="101.6" y1="157.48" x2="81.28" y2="157.48" width="0.1524" layer="91"/>
 <label x="101.6" y="157.48" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="185.42" y1="154.94" x2="187.96" y2="154.94" width="0.1524" layer="91"/>
+<label x="187.96" y="154.94" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D" class="0">
@@ -12793,6 +12837,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="81.28" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
 <label x="78.74" y="63.5" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="185.42" y1="101.6" x2="187.96" y2="101.6" width="0.1524" layer="91"/>
+<label x="187.96" y="101.6" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SCK" class="0">
 <segment>
@@ -12811,6 +12859,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="81.28" y1="58.42" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
 <label x="78.74" y="58.42" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="185.42" y1="99.06" x2="187.96" y2="99.06" width="0.1524" layer="91"/>
+<label x="187.96" y="99.06" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="D4" class="0">
 <segment>
@@ -12822,6 +12874,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="U1" gate="G$1" pin="PB1(OC1A)"/>
 <wire x1="81.28" y1="111.76" x2="101.6" y2="111.76" width="0.1524" layer="91"/>
 <label x="101.6" y="111.76" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="185.42" y1="109.22" x2="187.96" y2="109.22" width="0.1524" layer="91"/>
+<label x="187.96" y="109.22" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D3" class="0">
@@ -12835,6 +12891,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="81.28" y1="152.4" x2="101.6" y2="152.4" width="0.1524" layer="91"/>
 <label x="101.6" y="152.4" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<wire x1="185.42" y1="149.86" x2="187.96" y2="149.86" width="0.1524" layer="91"/>
+<label x="187.96" y="149.86" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="D2" class="0">
 <segment>
@@ -12846,6 +12906,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="U1" gate="G$1" pin="PC2(ADC2)"/>
 <wire x1="81.28" y1="154.94" x2="101.6" y2="154.94" width="0.1524" layer="91"/>
 <label x="101.6" y="154.94" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="185.42" y1="152.4" x2="187.96" y2="152.4" width="0.1524" layer="91"/>
+<label x="187.96" y="152.4" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SS" class="0">
@@ -12859,6 +12923,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="J3" gate="G$1" pin="1"/>
 <wire x1="81.28" y1="66.04" x2="78.74" y2="66.04" width="0.1524" layer="91"/>
 <label x="78.74" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="185.42" y1="106.68" x2="187.96" y2="106.68" width="0.1524" layer="91"/>
+<label x="187.96" y="106.68" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="C" class="0">
@@ -12928,6 +12996,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="114.3" y1="53.34" x2="119.38" y2="53.34" width="0.1524" layer="91"/>
 <label x="119.38" y="53.34" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<wire x1="185.42" y1="132.08" x2="187.96" y2="132.08" width="0.1524" layer="91"/>
+<label x="187.96" y="132.08" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="RX" class="0">
 <segment>
@@ -12940,6 +13012,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="114.3" y1="55.88" x2="119.38" y2="55.88" width="0.1524" layer="91"/>
 <label x="119.38" y="55.88" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<wire x1="185.42" y1="134.62" x2="187.96" y2="134.62" width="0.1524" layer="91"/>
+<label x="187.96" y="134.62" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="AREF" class="0">
 <segment>
@@ -12951,6 +13027,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="U1" gate="G$1" pin="AREF"/>
 <wire x1="33.02" y1="144.78" x2="27.94" y2="144.78" width="0.1524" layer="91"/>
 <label x="27.94" y="144.78" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="137.16" y1="142.24" x2="134.62" y2="142.24" width="0.1524" layer="91"/>
+<label x="134.62" y="142.24" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="9V" class="0">
@@ -12975,6 +13055,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <junction x="33.02" y="182.88"/>
 <label x="35.56" y="182.88" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<wire x1="137.16" y1="127" x2="134.62" y2="127" width="0.1524" layer="91"/>
+<label x="134.62" y="127" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="XTAL1" class="0">
 <segment>
@@ -12991,6 +13075,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <junction x="33.02" y="193.04"/>
 <label x="35.56" y="193.04" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<wire x1="137.16" y1="132.08" x2="134.62" y2="132.08" width="0.1524" layer="91"/>
+<label x="134.62" y="132.08" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="PIN_C" class="0">
 <segment>
@@ -13002,6 +13090,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="U1" gate="G$1" pin="PD4(XCK/T0)"/>
 <wire x1="81.28" y1="127" x2="83.82" y2="127" width="0.1524" layer="91"/>
 <label x="83.82" y="127" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="185.42" y1="124.46" x2="187.96" y2="124.46" width="0.1524" layer="91"/>
+<label x="187.96" y="124.46" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PIN_A" class="0">
@@ -13015,6 +13107,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="81.28" y1="132.08" x2="83.82" y2="132.08" width="0.1524" layer="91"/>
 <label x="83.82" y="132.08" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<wire x1="185.42" y1="129.54" x2="187.96" y2="129.54" width="0.1524" layer="91"/>
+<label x="187.96" y="129.54" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="PIN_B" class="0">
 <segment>
@@ -13026,6 +13122,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="U1" gate="G$1" pin="PD3(INT1)"/>
 <wire x1="81.28" y1="129.54" x2="83.82" y2="129.54" width="0.1524" layer="91"/>
 <label x="83.82" y="129.54" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="185.42" y1="127" x2="187.96" y2="127" width="0.1524" layer="91"/>
+<label x="187.96" y="127" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PIN_D" class="0">
@@ -13039,6 +13139,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="81.28" y1="124.46" x2="83.82" y2="124.46" width="0.1524" layer="91"/>
 <label x="83.82" y="124.46" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<wire x1="185.42" y1="121.92" x2="187.96" y2="121.92" width="0.1524" layer="91"/>
+<label x="187.96" y="121.92" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="PIN_E" class="0">
 <segment>
@@ -13050,6 +13154,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="U1" gate="G$1" pin="PD6(AIN0)"/>
 <wire x1="81.28" y1="121.92" x2="83.82" y2="121.92" width="0.1524" layer="91"/>
 <label x="83.82" y="121.92" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="185.42" y1="119.38" x2="187.96" y2="119.38" width="0.1524" layer="91"/>
+<label x="187.96" y="119.38" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PIN_F" class="0">
@@ -13063,6 +13171,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="81.28" y1="119.38" x2="83.82" y2="119.38" width="0.1524" layer="91"/>
 <label x="83.82" y="119.38" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<wire x1="185.42" y1="116.84" x2="187.96" y2="116.84" width="0.1524" layer="91"/>
+<label x="187.96" y="116.84" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="PIN_G" class="0">
 <segment>
@@ -13074,6 +13186,30 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="U1" gate="G$1" pin="PB0(ICP)"/>
 <wire x1="81.28" y1="114.3" x2="83.82" y2="114.3" width="0.1524" layer="91"/>
 <label x="83.82" y="114.3" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="185.42" y1="111.76" x2="187.96" y2="111.76" width="0.1524" layer="91"/>
+<label x="187.96" y="111.76" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<wire x1="137.16" y1="101.6" x2="134.62" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<wire x1="137.16" y1="104.14" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$35" class="0">
+<segment>
+<wire x1="185.42" y1="139.7" x2="187.96" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<wire x1="185.42" y1="142.24" x2="187.96" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
