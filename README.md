@@ -45,10 +45,17 @@ Like v1.2, but has:
  - Test points,
  - 9V or 5V USB power option.
 
+See the <a href="Wash_Hand_v1.3.pdf">Board/Schematic</a> . The <a href="BOM-1.3.txt">BOM</a> for the list of materials.
+
+<img src="front-1.3.jpg" width=250></img>
+<img src="back-1.3.jpg" width=250></img>
+
+And the data sheets are in <a href="Datasheets">Datasheets</a> directory.
 
 # Future plans for software
 
 In particular order:
+
  - Fetch data from a SD-card (if attached), otherwise read from EEPROM (1K).
  - Format-type of the data type for above mechanism.
  - Utilize sleep operations to keep the CPU most of the time asleep.
