@@ -52,14 +52,14 @@ See the <a href="Wash_Hand_v1.3.pdf">Board/Schematic</a> . The <a href="BOM-1.3.
 
 And the data sheets are in <a href="Datasheets">Datasheets</a> directory.
 
-## PCB v1.3
+## PCB v1.3b
 
 Like v1.3, but has:
 
  - ATMEGA328P TQFP
 
-<img src="front-1.3a.jpg" width=250></img>
-<img src="back-1.3a.jpg" width=250></img>
+<img src="front-1.3b.jpg" width=250></img>
+<img src="back-1.3b.jpg" width=250></img>
 
 
 
