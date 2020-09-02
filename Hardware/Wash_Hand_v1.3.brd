@@ -266,6 +266,19 @@ IR_E</text>
 <circle x="6.35" y="37.592" radius="0.254" width="0.254" layer="25"/>
 <circle x="6.35" y="37.592" radius="0.567959375" width="0.1524" layer="25"/>
 <text x="21.336" y="19.558" size="1.778" layer="26" ratio="14" rot="MR0">v1.3a.1</text>
+<text x="56.134" y="15.494" size="1.016" layer="25" ratio="14">#
+[  ]
+[  ]
+[  ]
+[  ]
+[  ]
+[  ]
+[  ]
+[  ]
+[        ]
+[        ]
+[        ]
+ASBLY</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors" urn="urn:adsk.eagle:library:510">
