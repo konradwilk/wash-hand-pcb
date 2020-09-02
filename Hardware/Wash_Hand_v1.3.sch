@@ -12413,7 +12413,9 @@ https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/114-00841-68.pdf"&gt
 <part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1" value="I2C"/>
 <part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03X2" device="FEMALE" package3d_urn="urn:adsk.eagle:package:38016/1" value="ICSP"/>
 <part name="X_5" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
+<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device="">
+<attribute name="REVISION" value="v1.3b.1"/>
+</part>
 <part name="R1" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
 <part name="R3" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
 <part name="R5" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
@@ -12461,7 +12463,9 @@ https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/114-00841-68.pdf"&gt
 <part name="U$6" library="darnok_sensors" deviceset="LTR-301" device=""/>
 <part name="X_16" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="U$2" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
-<part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
+<part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device="">
+<attribute name="REVISION" value="v1.3b.1"/>
+</part>
 <part name="TP1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1" value="T_5V_VCC"/>
 <part name="TP2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1" value="T_USB_VCC"/>
 <part name="TP3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1" value="T_IR_DET"/>
@@ -12497,7 +12501,6 @@ https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/114-00841-68.pdf"&gt
 <text x="160.02" y="53.34" size="2.54" layer="95">Hand Wash count down</text>
 <text x="223.52" y="53.34" size="1.778" layer="95">Copyright 2020 by
 Konrad Rzeszutek Wilk</text>
-<text x="243.84" y="30.48" size="1.778" layer="95">v1.3b</text>
 <text x="157.48" y="48.26" size="1.778" layer="95">Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) 
 designed by Konrad Rzeszutek Wilk</text>
 </plain>
@@ -12532,7 +12535,9 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="VALUE" x="27.178" y="55.118" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
 <instance part="X_5" gate="G$1" x="43.18" y="55.88" smashed="yes"/>
-<instance part="FRAME1" gate="G$1" x="5.08" y="22.86" smashed="yes"/>
+<instance part="FRAME1" gate="G$1" x="5.08" y="22.86" smashed="yes">
+<attribute name="REVISION" x="243.84" y="30.48" size="1.778" layer="96"/>
+</instance>
 <instance part="FRAME1" gate="G$2" x="152.4" y="22.86" smashed="yes">
 <attribute name="LAST_DATE_TIME" x="165.1" y="24.13" size="2.54" layer="94"/>
 <attribute name="SHEET" x="238.76" y="24.13" size="2.54" layer="94"/>
@@ -13170,12 +13175,13 @@ Line sensor is D0, GND, VCC</text>
 <wire x1="119.38" y1="119.38" x2="119.38" y2="177.8" width="0.1524" layer="97"/>
 <text x="187.96" y="78.74" size="1.778" layer="97">The jumper is if you want to use USB or 9V.
 By default USB is used.</text>
-<text x="238.76" y="7.62" size="1.778" layer="95">v1.3b</text>
 <text x="172.72" y="101.6" size="1.778" layer="97">C6, 2.2uF tantalum
 </text>
 </plain>
 <instances>
-<instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
+<instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="REVISION" x="238.76" y="7.62" size="1.778" layer="96"/>
+</instance>
 <instance part="FRAME2" gate="G$2" x="147.32" y="0" smashed="yes">
 <attribute name="LAST_DATE_TIME" x="160.02" y="1.27" size="2.54" layer="94"/>
 <attribute name="SHEET" x="233.68" y="1.27" size="2.54" layer="94"/>
