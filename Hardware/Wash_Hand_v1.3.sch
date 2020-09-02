@@ -12320,7 +12320,8 @@ MAX3223-MAX3243.pdf</description>
 </symbols>
 <devicesets>
 <deviceset name="4050" prefix="IC">
-<description>Hex non-inverting &lt;b&gt;BUFFER&lt;/b&gt;</description>
+<description>Hex non-inverting &lt;b&gt;BUFFER&lt;/b&gt;
+aka CD74HC4050PWR</description>
 <gates>
 <gate name="A" symbol="4050-1" x="17.78" y="0" swaplevel="1"/>
 <gate name="B" symbol="4050-1" x="17.78" y="-12.7" swaplevel="1"/>

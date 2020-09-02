@@ -10,6 +10,7 @@ The project is under Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
  - darnok\_usb (https://github.com/konradwilk/eagle-libraries.git)
  - darnok\_sensors (https://github.com/konradwilk/eagle-libraries.git)
  - darnok\_microsd (https://github.com/konradwilk/eagle-libraries.git)
+ - darnok\_4050 (https://github.com/konradwilk/eagle-libraries.git)
  - SparkFun-Aesthetics
  - SparkFun-Capacitors
  - SparkFun-Connectors
@@ -52,7 +53,7 @@ See the <a href="Wash_Hand_v1.3.pdf">Board/Schematic</a> . The <a href="BOM-1.3.
 
 And the data sheets are in <a href="Datasheets">Datasheets</a> directory.
 
-## PCB v1.3b
+### PCB v1.3b
 
 Like v1.3, but has:
 
@@ -61,6 +62,9 @@ Like v1.3, but has:
 <img src="front-1.3b.jpg" width=250></img>
 <img src="back-1.3b.jpg" width=250></img>
 
+### PCB v1.3b.2
+
+Uses the 16TSSOP for the CD74HC4050PWR.
 
 
 # Future plans for software
