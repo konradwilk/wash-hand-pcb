@@ -1430,7 +1430,7 @@ Copyright 2020 by Konrad Rzeszutek Wilk &amp;lt;konrad@darnok.org&amp;gt;&lt;/p&
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default *">
+<designrules name="oshpark-2layer">
 <description language="en">&lt;b&gt;OSH Park Design Rules&lt;/b&gt;
 &lt;p&gt;
 Please make sure your boards conform to these design rules.
@@ -2248,7 +2248,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="D1">
 <contactref element="U$5" pad="PIN12"/>
 <contactref element="U2" pad="24"/>
-<wire x1="38.608" y1="39.116" x2="38.8366" y2="38.8874" width="0.1524" layer="1"/>
 <wire x1="34.8322125" y1="37.8686" x2="34.5556125" y2="37.592" width="0.1524" layer="1"/>
 <wire x1="38.608" y1="39.116" x2="37.3606" y2="37.8686" width="0.1524" layer="1"/>
 <wire x1="37.3606" y1="37.8686" x2="34.8322125" y2="37.8686" width="0.1524" layer="1"/>
@@ -2351,7 +2350,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="37.846" y="36.83" extent="1-16" drill="0.35"/>
 <wire x1="37.846" y1="36.83" x2="36.8183875" y2="36.83" width="0.1524" layer="16"/>
 <wire x1="36.8183875" y1="36.83" x2="36.7957875" y2="36.8074" width="0.1524" layer="16"/>
-<wire x1="34.8322125" y1="36.8074" x2="34.8096125" y2="36.83" width="0.1524" layer="16"/>
 <wire x1="36.7957875" y1="36.8074" x2="34.8322125" y2="36.8074" width="0.1524" layer="16"/>
 <wire x1="25.4" y1="36.83" x2="34.8322125" y2="36.8074" width="0.1524" layer="16"/>
 </signal>
@@ -2515,7 +2513,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 <signal name="AREF">
 <contactref element="C4" pad="2"/>
-<wire x1="34.29" y1="43.05" x2="33.782" y2="43.05" width="0.1524" layer="16"/>
 <contactref element="U2" pad="20"/>
 <via x="35.052" y="37.338" extent="1-16" drill="0.35"/>
 <wire x1="35.052" y1="37.338" x2="35.052" y2="35.8966" width="0.1524" layer="1"/>
@@ -2823,7 +2820,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="25.654" y1="16.888" x2="26.292" y2="16.888" width="0.1524" layer="16"/>
 <wire x1="26.292" y1="16.888" x2="26.416" y2="16.764" width="0.1524" layer="16"/>
 <contactref element="U2" pad="1"/>
-<wire x1="31.744" y1="27.2034" x2="31.7186" y2="27.178" width="0.1524" layer="1"/>
 <wire x1="27.3812" y1="24.3332" x2="29.464" y2="26.416" width="0.1524" layer="16"/>
 <via x="29.464" y="26.416" extent="1-16" drill="0.35"/>
 <wire x1="29.464" y1="26.416" x2="30.2514" y2="27.2034" width="0.1524" layer="1"/>
