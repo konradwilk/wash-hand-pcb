@@ -1785,7 +1785,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="TP6" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="PAD.03X.04" package3d_urn="urn:adsk.eagle:package:38287/1" value="T_CD" x="17.272" y="24.13" smashed="yes"/>
 <element name="TP7" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="PAD.03X.04" package3d_urn="urn:adsk.eagle:package:38287/1" value="T_33_VCC" x="26.162" y="41.656" smashed="yes" rot="MR180"/>
-<element name="C8" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="1206" package3d_urn="urn:adsk.eagle:package:37426/1" value="2.2uF" x="8.128" y="44.45" smashed="yes" rot="MR90">
+<element name="C11" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="1206" package3d_urn="urn:adsk.eagle:package:37426/1" value="2.2uF" x="8.128" y="44.45" smashed="yes" rot="MR90">
 <attribute name="NAME" x="9.271" y="44.45" size="0.6096" layer="26" font="vector" ratio="20" rot="MR90" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-09822" x="8.128" y="44.45" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="6.985" y="44.45" size="0.6096" layer="28" font="vector" ratio="20" rot="MR90" align="top-center"/>
@@ -1804,7 +1804,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="PROD_ID" value="CAP-09822" x="12.192" y="44.45" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="11.049" y="44.45" size="0.6096" layer="28" font="vector" ratio="20" rot="MR90" align="top-center"/>
 </element>
-<element name="C11" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="1206" package3d_urn="urn:adsk.eagle:package:37426/1" value="470pF" x="57.15" y="44.45" smashed="yes" rot="R90">
+<element name="C8" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="1206" package3d_urn="urn:adsk.eagle:package:37426/1" value="470pF" x="57.15" y="44.45" smashed="yes" rot="R90">
 <attribute name="NAME" x="56.007" y="44.45" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-09822" x="57.15" y="44.45" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="58.293" y="44.45" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
@@ -1964,9 +1964,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="IC3" pad="12"/>
 <contactref element="IC3" pad="8"/>
 <contactref element="C9" pad="2"/>
-<contactref element="C8" pad="2"/>
-<contactref element="C10" pad="2"/>
 <contactref element="C11" pad="2"/>
+<contactref element="C10" pad="2"/>
+<contactref element="C8" pad="2"/>
 <contactref element="MICROSD" pad="VSS"/>
 <contactref element="MICROSD" pad="GND$1"/>
 <contactref element="MICROSD" pad="GND$2"/>
