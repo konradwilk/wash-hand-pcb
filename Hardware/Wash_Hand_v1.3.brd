@@ -280,6 +280,10 @@ IR_E</text>
 [        ]
 ASBLY</text>
 <text x="41.148" y="40.132" size="1.778" layer="25">+</text>
+<circle x="68.072" y="24.892" radius="0.254" width="0.254" layer="25"/>
+<circle x="68.072" y="24.892" radius="0.567959375" width="0.1524" layer="25"/>
+<circle x="30.48" y="27.432" radius="0.254" width="0.254" layer="25"/>
+<circle x="30.48" y="27.432" radius="0.567959375" width="0.1524" layer="25"/>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors" urn="urn:adsk.eagle:library:510">
