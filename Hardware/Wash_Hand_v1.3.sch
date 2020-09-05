@@ -13759,6 +13759,51 @@ By default USB is used.</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,190.5,68.58,U$5,CATHODE_DP,,,,"/>
+<approved hash="104,2,190.5,139.7,IC1P,V+,N$15,,,"/>
+<approved hash="104,2,190.5,124.46,IC1P,V-,0,,,"/>
+<approved hash="104,2,93.98,68.58,IC3P,VSS,0,,,"/>
+<approved hash="104,2,81.28,144.78,MICROSD,VSS,0,,,"/>
+<approved hash="104,2,81.28,139.7,MICROSD,GND,0,,,"/>
+<approved hash="104,2,81.28,137.16,MICROSD,GND,0,,,"/>
+<approved hash="104,2,81.28,134.62,MICROSD,GND,0,,,"/>
+<approved hash="104,2,81.28,132.08,MICROSD,GND,0,,,"/>
+<approved hash="206,2,104.14,111.76,0,,,,,"/>
+<approved hash="206,2,104.14,76.2,0,,,,,"/>
+<approved hash="208,1,10.16,177.8,0,sup,,,,"/>
+<approved hash="208,1,45.72,35.56,0,sup,,,,"/>
+<approved hash="208,1,55.88,193.04,0,sup,,,,"/>
+<approved hash="208,1,137.16,58.42,0,sup,,,,"/>
+<approved hash="208,1,91.44,33.02,0,sup,,,,"/>
+<approved hash="208,1,43.18,55.88,0,sup,,,,"/>
+<approved hash="208,1,134.62,96.52,0,sup,,,,"/>
+<approved hash="208,2,205.74,154.94,0,sup,,,,"/>
+<approved hash="208,2,177.8,124.46,0,sup,,,,"/>
+<approved hash="208,2,154.94,124.46,0,sup,,,,"/>
+<approved hash="208,2,167.64,124.46,0,sup,,,,"/>
+<approved hash="208,2,172.72,50.8,0,sup,,,,"/>
+<approved hash="208,2,149.86,83.82,0,sup,,,,"/>
+<approved hash="208,2,177.8,88.9,0,sup,,,,"/>
+<approved hash="208,2,187.96,88.9,0,sup,,,,"/>
+<approved hash="208,2,15.24,142.24,0,sup,,,,"/>
+<approved hash="208,2,106.68,109.22,0,sup,,,,"/>
+<approved hash="208,2,104.14,111.76,0,out,,,,"/>
+<approved hash="208,2,81.28,109.22,0,sup,,,,"/>
+<approved hash="208,2,76.2,127,0,sup,,,,"/>
+<approved hash="208,2,81.28,73.66,0,sup,,,,"/>
+<approved hash="208,2,111.76,73.66,0,sup,,,,"/>
+<approved hash="208,2,104.14,76.2,0,out,,,,"/>
+<approved hash="208,2,93.98,66.04,0,sup,,,,"/>
+<approved hash="208,2,53.34,142.24,0,sup,,,,"/>
+<approved hash="208,2,43.18,139.7,0,sup,,,,"/>
+<approved hash="208,2,170.18,78.74,0,sup,,,,"/>
+<approved hash="208,2,142.24,83.82,0,sup,,,,"/>
+<approved hash="208,2,190.5,124.46,0,sup,,,,"/>
+<approved hash="113,1,129.436,115.466,FRAME1,,,,,"/>
+<approved hash="113,2,124.356,92.606,FRAME2,,,,,"/>
+<approved hash="115,2,200.66,132.08,D0,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
