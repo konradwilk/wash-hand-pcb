@@ -1741,9 +1741,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="30.353" y="43.688" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="27.432" y="43.688" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="JP3" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" package="SMT-JUMPER_2_NO_NO-SILK_ROUND" package3d_urn="urn:adsk.eagle:package:39278/1" value="ENA_INT_D0" x="61.976" y="39.37" smashed="yes">
-<attribute name="NAME" x="61.976" y="41.3385" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="VALUE" x="61.976" y="37.4015" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+<element name="JP3" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" package="SMT-JUMPER_2_NO_NO-SILK_ROUND" package3d_urn="urn:adsk.eagle:package:39278/1" value="ENA_INT_D0" x="61.722" y="39.37" smashed="yes">
+<attribute name="NAME" x="61.722" y="41.3385" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="VALUE" x="61.722" y="37.4015" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 <element name="JP4" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" package="SMT-JUMPER_2_NO_NO-SILK_ROUND" package3d_urn="urn:adsk.eagle:package:39278/1" value="ENA_INT_SENSOR" x="68.072" y="39.37" smashed="yes">
 <attribute name="NAME" x="68.072" y="41.3385" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
@@ -2132,11 +2132,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 <signal name="D0">
 <contactref element="J" pad="3"/>
-<contactref element="JP3" pad="2"/>
 <contactref element="JP3" pad="1"/>
 <contactref element="IC1" pad="1"/>
-<wire x1="63.246" y1="37.592" x2="63.246" y2="38.608" width="0.1524" layer="1"/>
-<wire x1="63.246" y1="37.592" x2="62.23" y2="36.576" width="0.1524" layer="1"/>
+<wire x1="62.23" y1="36.576" x2="63.246" y2="37.592" width="0.1524" layer="1"/>
 <wire x1="62.23" y1="36.576" x2="62.23" y2="33.274" width="0.1524" layer="1"/>
 <wire x1="65.024" y1="27.94" x2="66.421" y2="26.543" width="0.1524" layer="1"/>
 <wire x1="62.23" y1="33.274" x2="65.024" y2="30.48" width="0.1524" layer="1"/>
@@ -2147,13 +2145,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="69.596" y1="23.876" x2="68.58" y2="24.892" width="0.1524" layer="1"/>
 <wire x1="68.58" y1="24.892" x2="58.928" y2="24.892" width="0.1524" layer="1"/>
 <wire x1="58.928" y1="24.892" x2="58.547" y2="25.273" width="0.1524" layer="1"/>
-<wire x1="63.246" y1="38.608" x2="63.246" y2="39.37" width="0.2032" layer="1"/>
-<wire x1="60.706" y1="39.37" x2="61.976" y2="39.37" width="0.2032" layer="1"/>
-<wire x1="61.976" y1="39.37" x2="63.246" y2="39.37" width="0.2032" layer="1"/>
 <wire x1="66.421" y1="26.543" x2="67.37" y2="26.543" width="0.1524" layer="1"/>
 <contactref element="U2" pad="23"/>
-<wire x1="61.976" y1="39.37" x2="59.944" y2="39.37" width="0.1524" layer="1"/>
-<wire x1="59.944" y1="39.37" x2="58.547" y2="37.973" width="0.1524" layer="1"/>
+<wire x1="58.547" y1="37.973" x2="59.944" y2="39.37" width="0.1524" layer="1"/>
 <wire x1="58.547" y1="37.973" x2="58.547" y2="29.718" width="0.1524" layer="1"/>
 <wire x1="58.547" y1="29.718" x2="58.547" y2="25.273" width="0.1524" layer="1"/>
 <wire x1="32.544" y1="35.7886" x2="32.544" y2="32.036" width="0.1524" layer="1"/>
@@ -2167,6 +2161,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="45.72" y1="32.004" x2="55.118" y2="32.004" width="0.1524" layer="1"/>
 <wire x1="57.404" y1="29.718" x2="58.547" y2="29.718" width="0.1524" layer="1"/>
 <wire x1="55.118" y1="32.004" x2="57.404" y2="29.718" width="0.1524" layer="1"/>
+<wire x1="60.452" y1="39.37" x2="59.944" y2="39.37" width="0.1524" layer="1"/>
+<contactref element="JP3" pad="2"/>
+<wire x1="63.246" y1="39.116" x2="62.992" y2="39.37" width="0.1524" layer="1"/>
+<wire x1="63.246" y1="37.592" x2="63.246" y2="39.116" width="0.1524" layer="1"/>
+<wire x1="60.452" y1="39.37" x2="62.992" y2="39.37" width="0.1524" layer="1"/>
 </signal>
 <signal name="SDA">
 <contactref element="J1" pad="1"/>
