@@ -13136,18 +13136,6 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="U2" gate="U$1" pin="PB0(ICP)"/>
 </segment>
 </net>
-<net name="N$35" class="0">
-<segment>
-<wire x1="185.42" y1="139.7" x2="187.96" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="U2" gate="U$1" pin="ADC7"/>
-</segment>
-</net>
-<net name="N$36" class="0">
-<segment>
-<wire x1="185.42" y1="142.24" x2="187.96" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="U2" gate="U$1" pin="ADC6"/>
-</segment>
-</net>
 </nets>
 </sheet>
 <sheet>
