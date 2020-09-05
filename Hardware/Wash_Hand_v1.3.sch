@@ -13293,6 +13293,7 @@ By default USB is used.</text>
 <label x="7.62" y="165.1" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <junction x="7.62" y="152.4"/>
+<junction x="7.62" y="162.56"/>
 </segment>
 <segment>
 <pinref part="J" gate="J$1" pin="1"/>
