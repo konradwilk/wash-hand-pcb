@@ -12912,7 +12912,6 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="U$5" gate="G$1" pin="CATHODE_B"/>
 <wire x1="190.5" y1="83.82" x2="185.674" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="R_2"/>
-<wire x1="182.88" y1="83.82" x2="185.674" y2="83.82" width="0.1524" layer="91"/>
 <label x="185.42" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
