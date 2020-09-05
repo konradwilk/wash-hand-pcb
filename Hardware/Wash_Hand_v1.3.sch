@@ -12724,9 +12724,17 @@ designed by Konrad Rzeszutek Wilk</text>
 </segment>
 <segment>
 <wire x1="137.16" y1="106.68" x2="134.62" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="106.68" x2="134.62" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="106.68" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="X_27" gate="G$1" pin="0"/>
 <pinref part="U2" gate="U$1" pin="AGND"/>
+<wire x1="134.62" y1="104.14" x2="134.62" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="101.6" x2="134.62" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="101.6" x2="134.62" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="U2" gate="U$1" pin="GND@5"/>
+<junction x="134.62" y="101.6"/>
+<wire x1="137.16" y1="104.14" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="U2" gate="U$1" pin="GND@3"/>
+<junction x="134.62" y="104.14"/>
 </segment>
 </net>
 <net name="D0" class="0">
@@ -13126,18 +13134,6 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="185.42" y1="111.76" x2="187.96" y2="111.76" width="0.1524" layer="91"/>
 <label x="187.96" y="111.76" size="1.778" layer="95" xref="yes"/>
 <pinref part="U2" gate="U$1" pin="PB0(ICP)"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<wire x1="137.16" y1="101.6" x2="134.62" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="U2" gate="U$1" pin="GND@5"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<wire x1="137.16" y1="104.14" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="U2" gate="U$1" pin="GND@3"/>
 </segment>
 </net>
 <net name="N$35" class="0">
