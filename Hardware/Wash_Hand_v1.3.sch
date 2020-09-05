@@ -432,7 +432,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RESISTOR">
+<deviceset name="RESISTOR" prefix="R">
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="-12.7" y="0"/>
 </gates>
@@ -12028,7 +12028,7 @@ Copyright 2020 by Konrad Rzeszutek Wilk &amp;lt;konrad@darnok.org&amp;gt;&lt;/p<
 <wire x1="5.08" y1="5.334" x2="3.81" y2="5.334" width="0.254" layer="94"/>
 <wire x1="1.27" y1="2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
 <pin name="A$1" x="-6.35" y="0" visible="off" length="middle"/>
-<pin name="K$1" x="6.35" y="0" visible="off" length="middle" direction="out" rot="R180"/>
+<pin name="K$1" x="6.35" y="0" visible="off" length="middle" direction="hiz" rot="R180"/>
 <text x="-6.35" y="3.81" size="1.27" layer="95">&gt;NAME</text>
 <text x="-6.35" y="-3.81" size="1.016" layer="96">&gt;VALUES</text>
 <wire x1="0" y1="2.794" x2="2.54" y2="5.334" width="0.254" layer="94"/>
@@ -12052,7 +12052,7 @@ Copyright 2020 by Konrad Rzeszutek Wilk &amp;lt;konrad@darnok.org&amp;gt;&lt;/p<
 <text x="5.588" y="0.508" size="1.27" layer="94">C</text>
 <text x="-7.366" y="0.508" size="1.27" layer="94">E</text>
 <pin name="E$1" x="-10.668" y="0" visible="off" length="middle" direction="in"/>
-<pin name="C$1" x="9.906" y="0" visible="off" length="middle" direction="out" rot="R180"/>
+<pin name="C$1" x="9.906" y="0" visible="off" length="middle" direction="hiz" rot="R180"/>
 <text x="-8.89" y="2.54" size="1.27" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-3.81" size="1.016" layer="96">&gt;VALUES</text>
 <wire x1="-2.794" y1="0.254" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
@@ -12150,10 +12150,10 @@ Copyright 2020 by Konrad Rzeszutek Wilk &amp;lt;konrad@darnok.org&amp;gt;&lt;/p&
 <pin name="DATA_2" x="-17.78" y="0" visible="pin" length="middle"/>
 <pin name="VDD" x="-17.78" y="-5.08" visible="pin" length="middle" direction="pwr"/>
 <pin name="VSS" x="-17.78" y="-7.62" visible="pin" length="middle" direction="pwr"/>
-<pin name="GND$1" x="-17.78" y="-12.7" visible="pin" length="middle" direction="pwr"/>
-<pin name="GND$2" x="-17.78" y="-15.24" visible="pin" length="middle" direction="pwr"/>
-<pin name="GND$3" x="-17.78" y="-17.78" visible="pin" length="middle" direction="pwr"/>
-<pin name="GND$4" x="-17.78" y="-20.32" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND@1" x="-17.78" y="-12.7" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND@2" x="-17.78" y="-15.24" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND@3" x="-17.78" y="-17.78" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND@4" x="-17.78" y="-20.32" visible="pin" length="middle" direction="pwr"/>
 <text x="-5.08" y="25.4" size="1.778" layer="95" ratio="14">&gt;NAME</text>
 <text x="-5.08" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
@@ -12177,10 +12177,10 @@ https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/114-00841-68.pdf"&gt
 <connect gate="A" pin="DATA_2" pad="DATA_2"/>
 <connect gate="A" pin="DATA_IN" pad="DATA_IN"/>
 <connect gate="A" pin="DATA_OUT" pad="DATA_OUT"/>
-<connect gate="A" pin="GND$1" pad="GND$1"/>
-<connect gate="A" pin="GND$2" pad="GND$2"/>
-<connect gate="A" pin="GND$3" pad="GND$3"/>
-<connect gate="A" pin="GND$4" pad="GND$4"/>
+<connect gate="A" pin="GND@1" pad="GND$1"/>
+<connect gate="A" pin="GND@2" pad="GND$2"/>
+<connect gate="A" pin="GND@3" pad="GND$3"/>
+<connect gate="A" pin="GND@4" pad="GND$4"/>
 <connect gate="A" pin="SCLK" pad="SCLK"/>
 <connect gate="A" pin="VDD" pad="VDD"/>
 <connect gate="A" pin="VSS" pad="VSS"/>
@@ -12442,7 +12442,7 @@ aka CD74HC4050PWR</description>
 <part name="X_10" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_11" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_12" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="J4" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
+<part name="J4" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1" value="9V_CONN"/>
 <part name="X_13" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="JP2" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39293/1" value="9V_JUMPER"/>
 <part name="JP3" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK_ROUND" package3d_urn="urn:adsk.eagle:package:39278/1" value="ENA_INT_D0"/>
@@ -13441,16 +13441,16 @@ By default USB is used.</text>
 <wire x1="76.2" y1="134.62" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="132.08" x2="76.2" y2="127" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="144.78" x2="76.2" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="MICROSD" gate="A" pin="GND$1"/>
+<pinref part="MICROSD" gate="A" pin="GND@1"/>
 <wire x1="81.28" y1="139.7" x2="76.2" y2="139.7" width="0.1524" layer="91"/>
 <junction x="76.2" y="139.7"/>
-<pinref part="MICROSD" gate="A" pin="GND$2"/>
+<pinref part="MICROSD" gate="A" pin="GND@2"/>
 <wire x1="81.28" y1="137.16" x2="76.2" y2="137.16" width="0.1524" layer="91"/>
 <junction x="76.2" y="137.16"/>
-<pinref part="MICROSD" gate="A" pin="GND$3"/>
+<pinref part="MICROSD" gate="A" pin="GND@3"/>
 <wire x1="81.28" y1="134.62" x2="76.2" y2="134.62" width="0.1524" layer="91"/>
 <junction x="76.2" y="134.62"/>
-<pinref part="MICROSD" gate="A" pin="GND$4"/>
+<pinref part="MICROSD" gate="A" pin="GND@4"/>
 <wire x1="81.28" y1="132.08" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
 <junction x="76.2" y="132.08"/>
 </segment>
