@@ -13327,6 +13327,10 @@ By default USB is used.</text>
 </instance>
 <instance part="IC1" gate="P" x="190.5" y="132.08" smashed="yes"/>
 <instance part="X_1" gate="G$1" x="190.5" y="124.46" smashed="yes"/>
+<instance part="IC1" gate="B" x="215.9" y="144.78" smashed="yes">
+<attribute name="NAME" x="218.44" y="147.955" size="1.778" layer="95"/>
+<attribute name="VALUE" x="218.44" y="139.7" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
