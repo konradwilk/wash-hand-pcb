@@ -12435,13 +12435,13 @@ LETTER landscape</description>
 <part name="X_19" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_22" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_23" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="C8" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="2.2uF"/>
+<part name="C11" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="2.2uF"/>
 <part name="C9" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="1uF"/>
 <part name="X_24" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="R8" library="darnok_common" deviceset="RESISTOR" device="R1206" value="100K"/>
 <part name="C10" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="0.01uF"/>
 <part name="X_25" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="C11" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="470pF"/>
+<part name="C8" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="470pF"/>
 <part name="X_26" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="TP8" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1" value="T_CD2"/>
 <part name="MICROSD" library="darnok_microsd" deviceset="114-00841-68" device=""/>
@@ -13250,7 +13250,7 @@ By default USB is used.</text>
 <instance part="X_19" gate="G$1" x="81.28" y="73.66" smashed="yes"/>
 <instance part="X_22" gate="G$1" x="93.98" y="66.04" smashed="yes"/>
 <instance part="X_23" gate="G$1" x="111.76" y="73.66" smashed="yes"/>
-<instance part="C8" gate="G$1" x="53.34" y="152.4" smashed="yes">
+<instance part="C11" gate="G$1" x="53.34" y="152.4" smashed="yes">
 <attribute name="NAME" x="54.864" y="155.321" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="54.864" y="150.241" size="1.778" layer="96" font="vector"/>
 </instance>
@@ -13268,7 +13268,7 @@ By default USB is used.</text>
 <attribute name="VALUE" x="44.704" y="142.621" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="X_25" gate="G$1" x="43.18" y="139.7" smashed="yes"/>
-<instance part="C11" gate="G$1" x="170.18" y="83.82" smashed="yes">
+<instance part="C8" gate="G$1" x="170.18" y="83.82" smashed="yes">
 <attribute name="NAME" x="171.704" y="86.741" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="171.704" y="81.661" size="1.778" layer="96" font="vector"/>
 </instance>
@@ -13431,7 +13431,7 @@ By default USB is used.</text>
 <wire x1="93.98" y1="66.04" x2="93.98" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="C11" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="149.86" x2="53.34" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="X_24" gate="G$1" pin="0"/>
 </segment>
@@ -13441,7 +13441,7 @@ By default USB is used.</text>
 <pinref part="X_25" gate="G$1" pin="0"/>
 </segment>
 <segment>
-<pinref part="C11" gate="G$1" pin="2"/>
+<pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="81.28" x2="170.18" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="X_26" gate="G$1" pin="0"/>
 </segment>
@@ -13626,7 +13626,7 @@ By default USB is used.</text>
 <junction x="43.18" y="162.56"/>
 <pinref part="TP7" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="172.72" x2="50.8" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="157.48" x2="53.34" y2="162.56" width="0.1524" layer="91"/>
 <junction x="53.34" y="162.56"/>
 </segment>
@@ -13685,7 +13685,7 @@ By default USB is used.</text>
 <net name="N$18" class="0">
 <segment>
 <pinref part="MIC5205" gate="U1" pin="BP"/>
-<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="91.44" x2="170.18" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
