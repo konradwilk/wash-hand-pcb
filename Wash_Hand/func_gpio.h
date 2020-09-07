@@ -5,7 +5,7 @@
 
 #include "alpha.h"
 
-#include "v1_2.h"
+#include "v1_3.h"
 
 const uint16_t char_to_port[] = {
     pinA,
