@@ -6921,62 +6921,6 @@ For reference (or to suit your programming needs) check out these designs:
 </deviceset>
 </devicesets>
 </library>
-<library name="frames" urn="urn:adsk.eagle:library:229">
-<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="LETTER_L" urn="urn:adsk.eagle:symbol:13870/1" library_version="1">
-<frame x1="0" y1="0" x2="248.92" y2="185.42" columns="12" rows="17" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
-</symbol>
-<symbol name="DOCFIELD" urn="urn:adsk.eagle:symbol:13864/1" library_version="1">
-<wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.1016" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.1016" layer="94"/>
-<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.1016" layer="94"/>
-<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
-<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.1016" layer="94"/>
-<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
-<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
-<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
-<text x="1.27" y="1.27" size="2.54" layer="94">Date:</text>
-<text x="12.7" y="1.27" size="2.54" layer="94">&gt;LAST_DATE_TIME</text>
-<text x="72.39" y="1.27" size="2.54" layer="94">Sheet:</text>
-<text x="86.36" y="1.27" size="2.54" layer="94">&gt;SHEET</text>
-<text x="88.9" y="11.43" size="2.54" layer="94">REV:</text>
-<text x="1.27" y="19.05" size="2.54" layer="94">TITLE:</text>
-<text x="1.27" y="11.43" size="2.54" layer="94">Document Number:</text>
-<text x="17.78" y="19.05" size="2.54" layer="94">&gt;DRAWING_NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="LETTER_L" urn="urn:adsk.eagle:component:13920/1" prefix="FRAME" uservalue="yes" library_version="1">
-<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
-LETTER landscape</description>
-<gates>
-<gate name="G$1" symbol="LETTER_L" x="0" y="0"/>
-<gate name="G$2" symbol="DOCFIELD" x="147.32" y="0" addlevel="must"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Hardware" urn="urn:adsk.eagle:library:519">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 This library contains board components that are not electrical in nature, such as stand-offs, magnets, and Actobotics. 
@@ -12330,6 +12274,79 @@ https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/114-00841-68.pdf"&gt
 </deviceset>
 </devicesets>
 </library>
+<library name="darnok_frame">
+<description>Frames for the sheet and layout, with &gt;REVISION global attribute to be also on board.
+&lt;br&gt;
+Copied from frames.lbr that comes with EAGLE.
+&lt;br&gt;&lt;br&gt;
+Modifications are
+Copyright 2020 by Konrad Rzeszutek Wilk &amp;lt;konrad@darnok.org&amp;gt;
+&lt;br&gt;
+Licensed under the Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).</description>
+<packages>
+<package name="REVISION_TEXT">
+<text x="-5.08" y="0" size="1.016" layer="25">&gt;REVISION</text>
+<wire x1="-5.334" y1="1.27" x2="-5.334" y2="-0.254" width="0.127" layer="51"/>
+<wire x1="-5.334" y1="-0.254" x2="2.286" y2="-0.254" width="0.127" layer="51"/>
+<wire x1="2.286" y1="-0.254" x2="2.286" y2="1.27" width="0.127" layer="51"/>
+<wire x1="2.286" y1="1.27" x2="-5.334" y2="1.27" width="0.127" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LETTER_L">
+<frame x1="0" y1="0" x2="248.92" y2="185.42" columns="12" rows="17" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="DOCFIELD">
+<wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
+<text x="1.27" y="1.27" size="2.54" layer="94">Date:</text>
+<text x="12.7" y="1.27" size="2.54" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="72.39" y="1.27" size="2.54" layer="94">Sheet:</text>
+<text x="86.36" y="1.27" size="2.54" layer="94">&gt;SHEET</text>
+<text x="88.9" y="11.43" size="2.54" layer="94">REV:</text>
+<text x="1.27" y="19.05" size="2.54" layer="94">TITLE:</text>
+<text x="1.27" y="11.43" size="2.54" layer="94">Document Number:</text>
+<text x="17.78" y="19.05" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+<text x="88.9" y="7.62" size="1.778" layer="94">&gt;REVISION</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LETTER_L" prefix="FRAME" uservalue="yes">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+LETTER landscape</description>
+<gates>
+<gate name="G$1" symbol="LETTER_L" x="0" y="0"/>
+<gate name="G$2" symbol="DOCFIELD" x="147.32" y="0" addlevel="must"/>
+</gates>
+<devices>
+<device name="" package="REVISION_TEXT">
+<technologies>
+<technology name="">
+<attribute name="REVISION" value="0.0" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12355,7 +12372,6 @@ https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/114-00841-68.pdf"&gt
 <part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1" value="I2C"/>
 <part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03X2" device="FEMALE" package3d_urn="urn:adsk.eagle:package:38016/1" value="ICSP"/>
 <part name="X_5" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
 <part name="R1" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
 <part name="R3" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
 <part name="R5" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
@@ -12403,7 +12419,6 @@ https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/114-00841-68.pdf"&gt
 <part name="U$6" library="darnok_sensors" deviceset="LTR-301" device=""/>
 <part name="X_16" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="U$2" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
-<part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
 <part name="TP1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1" value="T_5V_VCC"/>
 <part name="TP2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1" value="T_USB_VCC"/>
 <part name="TP3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1" value="T_IR_DET"/>
@@ -12430,6 +12445,12 @@ https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/114-00841-68.pdf"&gt
 <part name="X_26" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="TP8" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1" value="T_CD2"/>
 <part name="MICROSD" library="darnok_microsd" deviceset="114-00841-68" device=""/>
+<part name="FRAME1" library="darnok_frame" deviceset="LETTER_L" device="">
+<attribute name="REVISION" value="v1.3a.1"/>
+</part>
+<part name="FRAME2" library="darnok_frame" deviceset="LETTER_L" device="">
+<attribute name="REVISION" value="v1.3a.1"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -12437,7 +12458,6 @@ https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/114-00841-68.pdf"&gt
 <text x="160.02" y="53.34" size="2.54" layer="95">Hand Wash count down</text>
 <text x="223.52" y="53.34" size="1.778" layer="95">Copyright 2020 by
 Konrad Rzeszutek Wilk</text>
-<text x="243.84" y="30.48" size="1.778" layer="95">v1.3</text>
 <text x="157.48" y="48.26" size="1.778" layer="95">Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) 
 designed by Konrad Rzeszutek Wilk</text>
 </plain>
@@ -12477,12 +12497,6 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="VALUE" x="27.178" y="55.118" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
 <instance part="X_5" gate="G$1" x="43.18" y="55.88" smashed="yes"/>
-<instance part="FRAME1" gate="G$1" x="5.08" y="22.86" smashed="yes"/>
-<instance part="FRAME1" gate="G$2" x="152.4" y="22.86" smashed="yes">
-<attribute name="LAST_DATE_TIME" x="165.1" y="24.13" size="2.54" layer="94"/>
-<attribute name="SHEET" x="238.76" y="24.13" size="2.54" layer="94"/>
-<attribute name="DRAWING_NAME" x="170.18" y="41.91" size="2.54" layer="94"/>
-</instance>
 <instance part="R1" gate="G$1" x="175.26" y="86.36" smashed="yes">
 <attribute name="NAME" x="175.768" y="87.884" size="1.27" layer="95"/>
 <attribute name="VALUE" x="175.514" y="84.328" size="1.016" layer="96"/>
@@ -12557,6 +12571,15 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="NAME" x="78.74" y="43.688" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="X_13" gate="G$1" x="91.44" y="33.02" smashed="yes"/>
+<instance part="FRAME1" gate="G$1" x="2.54" y="22.86" smashed="yes">
+<attribute name="REVISION" x="2.54" y="22.86" size="1.778" layer="96"/>
+</instance>
+<instance part="FRAME1" gate="G$2" x="149.86" y="22.86" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="162.56" y="24.13" size="2.54" layer="94"/>
+<attribute name="SHEET" x="236.22" y="24.13" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="167.64" y="41.91" size="2.54" layer="94"/>
+<attribute name="REVISION" x="238.76" y="30.48" size="1.778" layer="94"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -13093,17 +13116,10 @@ Line sensor is D0, GND, VCC</text>
 <wire x1="119.38" y1="119.38" x2="119.38" y2="177.8" width="0.1524" layer="97"/>
 <text x="187.96" y="78.74" size="1.778" layer="97">The jumper is if you want to use USB or 9V.
 By default USB is used.</text>
-<text x="238.76" y="7.62" size="1.778" layer="95">v1.3</text>
 <text x="172.72" y="101.6" size="1.778" layer="97">C6, 2.2uF tantalum
 </text>
 </plain>
 <instances>
-<instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
-<instance part="FRAME2" gate="G$2" x="147.32" y="0" smashed="yes">
-<attribute name="LAST_DATE_TIME" x="160.02" y="1.27" size="2.54" layer="94"/>
-<attribute name="SHEET" x="233.68" y="1.27" size="2.54" layer="94"/>
-<attribute name="DRAWING_NAME" x="165.1" y="19.05" size="2.54" layer="94"/>
-</instance>
 <instance part="X_4" gate="G$1" x="205.74" y="154.94" smashed="yes"/>
 <instance part="J" gate="J$1" x="231.14" y="157.48" smashed="yes" rot="R180">
 <attribute name="VALUE" x="233.68" y="164.846" size="1.778" layer="96" font="vector" rot="R180"/>
@@ -13264,6 +13280,15 @@ By default USB is used.</text>
 <instance part="MICROSD" gate="A" x="99.06" y="152.4" smashed="yes">
 <attribute name="NAME" x="93.98" y="177.8" size="1.778" layer="95" ratio="14"/>
 <attribute name="VALUE" x="93.98" y="127" size="1.778" layer="96"/>
+</instance>
+<instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="REVISION" x="0" y="0" size="1.778" layer="96"/>
+</instance>
+<instance part="FRAME2" gate="G$2" x="147.32" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="160.02" y="1.27" size="2.54" layer="94"/>
+<attribute name="SHEET" x="233.68" y="1.27" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="165.1" y="19.05" size="2.54" layer="94"/>
+<attribute name="REVISION" x="236.22" y="7.62" size="1.778" layer="94"/>
 </instance>
 </instances>
 <busses>
