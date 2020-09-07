@@ -2,10 +2,12 @@
 # Copyright 2020, Konrad Rzeszutek Wilk
 # SPDX-License-Identifier: CC-BY-4.0
 */
-#include "func_gpio.h"
 
-/* For DEBUG - use this. */
-//#include "func_usb.h"
+#ifndef USB
+#include "func_gpio.h"
+#else
+#include "func_usb.h"
+#endif
 
 void write(char d1, char d2, char d3, char d4, unsigned int sleep) {
 

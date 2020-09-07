@@ -1,6 +1,12 @@
 
 all:
-	arduino-cli -v compile --fqbn  arduino:avr:uno --output-dir `pwd`
+	arduino-cli -v compile --warnings=all --fqbn  arduino:avr:uno --output-dir `pwd`
+
+usb:
+	arduino-cli -v compile --warnings=all --build-properties compiler.cpp.extra_flags=-DUSB --fqbn  arduino:avr:uno --output-dir `pwd`
+
+debug:
+	arduino-cli -v compile --warnings=all --build-properties compiler.cpp.extra_flags=-DDEBUG --fqbn  arduino:avr:uno --output-dir `pwd`
 
 clean:
 	rm -f *.ihex *.elf *.eep *.bin *.hex
