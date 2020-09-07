@@ -91,7 +91,7 @@ static inline int debug_loop() { return 1; }
 static inline int debug_loop() { return 0; }
 #endif
 
-void debug_begin(unsigned int val) {}
+void debug_begin(unsigned int) {}
 void debug_end(void) { }
-void debug_print(unsigned int val) { }
-void debug_error(const char s[]) { }
+void debug_print(unsigned int) { }
+void debug_error(const char *) { }
