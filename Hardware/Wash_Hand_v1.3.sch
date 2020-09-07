@@ -12446,10 +12446,10 @@ LETTER landscape</description>
 <part name="TP8" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1" value="T_CD2"/>
 <part name="MICROSD" library="darnok_microsd" deviceset="114-00841-68" device=""/>
 <part name="FRAME1" library="darnok_frame" deviceset="LETTER_L" device="">
-<attribute name="REVISION" value="v1.3a.1"/>
+<attribute name="REVISION" value="v1.3a.2"/>
 </part>
 <part name="FRAME2" library="darnok_frame" deviceset="LETTER_L" device="">
-<attribute name="REVISION" value="v1.3a.1"/>
+<attribute name="REVISION" value="v1.3a.2"/>
 </part>
 <part name="X_27" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 </parts>
