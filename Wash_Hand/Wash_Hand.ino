@@ -50,6 +50,7 @@ void setup(void) {
 #define STR_DELAY 5000
 #define SEC_DELAY 1000
 
+#define DEBUG_STR   '8','8','8','8'
 
 unsigned int state = INIT;
 unsigned long s;
@@ -68,6 +69,11 @@ unsigned int waitFor(unsigned long timeout, unsigned new_state)
 void loop() {
   int sensor = 0;
 
+  if (debug_loop()) {
+    setupPorts();
+    write(DEBUG_STR, DELAY);
+    (void)waitFor(STR_DELAY, INIT);
+  }
   sensor = readSensor();
   if (sensor < 500) {
     if (state == INIT) {

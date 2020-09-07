@@ -52,6 +52,12 @@ int readSensor(void) {
   return 1024;
 }
 
+static int inline debug_loop(void) {
+
+  return 0;
+
+};
+
 static void inline debug_print(unsigned int v) {
   Serial.print(__LINE__);
   Serial.print(" ");
