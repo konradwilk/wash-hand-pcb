@@ -279,6 +279,7 @@ IR_E</text>
 [        ]
 [        ]
 ASBLY</text>
+<text x="41.148" y="40.132" size="1.778" layer="25">+</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors" urn="urn:adsk.eagle:library:510">
