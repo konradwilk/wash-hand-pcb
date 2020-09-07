@@ -1,0 +1,5 @@
+# Notes on v1.3b
+
+ - The LM358 did not have V+ or V-
+ - The ATMEGA328P is missing GND on PIN3,5
+ - Nothing displays on v1.3.
