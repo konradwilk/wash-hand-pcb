@@ -3,6 +3,7 @@
 # SPDX-License-Identifier: CC-BY-4.0
 */
 
+#define STRINGIFY(x) #x
 #ifndef USB
 #include "func_gpio.h"
 #else
@@ -134,7 +135,7 @@ void loop() {
           delay(DELAY);
           state = waitFor(SEC_DELAY, state + 1);
         } else
-          debug_error(__LINE__);
+          debug_error(STRINGIFY(__LINE__));
 
       } else if (state > COUNT_MAX) {
           state = YAY;
