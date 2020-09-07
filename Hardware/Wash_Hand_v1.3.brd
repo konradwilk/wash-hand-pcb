@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2108,6 +2108,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="32.766" y1="47.0662" x2="33.9822" y2="45.85" width="0.2032" layer="16"/>
 <wire x1="33.9822" y1="45.85" x2="34.29" y2="45.85" width="0.2032" layer="16"/>
 <wire x1="6.888" y1="11.4" x2="5.42" y2="11.4" width="0.2032" layer="1"/>
+<contactref element="IC1" pad="4"/>
+<wire x1="67.37" y1="30.353" x2="69.342" y2="32.325" width="0.2032" layer="1"/>
+<wire x1="69.342" y1="32.325" x2="69.342" y2="34.544" width="0.2032" layer="1"/>
 </signal>
 <signal name="D0">
 <contactref element="U1" pad="23"/>
@@ -2118,7 +2121,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="63.246" y1="37.592" x2="63.246" y2="38.608" width="0.1524" layer="1"/>
 <wire x1="63.246" y1="37.592" x2="62.23" y2="36.576" width="0.1524" layer="1"/>
 <wire x1="62.23" y1="36.576" x2="62.23" y2="33.274" width="0.1524" layer="1"/>
-<wire x1="65.024" y1="27.94" x2="66.04" y2="26.924" width="0.1524" layer="1"/>
+<wire x1="65.024" y1="27.94" x2="66.421" y2="26.543" width="0.1524" layer="1"/>
 <wire x1="62.23" y1="33.274" x2="65.024" y2="30.48" width="0.1524" layer="1"/>
 <wire x1="65.024" y1="30.48" x2="65.024" y2="27.94" width="0.1524" layer="1"/>
 <wire x1="60.706" y1="39.37" x2="58.674" y2="37.338" width="0.1524" layer="1"/>
@@ -2129,15 +2132,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="34.798" y1="36.83" x2="33.02" y2="35.052" width="0.1524" layer="1"/>
 <wire x1="68.58" y1="10.922" x2="69.596" y2="11.938" width="0.1524" layer="1"/>
 <wire x1="69.596" y1="11.938" x2="69.596" y2="23.876" width="0.1524" layer="1"/>
-<wire x1="69.596" y1="23.876" x2="68.326" y2="25.146" width="0.1524" layer="1"/>
-<wire x1="68.326" y1="25.146" x2="58.674" y2="25.146" width="0.1524" layer="1"/>
+<wire x1="69.596" y1="23.876" x2="68.834" y2="24.638" width="0.1524" layer="1"/>
+<wire x1="68.834" y1="24.638" x2="59.182" y2="24.638" width="0.1524" layer="1"/>
 <wire x1="53.34" y1="36.83" x2="34.798" y2="36.83" width="0.1524" layer="1"/>
 <wire x1="54.61" y1="35.56" x2="54.61" y2="29.21" width="0.1524" layer="1"/>
-<wire x1="58.674" y1="25.146" x2="54.61" y2="29.21" width="0.1524" layer="1"/>
+<wire x1="59.182" y1="24.638" x2="54.61" y2="29.21" width="0.1524" layer="1"/>
 <wire x1="53.34" y1="36.83" x2="54.61" y2="35.56" width="0.1524" layer="1"/>
 <wire x1="63.246" y1="38.608" x2="63.246" y2="39.37" width="0.2032" layer="1"/>
 <wire x1="60.706" y1="39.37" x2="63.246" y2="39.37" width="0.2032" layer="1"/>
-<wire x1="66.04" y1="26.924" x2="66.421" y2="26.543" width="0.1524" layer="1"/>
 <wire x1="66.421" y1="26.543" x2="67.37" y2="26.543" width="0.1524" layer="1"/>
 </signal>
 <signal name="SDA">
@@ -2565,15 +2567,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="68.072" y1="35.56" x2="69.85" y2="37.338" width="0.1524" layer="1"/>
 <wire x1="69.85" y1="37.338" x2="69.85" y2="38.862" width="0.1524" layer="1"/>
 <wire x1="69.85" y1="38.862" x2="69.342" y2="39.37" width="0.1524" layer="1"/>
-<wire x1="61.468" y1="22.99" x2="61.468" y2="27.178" width="0.1524" layer="16"/>
+<wire x1="61.468" y1="22.99" x2="61.468" y2="25.654" width="0.1524" layer="16"/>
+<wire x1="61.468" y1="25.654" x2="61.468" y2="27.178" width="0.1524" layer="16"/>
 <wire x1="61.468" y1="27.178" x2="62.722" y2="28.432" width="0.1524" layer="16"/>
 <wire x1="62.722" y1="28.432" x2="63.961" y2="28.432" width="0.1524" layer="16"/>
-</signal>
-<signal name="V+">
 <contactref element="IC1" pad="8"/>
-</signal>
-<signal name="V-">
-<contactref element="IC1" pad="4"/>
+<wire x1="62.17" y1="26.543" x2="62.17" y2="26.356" width="0.1524" layer="1"/>
+<wire x1="62.17" y1="26.356" x2="61.468" y2="25.654" width="0.1524" layer="1"/>
+<via x="61.468" y="25.654" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="N$16">
 <contactref element="TM1" pad="2"/>

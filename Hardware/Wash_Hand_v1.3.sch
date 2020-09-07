@@ -12451,6 +12451,7 @@ LETTER landscape</description>
 <part name="FRAME2" library="darnok_frame" deviceset="LETTER_L" device="">
 <attribute name="REVISION" value="v1.3a.1"/>
 </part>
+<part name="X_27" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13192,9 +13193,9 @@ By default USB is used.</text>
 <attribute name="NAME" x="175.26" y="71.12" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="175.26" y="66.04" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="TP3" gate="G$1" x="187.96" y="152.4" smashed="yes">
-<attribute name="NAME" x="185.42" y="154.94" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="185.42" y="149.86" size="1.778" layer="96" font="vector"/>
+<instance part="TP3" gate="G$1" x="187.96" y="152.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="185.42" y="149.86" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="190.5" y="149.86" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
 <instance part="TP4" gate="G$1" x="157.48" y="147.32" smashed="yes">
 <attribute name="NAME" x="154.94" y="149.86" size="1.778" layer="95" font="vector"/>
@@ -13290,6 +13291,8 @@ By default USB is used.</text>
 <attribute name="DRAWING_NAME" x="165.1" y="19.05" size="2.54" layer="94"/>
 <attribute name="REVISION" x="236.22" y="7.62" size="1.778" layer="94"/>
 </instance>
+<instance part="IC1" gate="P" x="190.5" y="132.08" smashed="yes"/>
+<instance part="X_27" gate="G$1" x="190.5" y="124.46" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -13450,6 +13453,10 @@ By default USB is used.</text>
 <wire x1="142.24" y1="91.44" x2="142.24" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="X_9" gate="G$1" pin="0"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="P" pin="V-"/>
+<pinref part="X_27" gate="G$1" pin="0"/>
+</segment>
 </net>
 <net name="D0" class="0">
 <segment>
@@ -13480,6 +13487,10 @@ By default USB is used.</text>
 <pinref part="U$2" gate="G$1" pin="R_2"/>
 <wire x1="154.94" y1="167.894" x2="154.94" y2="170.18" width="0.1524" layer="91"/>
 <junction x="154.94" y="170.18"/>
+<pinref part="IC1" gate="P" pin="V+"/>
+<wire x1="190.5" y1="139.7" x2="190.5" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="170.18" x2="177.8" y2="170.18" width="0.1524" layer="91"/>
+<junction x="177.8" y="170.18"/>
 </segment>
 </net>
 <net name="N$16" class="0">
