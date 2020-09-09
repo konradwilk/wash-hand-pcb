@@ -12359,8 +12359,8 @@ LETTER landscape</description>
 <parts>
 <part name="U1" library="SparkFun-IC-Microcontroller" library_urn="urn:adsk.eagle:library:525" deviceset="ATMEGA328P_PDIP" device="" package3d_urn="urn:adsk.eagle:package:38942/1" value="328P"/>
 <part name="Q1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="CRYSTAL" device="HC49S" package3d_urn="urn:adsk.eagle:package:6240901/1" value="16.0 Mhz"/>
-<part name="C1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF" device="-1206-6.3V-20%" package3d_urn="urn:adsk.eagle:package:37426/1" value="22pF"/>
-<part name="C2" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF" device="-1206-6.3V-20%" package3d_urn="urn:adsk.eagle:package:37426/1" value="22pF"/>
+<part name="C1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF" device="-1206-6.3V-20%" package3d_urn="urn:adsk.eagle:package:37426/1" value="10pF"/>
+<part name="C2" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF" device="-1206-6.3V-20%" package3d_urn="urn:adsk.eagle:package:37426/1" value="10pF"/>
 <part name="X_1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_2" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="U$4" library="darnok_usb" deviceset="USB_MICROB_10118194_AMPHENOL" device="" package3d_urn="urn:adsk.eagle:package:21769933/1"/>
