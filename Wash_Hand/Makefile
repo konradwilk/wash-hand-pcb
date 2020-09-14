@@ -17,6 +17,12 @@ buspirate:
 upload:
 	avrdude -C/etc/avrdude/avrdude.conf -v -carduino -patmega328p -P/dev/ttyACM0 -b115200 -D -Uflash:w:Wash_Hand.ino.hex:i
 
+upload-dip28:
+	avrdude -C/etc/avrdude/avrdude.conf -v -cstk500v1 -patmega328p -P/dev/ttyACM0 -b19200 -D -Uflash:w:Wash_Hand.ino.hex:i
+
+upload-tqfp:
+	 avrdude -C/etc/avrdude/avrdude.conf -v -patmega328 -cstk500v1 -P/dev/ttyACM0 -b19200 -D -Uflash:w:Wash_Hand.ino.hex:i
+
 mini:
 	avrdude -C/etc/avrdude/avrdude.conf -vvvv -carduino -patmega328p -P/dev/ttyUSB0 -b57600 -D -Uflash:w:Wash_Hand.ino.hex:i
 
