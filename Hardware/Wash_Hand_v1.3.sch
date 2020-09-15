@@ -12488,6 +12488,8 @@ aka CD74HC4050PWR</description>
 <part name="MICROSD" library="darnok_microsd" deviceset="114-00841-68" device=""/>
 <part name="U2" library="SparkFun-IC-Microcontroller" library_urn="urn:adsk.eagle:library:525" deviceset="ATMEGA328P_TQFP" device="" package3d_urn="urn:adsk.eagle:package:38945/1" value="ATMEGA328P_TQFP"/>
 <part name="X_1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="X_28" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="R12" library="darnok_common" deviceset="RESISTOR" device="R1206" value="1K"/>
 </parts>
 <sheets>
 <sheet>
@@ -12616,6 +12618,11 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="NAME" x="142.24" y="160.782" size="1.778" layer="95"/>
 <attribute name="VALUE" x="142.24" y="93.98" size="1.778" layer="96"/>
 </instance>
+<instance part="X_28" gate="G$1" x="78.74" y="157.48" smashed="yes"/>
+<instance part="R12" gate="G$1" x="78.74" y="162.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="77.216" y="161.544" size="1.27" layer="95" rot="R90"/>
+<attribute name="VALUE" x="80.01" y="167.894" size="1.016" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -12623,10 +12630,14 @@ designed by Konrad Rzeszutek Wilk</text>
 <net name="RESET" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="R_1"/>
-<wire x1="91.44" y1="175.26" x2="71.12" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="175.26" x2="78.74" y2="175.26" width="0.1524" layer="91"/>
 <label x="73.66" y="175.26" size="1.778" layer="95"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <label x="91.44" y="175.26" size="1.778" layer="95" xref="yes"/>
+<pinref part="R12" gate="G$1" pin="R_2"/>
+<wire x1="78.74" y1="175.26" x2="71.12" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="172.974" x2="78.74" y2="175.26" width="0.1524" layer="91"/>
+<junction x="78.74" y="175.26"/>
 </segment>
 <segment>
 <wire x1="137.16" y1="157.48" x2="134.62" y2="157.48" width="0.1524" layer="91"/>
@@ -12741,6 +12752,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="182.88" x2="12.7" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="182.88" x2="12.7" y2="187.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X_28" gate="G$1" pin="0"/>
+<pinref part="R12" gate="G$1" pin="R_1"/>
 </segment>
 </net>
 <net name="D0" class="0">
@@ -13772,7 +13787,6 @@ By default USB is used.</text>
 <approved hash="104,2,81.28,132.08,MICROSD,GND,0,,,"/>
 <approved hash="206,2,104.14,111.76,0,,,,,"/>
 <approved hash="206,2,104.14,76.2,0,,,,,"/>
-<approved hash="208,1,10.16,177.8,0,sup,,,,"/>
 <approved hash="208,1,45.72,35.56,0,sup,,,,"/>
 <approved hash="208,1,55.88,193.04,0,sup,,,,"/>
 <approved hash="208,1,137.16,58.42,0,sup,,,,"/>
