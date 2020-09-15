@@ -12436,8 +12436,8 @@ aka CD74HC4050PWR</description>
 <part name="X_8" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="MIC5205" library="SparkFun-IC-Power" library_urn="urn:adsk.eagle:library:526" deviceset="V_REG_MIC5205" device="5V" package3d_urn="urn:adsk.eagle:package:39060/1" value="5V"/>
 <part name="C5" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="1uF"/>
-<part name="C6" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="2.2uF T"/>
 <part name="C7" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="1uF"/>
+<part name="C6" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="2.2uF T"/>
 <part name="X_9" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_10" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_11" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
@@ -13228,11 +13228,11 @@ By default USB is used.</text>
 <attribute name="NAME" x="143.764" y="96.901" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="143.764" y="91.821" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="C6" gate="G$1" x="177.8" y="96.52" smashed="yes">
+<instance part="C7" gate="G$1" x="177.8" y="96.52" smashed="yes">
 <attribute name="NAME" x="179.324" y="99.441" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="179.324" y="94.361" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="C7" gate="G$1" x="187.96" y="96.52" smashed="yes">
+<instance part="C6" gate="G$1" x="187.96" y="96.52" smashed="yes">
 <attribute name="NAME" x="189.484" y="99.441" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="189.484" y="94.361" size="1.778" layer="96" font="vector"/>
 </instance>
@@ -13418,12 +13418,12 @@ By default USB is used.</text>
 </segment>
 <segment>
 <pinref part="X_11" gate="G$1" pin="0"/>
-<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="177.8" y1="88.9" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X_12" gate="G$1" pin="0"/>
-<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="187.96" y1="88.9" x2="187.96" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -13600,9 +13600,9 @@ By default USB is used.</text>
 <net name="N$10" class="0">
 <segment>
 <pinref part="MIC5205" gate="U1" pin="OUT"/>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="101.6" x2="177.8" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="101.6" x2="177.8" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="187.96" y1="101.6" x2="177.8" y2="101.6" width="0.1524" layer="91"/>
 <junction x="177.8" y="101.6"/>
 <wire x1="187.96" y1="101.6" x2="200.66" y2="101.6" width="0.1524" layer="91"/>
