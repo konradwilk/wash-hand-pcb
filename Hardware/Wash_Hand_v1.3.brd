@@ -1840,6 +1840,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="FRAME2" library="darnok_frame" package="REVISION_TEXT" value="" x="18.542" y="19.812" smashed="yes" rot="MR0">
 <attribute name="REVISION" value="v1.3a.2" x="18.542" y="19.812" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
+<element name="R12" library="darnok_common" package="1206" value="1K" x="16.764" y="10.922" smashed="yes" rot="MR90">
+<attribute name="NAME" x="17.907" y="10.922" size="0.6096" layer="26" font="vector" ratio="20" rot="MR90" align="bottom-center"/>
+<attribute name="VALUE" x="15.621" y="10.922" size="0.6096" layer="28" font="vector" ratio="20" rot="MR90" align="top-center"/>
+</element>
 </elements>
 <signals>
 <signal name="RESET">
@@ -1874,6 +1878,16 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="54.864" y1="2.54" x2="51.816" y2="5.588" width="0.1524" layer="1"/>
 <wire x1="51.308" y1="5.588" x2="51.816" y2="5.588" width="0.1524" layer="1"/>
 <wire x1="54.864" y1="2.54" x2="55.626" y2="2.54" width="0.1524" layer="1"/>
+<contactref element="R12" pad="2"/>
+<wire x1="25.654" y1="12.322" x2="24.4348" y2="11.1028" width="0.1524" layer="16"/>
+<wire x1="24.4348" y1="11.1028" x2="24.4348" y2="8.25574375" width="0.1524" layer="16"/>
+<wire x1="18.8302125" y1="7.0894" x2="18.8076125" y2="7.112" width="0.1524" layer="16"/>
+<wire x1="24.4348" y1="8.25574375" x2="23.26845625" y2="7.0894" width="0.1524" layer="16"/>
+<wire x1="23.26845625" y1="7.0894" x2="18.8302125" y2="7.0894" width="0.1524" layer="16"/>
+<wire x1="18.8076125" y1="7.112" x2="18.542" y2="7.112" width="0.1524" layer="16"/>
+<wire x1="18.542" y1="7.112" x2="18.034" y2="7.62" width="0.1524" layer="16"/>
+<wire x1="18.034" y1="11.052" x2="16.764" y2="12.322" width="0.1524" layer="16"/>
+<wire x1="18.034" y1="7.62" x2="18.034" y2="11.052" width="0.1524" layer="16"/>
 </signal>
 <signal name="VCC">
 <contactref element="JP2" pad="2"/>
@@ -2125,9 +2139,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="15.127840625" y1="19.688" x2="25.654" y2="19.688" width="0.2032" layer="1"/>
 <wire x1="12.55" y1="22.265840625" x2="15.127840625" y2="19.688" width="0.2032" layer="1"/>
 <wire x1="25.654" y1="19.688" x2="27.556" y2="21.59" width="0.2032" layer="1"/>
-<wire x1="27.556" y1="21.59" x2="27.686" y2="21.59" width="0.2032" layer="1"/>
 <wire x1="29.718" y1="19.688" x2="27.816" y2="21.59" width="0.2032" layer="1"/>
-<wire x1="27.816" y1="21.59" x2="27.686" y2="21.59" width="0.2032" layer="1"/>
+<wire x1="27.816" y1="21.59" x2="27.556" y2="21.59" width="0.2032" layer="1"/>
+<contactref element="R12" pad="1"/>
+<wire x1="16.764" y1="9.522" x2="15.11" y2="9.522" width="0.1524" layer="16"/>
+<wire x1="15.11" y1="9.522" x2="8.636" y2="3.048" width="0.1524" layer="16"/>
 </signal>
 <signal name="D0">
 <contactref element="U1" pad="23"/>

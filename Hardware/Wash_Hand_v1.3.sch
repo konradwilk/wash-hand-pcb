@@ -12452,6 +12452,8 @@ LETTER landscape</description>
 <attribute name="REVISION" value="v1.3a.2"/>
 </part>
 <part name="X_27" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="R12" library="darnok_common" deviceset="RESISTOR" device="R1206" value="1K"/>
+<part name="X_28" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12484,9 +12486,9 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="NAME" x="203.2" y="91.44" size="1.778" layer="95" display="both"/>
 <attribute name="VALUE" x="205.74" y="63.5" size="1.778" layer="96"/>
 </instance>
-<instance part="R9" gate="G$1" x="91.44" y="180.34" smashed="yes" rot="R90">
-<attribute name="NAME" x="88.9" y="182.88" size="1.27" layer="95" rot="R90"/>
-<attribute name="VALUE" x="93.98" y="180.34" size="1.27" layer="96" rot="R90"/>
+<instance part="R9" gate="G$1" x="187.96" y="134.62" smashed="yes" rot="R90">
+<attribute name="NAME" x="185.42" y="137.16" size="1.27" layer="95" rot="R90"/>
+<attribute name="VALUE" x="190.5" y="134.62" size="1.27" layer="96" rot="R90"/>
 </instance>
 <instance part="X_3" gate="G$1" x="10.16" y="177.8" smashed="yes"/>
 <instance part="J1" gate="G$1" x="154.94" y="198.12" smashed="yes" rot="R180">
@@ -12553,9 +12555,9 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="VALUE" x="172.72" y="183.261" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
 </instance>
 <instance part="LOGO1" gate="G$1" x="139.7" y="33.02" smashed="yes"/>
-<instance part="C3" gate="G$1" x="68.58" y="175.26" smashed="yes" rot="R90">
-<attribute name="NAME" x="65.659" y="176.784" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="70.739" y="176.784" size="1.778" layer="96" font="vector" rot="R90"/>
+<instance part="C3" gate="G$1" x="170.18" y="129.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="167.259" y="131.064" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="172.339" y="131.064" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
 <instance part="C4" gate="G$1" x="63.5" y="195.58" smashed="yes" rot="R90">
 <attribute name="NAME" x="60.579" y="197.104" size="1.778" layer="95" font="vector" rot="R90"/>
@@ -12581,6 +12583,11 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="DRAWING_NAME" x="167.64" y="41.91" size="2.54" layer="94"/>
 <attribute name="REVISION" x="238.76" y="30.48" size="1.778" layer="94"/>
 </instance>
+<instance part="R12" gate="G$1" x="180.34" y="116.84" smashed="yes" rot="R90">
+<attribute name="NAME" x="178.816" y="115.824" size="1.27" layer="95" rot="R90"/>
+<attribute name="VALUE" x="181.61" y="122.174" size="1.016" layer="96" rot="R90"/>
+</instance>
+<instance part="X_28" gate="G$1" x="180.34" y="109.22" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -12588,10 +12595,14 @@ designed by Konrad Rzeszutek Wilk</text>
 <net name="RESET" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="R_1"/>
-<wire x1="91.44" y1="175.26" x2="71.12" y2="175.26" width="0.1524" layer="91"/>
-<label x="73.66" y="175.26" size="1.778" layer="95"/>
+<label x="175.26" y="129.54" size="1.778" layer="95"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<label x="91.44" y="175.26" size="1.778" layer="95" xref="yes"/>
+<label x="187.96" y="129.54" size="1.778" layer="95" xref="yes"/>
+<wire x1="187.96" y1="129.54" x2="180.34" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="R_2"/>
+<wire x1="180.34" y1="129.54" x2="172.72" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="127.254" x2="180.34" y2="129.54" width="0.1524" layer="91"/>
+<junction x="180.34" y="129.54"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PC6(/RESET)"/>
@@ -12617,8 +12628,8 @@ designed by Konrad Rzeszutek Wilk</text>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="R_2"/>
-<wire x1="91.44" y1="190.754" x2="91.44" y2="193.04" width="0.1524" layer="91"/>
-<label x="91.44" y="193.04" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="187.96" y1="145.034" x2="187.96" y2="147.32" width="0.1524" layer="91"/>
+<label x="187.96" y="147.32" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="2"/>
@@ -12699,6 +12710,11 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="182.88" x2="15.24" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="182.88" x2="15.24" y2="187.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="R_1"/>
+<wire x1="180.34" y1="111.76" x2="180.34" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="X_28" gate="G$1" pin="0"/>
 </segment>
 </net>
 <net name="D0" class="0">
@@ -12933,8 +12949,8 @@ designed by Konrad Rzeszutek Wilk</text>
 <net name="DTR" class="0">
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="175.26" x2="58.42" y2="175.26" width="0.1524" layer="91"/>
-<label x="58.42" y="175.26" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="129.54" x2="160.02" y2="129.54" width="0.1524" layer="91"/>
+<label x="160.02" y="129.54" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J6" gate="G$1" pin="1"/>
@@ -13735,13 +13751,13 @@ By default USB is used.</text>
 <approved hash="104,2,81.28,132.08,MICROSD,GND,0,,,"/>
 <approved hash="206,2,104.14,111.76,0,,,,,"/>
 <approved hash="206,2,104.14,76.2,0,,,,,"/>
-<approved hash="208,1,10.16,177.8,0,sup,,,,"/>
 <approved hash="208,1,45.72,35.56,0,sup,,,,"/>
 <approved hash="208,1,55.88,193.04,0,sup,,,,"/>
 <approved hash="208,1,137.16,58.42,0,sup,,,,"/>
 <approved hash="208,1,91.44,33.02,0,sup,,,,"/>
 <approved hash="208,1,27.94,99.06,0,sup,,,,"/>
 <approved hash="208,1,43.18,55.88,0,sup,,,,"/>
+<approved hash="208,1,10.16,177.8,0,sup,,,,"/>
 <approved hash="208,2,205.74,154.94,0,sup,,,,"/>
 <approved hash="208,2,177.8,124.46,0,sup,,,,"/>
 <approved hash="208,2,154.94,124.46,0,sup,,,,"/>
