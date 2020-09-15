@@ -12503,13 +12503,13 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="NAME" x="34.036" y="185.42" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="30.48" y="185.42" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C1" gate="G$1" x="22.86" y="182.88" smashed="yes" rot="R90">
-<attribute name="NAME" x="19.939" y="184.404" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="25.019" y="184.404" size="1.778" layer="96" font="vector" rot="R90"/>
+<instance part="C1" gate="G$1" x="22.86" y="182.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="25.781" y="181.356" size="1.778" layer="95" font="vector" rot="R270"/>
+<attribute name="VALUE" x="20.701" y="181.356" size="1.778" layer="96" font="vector" rot="R270"/>
 </instance>
-<instance part="C2" gate="G$1" x="22.86" y="193.04" smashed="yes" rot="R90">
-<attribute name="NAME" x="19.939" y="194.564" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="25.019" y="194.564" size="1.778" layer="96" font="vector" rot="R90"/>
+<instance part="C2" gate="G$1" x="22.86" y="193.04" smashed="yes" rot="R270">
+<attribute name="NAME" x="25.781" y="191.516" size="1.778" layer="95" font="vector" rot="R270"/>
+<attribute name="VALUE" x="20.701" y="191.516" size="1.778" layer="96" font="vector" rot="R270"/>
 </instance>
 <instance part="U$5" gate="G$1" x="210.82" y="76.2" smashed="yes">
 <attribute name="NAME" x="203.2" y="91.44" size="1.778" layer="95" display="both"/>
@@ -12519,7 +12519,7 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="NAME" x="88.9" y="182.88" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="93.98" y="180.34" size="1.27" layer="96" rot="R90"/>
 </instance>
-<instance part="X_3" gate="G$1" x="10.16" y="177.8" smashed="yes"/>
+<instance part="X_3" gate="G$1" x="10.16" y="187.96" smashed="yes" rot="R270"/>
 <instance part="J1" gate="G$1" x="154.94" y="198.12" smashed="yes" rot="R180">
 <attribute name="VALUE" x="157.48" y="202.946" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="157.48" y="192.532" size="1.778" layer="95" font="vector" rot="R180"/>
@@ -12678,16 +12678,6 @@ designed by Konrad Rzeszutek Wilk</text>
 </net>
 <net name="0" class="0">
 <segment>
-<pinref part="X_3" gate="G$1" pin="0"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="10.16" y1="193.04" x2="10.16" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="193.04" x2="10.16" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="182.88" x2="10.16" y2="182.88" width="0.1524" layer="91"/>
-<junction x="10.16" y="182.88"/>
-<wire x1="10.16" y1="182.88" x2="10.16" y2="177.8" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="J5" gate="G$1" pin="1"/>
 <wire x1="38.1" y1="38.1" x2="45.72" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="X_6" gate="G$1" pin="0"/>
@@ -12735,6 +12725,17 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="137.16" y1="104.14" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="U2" gate="U$1" pin="GND@3"/>
 <junction x="134.62" y="104.14"/>
+</segment>
+<segment>
+<pinref part="X_3" gate="G$1" pin="0"/>
+<wire x1="10.16" y1="187.96" x2="12.7" y2="187.96" width="0.1524" layer="91"/>
+<junction x="12.7" y="187.96"/>
+<wire x1="12.7" y1="187.96" x2="12.7" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="12.7" y1="193.04" x2="20.32" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="182.88" x2="12.7" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="182.88" x2="12.7" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D0" class="0">
@@ -13021,13 +13022,13 @@ designed by Konrad Rzeszutek Wilk</text>
 </net>
 <net name="XTAL2" class="0">
 <segment>
-<pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="Q1" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="182.88" x2="33.02" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="182.88" x2="33.02" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="182.88" x2="35.56" y2="182.88" width="0.1524" layer="91"/>
-<junction x="33.02" y="182.88"/>
 <label x="35.56" y="182.88" size="1.778" layer="95" xref="yes"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="182.88" x2="33.02" y2="182.88" width="0.1524" layer="91"/>
+<junction x="33.02" y="182.88"/>
 </segment>
 <segment>
 <wire x1="137.16" y1="127" x2="134.62" y2="127" width="0.1524" layer="91"/>
@@ -13038,12 +13039,12 @@ designed by Konrad Rzeszutek Wilk</text>
 <net name="XTAL1" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="1"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="193.04" x2="33.02" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="193.04" x2="33.02" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="193.04" x2="35.56" y2="193.04" width="0.1524" layer="91"/>
-<junction x="33.02" y="193.04"/>
 <label x="35.56" y="193.04" size="1.778" layer="95" xref="yes"/>
+<junction x="33.02" y="193.04"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="193.04" x2="27.94" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="137.16" y1="132.08" x2="134.62" y2="132.08" width="0.1524" layer="91"/>
@@ -13800,8 +13801,6 @@ By default USB is used.</text>
 <approved hash="208,2,170.18,78.74,0,sup,,,,"/>
 <approved hash="208,2,142.24,83.82,0,sup,,,,"/>
 <approved hash="208,2,190.5,124.46,0,sup,,,,"/>
-<approved hash="113,1,129.436,115.466,FRAME1,,,,,"/>
-<approved hash="113,2,124.356,92.606,FRAME2,,,,,"/>
 <approved hash="115,2,200.66,132.08,D0,,,,,"/>
 </errors>
 </schematic>
