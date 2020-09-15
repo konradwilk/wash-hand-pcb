@@ -12633,6 +12633,11 @@ designed by Konrad Rzeszutek Wilk</text>
 <label x="134.62" y="157.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="U2" gate="U$1" pin="PC6(/RESET)"/>
 </segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="5"/>
+<wire x1="22.86" y1="58.42" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
+<label x="20.32" y="58.42" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -12965,11 +12970,6 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="63.5" y1="175.26" x2="58.42" y2="175.26" width="0.1524" layer="91"/>
 <label x="58.42" y="175.26" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="5"/>
-<wire x1="22.86" y1="58.42" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
-<label x="20.32" y="58.42" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J6" gate="G$1" pin="1"/>
