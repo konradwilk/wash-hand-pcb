@@ -409,6 +409,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
+<package name="RESONATOR">
+<wire x1="-1.4" y1="0.8" x2="1.4" y2="0.8" width="0.127" layer="51"/>
+<wire x1="1.4" y1="0.8" x2="1.4" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="1.4" y1="-0.8" x2="-1.4" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="-0.8" x2="-1.4" y2="0.8" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="0.8" x2="-1.6" y2="-0.8" width="0.22" layer="21"/>
+<wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.22" layer="21"/>
+<smd name="1" x="-1" y="0" dx="2" dy="0.7" layer="1" rot="R90"/>
+<smd name="2" x="0" y="0" dx="2" dy="0.7" layer="1" rot="R90"/>
+<smd name="3" x="1" y="0" dx="2" dy="0.7" layer="1" rot="R90"/>
+<text x="-1.45" y="1.35" size="0.3556" layer="25">&gt;NAME</text>
+<text x="-1.45" y="-1.688" size="0.3556" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="RESISTOR" urn="urn:adsk.eagle:package:21769931/1" type="box">
@@ -429,6 +442,36 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="R_2" x="10.414" y="0" visible="off" length="middle" rot="R180"/>
 <text x="-1.016" y="1.524" size="1.27" layer="95">&gt;NAME</text>
 <text x="5.334" y="-1.27" size="1.016" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="RESONATOR">
+<wire x1="-1.524" y1="-0.508" x2="1.524" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-0.508" x2="1.524" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="0.508" x2="-1.524" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="0.508" x2="-1.524" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="-1.016" x2="0" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.016" x2="1.778" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="1.016" x2="0" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.016" x2="1.778" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.016" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="-2.032" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-2.032" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="3.302" x2="-2.032" y2="1.778" width="0.1524" layer="94"/>
+<wire x1="-3.048" y1="3.302" x2="-3.048" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-3.048" y1="2.54" x2="-3.048" y2="1.778" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="-1.778" x2="-2.032" y2="-3.302" width="0.1524" layer="94"/>
+<wire x1="-3.048" y1="-1.778" x2="-3.048" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-3.048" y1="-2.54" x2="-3.048" y2="-3.302" width="0.1524" layer="94"/>
+<wire x1="-3.048" y1="2.54" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-3.048" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-7.62" y2="0" width="0.1524" layer="94"/>
+<pin name="1" x="0" y="2.54" visible="off" length="point" direction="pas" rot="R180"/>
+<pin name="2" x="-7.62" y="0" visible="off" length="point" direction="pas"/>
+<pin name="3" x="0" y="-2.54" visible="off" length="point" direction="pas" rot="R180"/>
+<text x="-5.08" y="4.572" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-5.588" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -453,6 +496,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connects>
 <connect gate="G$1" pin="R_1" pad="1"/>
 <connect gate="G$1" pin="R_2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RESONATOR" prefix="Y">
+<gates>
+<gate name="G$1" symbol="RESONATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="MU" package="RESONATOR">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12491,6 +12551,8 @@ aka CD74HC4050PWR</description>
 <part name="X_28" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="R12" library="darnok_common" deviceset="RESISTOR" device="R1206" value="1K"/>
 <part name="R13" library="darnok_common" deviceset="RESISTOR" device="R1206" value="1M"/>
+<part name="Y1" library="darnok_common" deviceset="RESONATOR" device="MU" value="16MHZ"/>
+<part name="X_29" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12628,6 +12690,11 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="NAME" x="26.416" y="181.864" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="29.21" y="188.214" size="1.016" layer="96" rot="R90"/>
 </instance>
+<instance part="Y1" gate="G$1" x="30.48" y="144.78" smashed="yes">
+<attribute name="NAME" x="25.4" y="149.352" size="1.778" layer="95"/>
+<attribute name="VALUE" x="25.4" y="139.192" size="1.778" layer="96"/>
+</instance>
+<instance part="X_29" gate="G$1" x="17.78" y="144.78" smashed="yes" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -12761,6 +12828,11 @@ designed by Konrad Rzeszutek Wilk</text>
 <segment>
 <pinref part="X_28" gate="G$1" pin="0"/>
 <pinref part="R12" gate="G$1" pin="R_1"/>
+</segment>
+<segment>
+<pinref part="Y1" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="144.78" x2="17.78" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="X_29" gate="G$1" pin="0"/>
 </segment>
 </net>
 <net name="D0" class="0">
@@ -13058,6 +13130,11 @@ designed by Konrad Rzeszutek Wilk</text>
 <label x="134.62" y="127" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="U2" gate="U$1" pin="PB7(XTAL2/TOSC2)"/>
 </segment>
+<segment>
+<pinref part="Y1" gate="G$1" pin="3"/>
+<wire x1="30.48" y1="142.24" x2="30.48" y2="134.62" width="0.1524" layer="91"/>
+<label x="30.48" y="134.62" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="XTAL1" class="0">
 <segment>
@@ -13077,6 +13154,11 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="137.16" y1="132.08" x2="134.62" y2="132.08" width="0.1524" layer="91"/>
 <label x="134.62" y="132.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="U2" gate="U$1" pin="PB6(XTAL1/TOSC1)"/>
+</segment>
+<segment>
+<pinref part="Y1" gate="G$1" pin="1"/>
+<wire x1="30.48" y1="147.32" x2="30.48" y2="154.94" width="0.1524" layer="91"/>
+<label x="30.48" y="154.94" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="PIN_C" class="0">
