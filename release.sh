@@ -82,8 +82,8 @@ function release()
         echo "$rev exists. Aborting."
         exit 5
      fi
-     echo "In case it does not work type script and select release.scr"
-     eagle -S`pwd`/release.scr $DIR/${name}.brd
+     echo "script ./release.scr"
+     eagle $DIR/${name}.brd
      convert -flip -rotate 180 $DIR/b-negative.png $DIR/b-flip-negative.png
      convert -negate $DIR/t-negative.png $rev/t-$rev.png
      convert -negate $DIR/b-flip-negative.png $rev/b-$rev.png

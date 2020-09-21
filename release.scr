@@ -1,5 +1,5 @@
+print
 display none tNames tValues tStop   tDocu dimension tTest
 export image t-negative 300
 display none bNames bValues bStop   bDocu dimension bTest
 export image b-negative 300
-quit
