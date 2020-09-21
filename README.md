@@ -24,48 +24,13 @@ The project is under Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
 Quite simply it is to have a count-down timer for 20 seconds for washing hands.
 It is activated by a line sensor (which has infrared light) that plugs in the board.
 
-## PCB v1.2-routing
+### PCB v1.3b.rc5
 
-The v1.2-routing is the stable release.  See the <a href="BOM.txt">BOM</a> for the list of materials.
-Note the missing line sensor which was <a href="https://www.aliexpress.com/item/32654587628.html">on AliExpress</a>
 
-<img src="front.jpg" width=250></img>
-<img src="back.jpg" width=250></img>
-
-Note that the routing was done automatically with slight adjustments whenever the Design Rule Check did not
-like it.
-
-## PCB v1.3
-
-Like v1.2, but has:
-
- - Reworked connectors for programming via FTDI USB,
- - Built in line sensor,
- - Built in SD card for various texts,
- - SMD resistors and capacitors,
- - Test points,
- - 9V or 5V USB power option.
-
-See the <a href="Wash_Hand_v1.3.pdf">Board/Schematic</a> . The <a href="BOM-1.3.txt">BOM</a> for the list of materials.
-
-<img src="front-1.3.jpg" width=250></img>
-<img src="back-1.3.jpg" width=250></img>
-
-And the data sheets are in <a href="Datasheets">Datasheets</a> directory.
-
-### PCB v1.3b
-
-Like v1.3, but has:
-
- - ATMEGA328P TQFP
-
-<img src="front-1.3b.jpg" width=250></img>
-<img src="back-1.3b.jpg" width=250></img>
-
-### PCB v1.3b.2
-
-Uses the 16TSSOP for the CD74HC4050PWR.
-
+ - <a href="v1.3b.rc5/BOM.txt">BOM</a> for the list of materials.
+ - <a href="v1.3b.rc5/b-v1.3b.rc5.png">Bottom placement</a>
+ - <a href="v1.3b.rc5/t-v1.3b.rc5.png">Top placement</a>
+ - <a href="Board-Wash_Hand_v1.3.pdf">Schematic</a>
 
 # Future plans for software
 

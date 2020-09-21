@@ -12467,7 +12467,7 @@ aka CD74HC4050PWR</description>
 <part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03X2" device="FEMALE" package3d_urn="urn:adsk.eagle:package:38016/1" value="ICSP"/>
 <part name="X_5" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device="">
-<attribute name="REVISION" value="v1.3b.rc4"/>
+<attribute name="REVISION" value="v1.3b.rc5"/>
 </part>
 <part name="R1" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
 <part name="R3" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
@@ -12517,7 +12517,7 @@ aka CD74HC4050PWR</description>
 <part name="X_16" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="U$2" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device="">
-<attribute name="REVISION" value="v1.3b.rc4"/>
+<attribute name="REVISION" value="v1.3b.rc5"/>
 </part>
 <part name="TP1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1" value="T_5V_VCC"/>
 <part name="TP2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1" value="T_USB_VCC"/>
