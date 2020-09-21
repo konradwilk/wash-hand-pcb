@@ -1548,6 +1548,21 @@ package type OT</description>
 <rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
 <rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
 </package>
+<package name="FIDUCIAL_1MM" urn="urn:adsk.eagle:footprint:6239986/1" library_version="2">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+</package>
 </packages>
 <packages3d>
 <package3d name="HC49/S" urn="urn:adsk.eagle:package:6240901/1" type="box" library_version="2">
@@ -1694,6 +1709,11 @@ package type OT</description>
 <packageinstance name="SOT23-5L"/>
 </packageinstances>
 </package3d>
+<package3d name="FIDUCIAL_1MM" urn="urn:adsk.eagle:package:6240632/1" type="box" library_version="2">
+<packageinstances>
+<packageinstance name="FIDUCIAL_1MM"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="Q" urn="urn:adsk.eagle:symbol:6239651/1" library_version="2">
@@ -1741,6 +1761,9 @@ package type OT</description>
 <pin name="GND" x="0" y="-15.24" length="middle" rot="R90"/>
 <pin name="EN" x="5.08" y="-15.24" length="middle" rot="R90"/>
 <pin name="BYP" x="5.08" y="10.16" length="middle" rot="R270"/>
+</symbol>
+<symbol name="DOT" urn="urn:adsk.eagle:symbol:6239475/1" library_version="2">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2159,6 +2182,23 @@ package type OT</description>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:6240724/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIDUCIAL" urn="urn:adsk.eagle:component:6240978/1" library_version="2">
+<description>For use by pick and place machines to calibrate the vision/machine, 1mm
+&lt;p&gt;By microbuilder.eu&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="DOT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FIDUCIAL_1MM">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6240632/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -12553,6 +12593,10 @@ aka CD74HC4050PWR</description>
 <part name="R13" library="darnok_common" deviceset="RESISTOR" device="R1206" value="1M"/>
 <part name="Y1" library="darnok_common" deviceset="RESONATOR" device="MU" value="16MHZ"/>
 <part name="X_29" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="U$7" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FIDUCIAL" device="" package3d_urn="urn:adsk.eagle:package:6240632/1"/>
+<part name="U$8" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FIDUCIAL" device="" package3d_urn="urn:adsk.eagle:package:6240632/1"/>
+<part name="U$9" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FIDUCIAL" device="" package3d_urn="urn:adsk.eagle:package:6240632/1"/>
+<part name="U$10" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FIDUCIAL" device="" package3d_urn="urn:adsk.eagle:package:6240632/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -12695,6 +12739,10 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="VALUE" x="25.4" y="139.192" size="1.778" layer="96"/>
 </instance>
 <instance part="X_29" gate="G$1" x="17.78" y="144.78" smashed="yes" rot="R270"/>
+<instance part="U$7" gate="G$1" x="175.26" y="60.96" smashed="yes"/>
+<instance part="U$8" gate="G$1" x="180.34" y="60.96" smashed="yes"/>
+<instance part="U$9" gate="G$1" x="185.42" y="60.96" smashed="yes"/>
+<instance part="U$10" gate="G$1" x="190.5" y="60.96" smashed="yes"/>
 </instances>
 <busses>
 </busses>
