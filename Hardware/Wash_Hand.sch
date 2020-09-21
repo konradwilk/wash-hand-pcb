@@ -12547,15 +12547,15 @@ aka CD74HC4050PWR</description>
 <part name="JP2" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39293/1" value="9V_JUMPER"/>
 <part name="JP3" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK_ROUND" package3d_urn="urn:adsk.eagle:package:39278/1" value="ENA_INT_D0"/>
 <part name="JP4" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK_ROUND" package3d_urn="urn:adsk.eagle:package:39278/1" value="ENA_INT_SENSOR"/>
-<part name="U$1" library="darnok_common" deviceset="RESISTOR" device="R1206" value="10K"/>
+<part name="R15" library="darnok_common" deviceset="RESISTOR" device="R1206" value="10K"/>
 <part name="X_14" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_15" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="LM358" device="D" package3d_urn="urn:adsk.eagle:package:16404/2"/>
 <part name="TM1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="TRIMPOT" device="TC33X" package3d_urn="urn:adsk.eagle:package:6240639/1" value="10K"/>
-<part name="U$3" library="darnok_sensors" deviceset="LTE-302" device=""/>
-<part name="U$6" library="darnok_sensors" deviceset="LTR-301" device=""/>
+<part name="E" library="darnok_sensors" deviceset="LTE-302" device=""/>
+<part name="D" library="darnok_sensors" deviceset="LTR-301" device=""/>
 <part name="X_16" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="U$2" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
+<part name="R14" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device="">
 <attribute name="REVISION" value="v1.3b.rc4"/>
 </part>
@@ -13335,7 +13335,7 @@ By default USB is used.</text>
 <attribute name="NAME" x="139.7" y="172.72" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="139.7" y="167.64" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
-<instance part="U$1" gate="G$1" x="167.64" y="157.48" smashed="yes" rot="R90">
+<instance part="R15" gate="G$1" x="167.64" y="157.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="166.116" y="156.464" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="168.91" y="162.814" size="1.016" layer="96" rot="R90"/>
 </instance>
@@ -13349,14 +13349,14 @@ By default USB is used.</text>
 <attribute name="NAME" x="171.831" y="125.73" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="173.99" y="125.73" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U$3" gate="G$1" x="154.94" y="137.16" smashed="yes" rot="R270">
+<instance part="E" gate="G$1" x="154.94" y="137.16" smashed="yes" rot="R270">
 <attribute name="NAME" x="158.75" y="142.24" size="1.27" layer="95" rot="R270"/>
 </instance>
-<instance part="U$6" gate="G$1" x="167.64" y="139.7" smashed="yes" rot="R90">
+<instance part="D" gate="G$1" x="167.64" y="139.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="166.37" y="130.81" size="1.27" layer="95" rot="R90"/>
 </instance>
 <instance part="X_16" gate="G$1" x="177.8" y="124.46" smashed="yes"/>
-<instance part="U$2" gate="G$1" x="154.94" y="157.48" smashed="yes" rot="R90">
+<instance part="R14" gate="G$1" x="154.94" y="157.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="153.416" y="156.464" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="156.21" y="162.814" size="1.016" layer="96" rot="R90"/>
 </instance>
@@ -13538,11 +13538,11 @@ By default USB is used.</text>
 </segment>
 <segment>
 <pinref part="X_14" gate="G$1" pin="0"/>
-<pinref part="U$3" gate="G$1" pin="K$1"/>
+<pinref part="E" gate="G$1" pin="K$1"/>
 <wire x1="154.94" y1="124.46" x2="154.94" y2="130.81" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="G$1" pin="E$1"/>
+<pinref part="D" gate="G$1" pin="E$1"/>
 <pinref part="X_15" gate="G$1" pin="0"/>
 <wire x1="167.64" y1="129.032" x2="167.64" y2="124.46" width="0.1524" layer="91"/>
 </segment>
@@ -13674,7 +13674,7 @@ By default USB is used.</text>
 <net name="N$15" class="0">
 <segment>
 <pinref part="JP4" gate="G$1" pin="2"/>
-<pinref part="U$1" gate="G$1" pin="R_2"/>
+<pinref part="R15" gate="G$1" pin="R_2"/>
 <wire x1="147.32" y1="170.18" x2="154.94" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="170.18" x2="167.64" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="170.18" x2="167.64" y2="167.894" width="0.1524" layer="91"/>
@@ -13682,7 +13682,7 @@ By default USB is used.</text>
 <wire x1="177.8" y1="134.62" x2="177.8" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="170.18" x2="167.64" y2="170.18" width="0.1524" layer="91"/>
 <junction x="167.64" y="170.18"/>
-<pinref part="U$2" gate="G$1" pin="R_2"/>
+<pinref part="R14" gate="G$1" pin="R_2"/>
 <wire x1="154.94" y1="167.894" x2="154.94" y2="170.18" width="0.1524" layer="91"/>
 <junction x="154.94" y="170.18"/>
 <pinref part="IC1" gate="P" pin="V+"/>
@@ -13701,8 +13701,8 @@ By default USB is used.</text>
 <segment>
 <wire x1="182.88" y1="152.4" x2="182.88" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="+IN"/>
-<pinref part="U$6" gate="G$1" pin="C$1"/>
-<pinref part="U$1" gate="G$1" pin="R_1"/>
+<pinref part="D" gate="G$1" pin="C$1"/>
+<pinref part="R15" gate="G$1" pin="R_1"/>
 <wire x1="167.64" y1="149.606" x2="167.64" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="152.4" x2="167.64" y2="152.4" width="0.1524" layer="91"/>
 <junction x="167.64" y="152.4"/>
@@ -13713,9 +13713,9 @@ By default USB is used.</text>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="R_1"/>
+<pinref part="R14" gate="G$1" pin="R_1"/>
 <wire x1="154.94" y1="143.51" x2="154.94" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="A$1"/>
+<pinref part="E" gate="G$1" pin="A$1"/>
 <pinref part="TP4" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="147.32" x2="154.94" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="147.32" x2="154.94" y2="147.32" width="0.1524" layer="91"/>
