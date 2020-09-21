@@ -12564,9 +12564,9 @@ Konrad Rzeszutek Wilk</text>
 designed by Konrad Rzeszutek Wilk</text>
 </plain>
 <instances>
-<instance part="Q1" gate="G$1" x="33.02" y="185.42" smashed="yes" rot="R270">
-<attribute name="NAME" x="34.036" y="182.88" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="30.48" y="182.88" size="1.778" layer="96" rot="R270"/>
+<instance part="Q1" gate="G$1" x="25.4" y="187.96" smashed="yes" rot="R270">
+<attribute name="NAME" x="26.416" y="185.42" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="22.86" y="185.42" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="C1" gate="G$1" x="17.78" y="177.8" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.701" y="176.276" size="1.778" layer="95" font="vector" rot="R270"/>
@@ -12686,9 +12686,9 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="NAME" x="77.216" y="161.544" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="80.01" y="167.894" size="1.016" layer="96" rot="R90"/>
 </instance>
-<instance part="R13" gate="G$1" x="27.94" y="182.88" smashed="yes" rot="R90">
-<attribute name="NAME" x="26.416" y="181.864" size="1.27" layer="95" rot="R90"/>
-<attribute name="VALUE" x="29.21" y="188.214" size="1.016" layer="96" rot="R90"/>
+<instance part="R13" gate="G$1" x="33.02" y="182.88" smashed="yes" rot="R90">
+<attribute name="NAME" x="31.496" y="181.864" size="1.27" layer="95" rot="R90"/>
+<attribute name="VALUE" x="34.29" y="188.214" size="1.016" layer="96" rot="R90"/>
 </instance>
 <instance part="Y1" gate="G$1" x="30.48" y="144.78" smashed="yes">
 <attribute name="NAME" x="25.4" y="149.352" size="1.778" layer="95"/>
@@ -13114,16 +13114,16 @@ designed by Konrad Rzeszutek Wilk</text>
 </net>
 <net name="XTAL2" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="177.8" x2="33.02" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="177.8" x2="35.56" y2="177.8" width="0.1524" layer="91"/>
 <label x="35.56" y="177.8" size="1.778" layer="95" xref="yes"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="177.8" x2="27.94" y2="177.8" width="0.1524" layer="91"/>
-<junction x="33.02" y="177.8"/>
+<wire x1="22.86" y1="177.8" x2="25.4" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="R_1"/>
-<wire x1="27.94" y1="177.8" x2="33.02" y2="177.8" width="0.1524" layer="91"/>
-<junction x="27.94" y="177.8"/>
+<wire x1="25.4" y1="177.8" x2="33.02" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="177.8" x2="35.56" y2="177.8" width="0.1524" layer="91"/>
+<junction x="33.02" y="177.8"/>
+<pinref part="Q1" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="177.8" x2="25.4" y2="185.42" width="0.1524" layer="91"/>
+<junction x="25.4" y="177.8"/>
 </segment>
 <segment>
 <wire x1="137.16" y1="127" x2="134.62" y2="127" width="0.1524" layer="91"/>
@@ -13138,17 +13138,17 @@ designed by Konrad Rzeszutek Wilk</text>
 </net>
 <net name="XTAL1" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="195.58" x2="33.02" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="195.58" x2="35.56" y2="195.58" width="0.1524" layer="91"/>
 <label x="35.56" y="195.58" size="1.778" layer="95" xref="yes"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="195.58" x2="27.94" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="195.58" x2="25.4" y2="195.58" width="0.1524" layer="91"/>
 <junction x="33.02" y="195.58"/>
-<junction x="27.94" y="195.58"/>
-<wire x1="27.94" y1="195.58" x2="33.02" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="195.58" x2="33.02" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="195.58" x2="35.56" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="R_2"/>
-<wire x1="27.94" y1="193.294" x2="27.94" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="193.294" x2="33.02" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="190.5" x2="25.4" y2="195.58" width="0.1524" layer="91"/>
+<junction x="25.4" y="195.58"/>
 </segment>
 <segment>
 <wire x1="137.16" y1="132.08" x2="134.62" y2="132.08" width="0.1524" layer="91"/>
