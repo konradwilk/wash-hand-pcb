@@ -241,12 +241,7 @@ IR_E</text>
 
 
  [   ] #1</text>
-<text x="9.144" y="8.128" size="0.762" layer="25">USB
-[    ]
-
-
-
-5V
+<text x="9.144" y="13.462" size="0.762" layer="25">USB
 [    ]</text>
 <text x="38.608" y="42.164" size="0.762" layer="25" rot="R90">[    ]T_9V</text>
 <wire x1="0" y1="33.528" x2="0.762" y2="32.766" width="0.1524" layer="20"/>
@@ -284,6 +279,8 @@ ASBLY</text>
 <circle x="68.072" y="24.892" radius="0.567959375" width="0.1524" layer="25"/>
 <circle x="40.64" y="8.636" radius="0.254" width="0.254" layer="25"/>
 <circle x="40.64" y="8.636" radius="0.567959375" width="0.1524" layer="25"/>
+<text x="14.478" y="6.604" size="0.762" layer="26" rot="MR0">VCC [   ]
+</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors" urn="urn:adsk.eagle:library:510">
