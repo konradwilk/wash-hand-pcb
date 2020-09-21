@@ -104,17 +104,29 @@ function release()
 case "$1" in
     get)
        FILE=$2
+       if [ -z "$FILE" ]; then
+           FILE=Hardware/Wash_Hand.sch
+       fi
        shift 1
        get_revision
        ;;
     release)
        FILE=$2
+       if [ -z "$FILE" ]; then
+           FILE=Hardware/Wash_Hand.sch
+       fi
        shift 1
        release
        ;;
     set)
        FILE=$2
+       if [ ! -e "$FILE" ]; then
+           FILE=Hardware/Wash_Hand.sch
+       fi
        REV=$3
+       if [ -z "$REV" ]; then
+           REV=$2
+       fi
        shift 2
        set_revision
        ;;
