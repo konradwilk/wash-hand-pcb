@@ -30,7 +30,7 @@ mini:
 	avrdude -C/etc/avrdude/avrdude.conf -vvvv -carduino -patmega328p -P/dev/ttyUSB0 -b57600 -D -Uflash:w:Wash_Hand.ino.hex:i
 
 usbasp:
-	avrdude -C/etc/avrdude/avrdude.conf -v -B 4 -cusbasp -pm328p -D -Uflash:w:Wash_Hand.ino.hex:i
+	avrdude -C/etc/avrdude/avrdude.conf -v -B 4 -cusbasp -pm328p -Uflash:w:Wash_Hand.ino.hex:i
 
 setup:
 	arduino-cli core update-index
