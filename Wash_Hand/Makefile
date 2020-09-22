@@ -8,6 +8,9 @@ usb:
 debug:
 	arduino-cli -v compile --warnings=all --build-properties compiler.cpp.extra_flags=-DDEBUG --fqbn  arduino:avr:uno --output-dir `pwd`
 
+nosd:
+	arduino-cli -v compile --warnings=all --build-properties compiler.cpp.extra_flags="-DDEBUG -DNOSD" --fqbn  arduino:avr:uno --output-dir `pwd`
+
 clean:
 	rm -f *.ihex *.elf *.eep *.bin *.hex
 

@@ -10,6 +10,12 @@
 #include "func_usb.h"
 #endif
 
+#ifndef NOSD
+#include <SPI.h>
+#include <SD.h>
+#else
+#endif
+
 void write(char d1, char d2, char d3, char d4, unsigned int sleep) {
 
   writeD1(d1);
@@ -58,6 +64,14 @@ void setup(void) {
 unsigned int state = INIT;
 unsigned long s;
 
+#ifndef NOSD
+Sd2Card card;
+SdVolume volume;
+SdFile root;
+
+const int CS = 10;
+unsigned int done_sd = 0;
+#endif
 unsigned int waitFor(unsigned long timeout, unsigned new_state)
 {
   unsigned long e = millis();
@@ -114,6 +128,37 @@ void loop() {
     printk("DBG");
     done = 1;
   }
+
+#ifndef NOSD
+  if (!done_sd) {
+    setupPorts();
+
+    if (!card.init(SPI_HALF_SPEED, CS)) {
+      ERR();
+    } else {
+      switch (card.type()) {
+        case SD_CARD_TYPE_SD1:
+          printk("SD01");
+          break;
+        case SD_CARD_TYPE_SD2:
+          printk("SD02");
+          break;
+        case SD_CARD_TYPE_SDHC:
+          printk("SDHC");
+          break;
+        default:
+          ERR();
+          break;
+      }
+      if (!volume.init(card)) {
+        ERR();
+      } else {
+        printk("OK!");
+      }
+    }
+    done_sd = 1;
+  }
+#endif
   sensor = readSensor();
   if (sensor < 500) {
     if (state == INIT) {
