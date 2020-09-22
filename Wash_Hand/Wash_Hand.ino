@@ -69,14 +69,49 @@ unsigned int waitFor(unsigned long timeout, unsigned new_state)
   return state;
 }
 
+
+void printk(const char *str) {
+
+  char *s;
+  unsigned int i = 0;
+  char buf[4] = {};
+
+  s = (char *)str;
+  do {
+    if (*s) {
+      buf[i] = *s;
+      i++;
+      s++;
+    }
+    if (i == 4 || *s == 0) {
+      unsigned long _e, _s;
+
+      _e = _s = millis();
+      do {
+        write(buf[0], buf[1], buf[2], buf[3], DELAY);
+        _e = millis();
+      } while ( (_e - _s ) < STR_DELAY);
+
+      buf[0] = buf[1] = buf[2] = buf[3] = ' ';
+      i = 0;
+    }
+  } while (*s != 0);
+}
+
+#define STR(x)  STRINGIFY(x)
+#define ERR()   printk("ERR " STR(__LINE__));
+
+#ifndef printf
+#define printf(x) ;
+#endif
+
 unsigned int done = 0;
 void loop() {
   int sensor = 0;
 
   if (debug_loop() && !done) {
     setupPorts();
-    write(DEBUG_STR, DELAY);
-    (void)waitFor(STR_DELAY, INIT);
+    printk("DBG");
     done = 1;
   }
   sensor = readSensor();
