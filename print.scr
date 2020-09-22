@@ -1,0 +1,6 @@
+display preset_top
+print 3 -1 -mirror sheets all file 2.pdf
+display preset_bottom
+print 3 -1 mirror sheets all file 3.pdf
+edit .sch
+print 1 -1 -mirror sheets all file 1.pdf

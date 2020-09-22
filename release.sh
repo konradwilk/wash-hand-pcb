@@ -90,6 +90,8 @@ function release()
      rm -f $DIR/t-negative.png
      rm -f $DIR/b-negative.png
      rm -f $DIR/b-flip-negative.png
+     pdfunite $DIR/1.pdf $DIR/2.pdf $DIR/3.pdf $name.pdf
+     rm $DIR/?.pdf
      echo "Run CAM"
      cp release.cam $rev/
      sed -i "s/#NAME/$name/" $rev/release.cam
