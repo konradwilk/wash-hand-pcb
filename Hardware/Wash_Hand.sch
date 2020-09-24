@@ -13964,6 +13964,9 @@ aka CD74HC4050PWR</description>
 <part name="X_30" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="LED1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:6240349/1" value="RED"/>
 <part name="R16" library="darnok_common" deviceset="RESISTOR" device="R1206" value="1K"/>
+<part name="R17" library="darnok_common" deviceset="RESISTOR" device="R1206" value="470"/>
+<part name="LED2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:6240349/1"/>
+<part name="X_31" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14882,6 +14885,15 @@ By default USB is used.</text>
 <attribute name="NAME" x="218.44" y="147.955" size="1.778" layer="95"/>
 <attribute name="VALUE" x="218.44" y="139.7" size="1.778" layer="96"/>
 </instance>
+<instance part="R17" gate="G$1" x="200.66" y="139.7" smashed="yes" rot="R90">
+<attribute name="NAME" x="199.136" y="138.684" size="1.27" layer="95" rot="R90"/>
+<attribute name="VALUE" x="201.93" y="145.034" size="1.016" layer="96" rot="R90"/>
+</instance>
+<instance part="LED2" gate="G$1" x="200.66" y="162.56" smashed="yes">
+<attribute name="NAME" x="204.216" y="157.988" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="206.375" y="157.988" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="X_31" gate="G$1" x="200.66" y="170.18" smashed="yes" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -15046,6 +15058,11 @@ By default USB is used.</text>
 <pinref part="IC1" gate="P" pin="V-"/>
 <pinref part="X_1" gate="G$1" pin="0"/>
 </segment>
+<segment>
+<pinref part="X_31" gate="G$1" pin="0"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="200.66" y1="170.18" x2="200.66" y2="165.1" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="D0" class="0">
 <segment>
@@ -15056,7 +15073,11 @@ By default USB is used.</text>
 <segment>
 <pinref part="JP3" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="A" pin="OUT"/>
-<wire x1="198.12" y1="132.08" x2="203.2" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="132.08" x2="200.66" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="R17" gate="G$1" pin="R_1"/>
+<wire x1="200.66" y1="132.08" x2="203.2" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="132.08" x2="200.66" y2="134.62" width="0.1524" layer="91"/>
+<junction x="200.66" y="132.08"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="2"/>
@@ -15305,6 +15326,14 @@ By default USB is used.</text>
 <wire x1="66.04" y1="170.18" x2="66.04" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="MICROSD" gate="A" pin="CARD_DETECT_2"/>
 <wire x1="81.28" y1="170.18" x2="66.04" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="INT_LED" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="R17" gate="G$1" pin="R_2"/>
+<wire x1="200.66" y1="157.48" x2="200.66" y2="150.114" width="0.1524" layer="91"/>
+<label x="200.66" y="154.94" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
