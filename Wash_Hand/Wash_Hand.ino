@@ -55,10 +55,15 @@ void setup(void) {
 #define CLEAR       (DONE+1)
 #define CLEAR_STR   ' ',' ',' ',' '
 
+#ifndef DEBUG
 #define  DELAY 5
 #define STR_DELAY 5000
 #define SEC_DELAY 1000
-
+#else
+#define  DELAY 1
+#define STR_DELAY 500
+#define SEC_DELAY 100
+#endif
 #define DEBUG_STR   '1','2','3','8'
 
 unsigned int state = INIT;
