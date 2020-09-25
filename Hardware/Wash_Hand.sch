@@ -13967,6 +13967,7 @@ aka CD74HC4050PWR</description>
 <part name="R17" library="darnok_common" deviceset="RESISTOR" device="R1206" value="470"/>
 <part name="LED2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:6240349/1"/>
 <part name="X_31" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="R18" library="darnok_common" deviceset="RESISTOR" device="R1206" value="100K"/>
 </parts>
 <sheets>
 <sheet>
@@ -14689,6 +14690,13 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="66.04" y1="127" x2="66.04" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="CD" class="0">
+<segment>
+<pinref part="U2" gate="U$1" pin="ADC6"/>
+<wire x1="185.42" y1="142.24" x2="187.96" y2="142.24" width="0.1524" layer="91"/>
+<label x="187.96" y="142.24" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -14894,6 +14902,10 @@ By default USB is used.</text>
 <attribute name="VALUE" x="206.375" y="157.988" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="X_31" gate="G$1" x="200.66" y="170.18" smashed="yes" rot="R180"/>
+<instance part="R18" gate="G$1" x="58.42" y="182.88" smashed="yes">
+<attribute name="NAME" x="57.404" y="184.404" size="1.27" layer="95"/>
+<attribute name="VALUE" x="63.754" y="181.61" size="1.016" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -14928,6 +14940,11 @@ By default USB is used.</text>
 <pinref part="J" gate="J$1" pin="1"/>
 <wire x1="223.52" y1="160.02" x2="220.98" y2="160.02" width="0.1524" layer="91"/>
 <label x="220.98" y="160.02" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R18" gate="G$1" pin="R_1"/>
+<wire x1="53.34" y1="182.88" x2="48.26" y2="182.88" width="0.1524" layer="91"/>
+<label x="48.26" y="182.88" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="0" class="0">
@@ -15312,20 +15329,16 @@ By default USB is used.</text>
 <wire x1="170.18" y1="91.44" x2="170.18" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="CD" class="0">
 <segment>
 <pinref part="TP6" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="172.72" x2="73.66" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="MICROSD" gate="A" pin="CARD_DETECT_1"/>
-<wire x1="81.28" y1="172.72" x2="73.66" y2="172.72" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="TP8" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="170.18" x2="66.04" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="MICROSD" gate="A" pin="CARD_DETECT_2"/>
-<wire x1="81.28" y1="170.18" x2="66.04" y2="170.18" width="0.1524" layer="91"/>
+<label x="78.74" y="180.34" size="1.778" layer="95" xref="yes"/>
+<wire x1="81.28" y1="172.72" x2="78.74" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="172.72" x2="73.66" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="180.34" x2="78.74" y2="172.72" width="0.1524" layer="91"/>
+<junction x="78.74" y="172.72"/>
 </segment>
 </net>
 <net name="INT_LED" class="0">
@@ -15334,6 +15347,21 @@ By default USB is used.</text>
 <pinref part="R17" gate="G$1" pin="R_2"/>
 <wire x1="200.66" y1="157.48" x2="200.66" y2="150.114" width="0.1524" layer="91"/>
 <label x="200.66" y="154.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="TP8" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="175.26" x2="66.04" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="MICROSD" gate="A" pin="CARD_DETECT_2"/>
+<wire x1="66.04" y1="170.18" x2="71.12" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="170.18" x2="81.28" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="170.18" x2="71.12" y2="182.88" width="0.1524" layer="91"/>
+<junction x="71.12" y="170.18"/>
+<pinref part="R18" gate="G$1" pin="R_2"/>
+<wire x1="68.58" y1="182.88" x2="68.834" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="182.88" x2="68.834" y2="182.88" width="0.1524" layer="91"/>
+<junction x="68.834" y="182.88"/>
 </segment>
 </net>
 </nets>
@@ -15380,7 +15408,6 @@ By default USB is used.</text>
 <approved hash="208,2,170.18,78.74,0,sup,,,,"/>
 <approved hash="208,2,142.24,83.82,0,sup,,,,"/>
 <approved hash="208,2,190.5,124.46,0,sup,,,,"/>
-<approved hash="115,2,200.66,132.08,D0,,,,,"/>
 </errors>
 </schematic>
 </drawing>
