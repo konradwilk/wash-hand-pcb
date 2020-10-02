@@ -13895,6 +13895,38 @@ aka CD74HC4050PWR</description>
 <text x="-3.81" y="0" size="0.6096" layer="25" ratio="10">&gt;NAME</text>
 <text x="-3.81" y="-1.27" size="0.6096" layer="27">&gt;VALUE</text>
 </package>
+<package name="CRYSTAL-SMD-3.2X2.5">
+<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-0.4" y1="1.25" x2="0.4" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-0.15" x2="-1.6" y2="0.15" width="0.127" layer="21"/>
+<wire x1="1.6" y1="0.15" x2="1.6" y2="-0.15" width="0.127" layer="21"/>
+<wire x1="0.4" y1="-1.25" x2="-0.4" y2="-1.25" width="0.127" layer="21"/>
+<rectangle x1="-1.6" y1="0.35" x2="-0.6" y2="1.15" layer="51"/>
+<rectangle x1="0.6" y1="-1.15" x2="1.6" y2="-0.35" layer="51" rot="R180"/>
+<rectangle x1="-1.6" y1="-1.15" x2="-0.6" y2="-0.35" layer="51"/>
+<rectangle x1="0.6" y1="0.35" x2="1.6" y2="1.15" layer="51" rot="R180"/>
+<smd name="1" x="-1.175" y="-0.875" dx="1.2" dy="1.1" layer="1" rot="R180"/>
+<smd name="2" x="1.175" y="-0.875" dx="1.2" dy="1.1" layer="1"/>
+<smd name="3" x="1.175" y="0.875" dx="1.2" dy="1.1" layer="1"/>
+<smd name="4" x="-1.175" y="0.875" dx="1.2" dy="1.1" layer="1" rot="R180"/>
+<text x="-1.651" y="1.397" size="0.4318" layer="25">&gt;Name</text>
+<text x="-1.651" y="-1.397" size="0.4318" layer="27" align="top-left">&gt;Value</text>
+</package>
+<package name="CRYSTAL-SMD-5X3">
+<wire x1="-0.6" y1="1.6" x2="0.6" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="0.3" x2="2.5" y2="-0.3" width="0.2032" layer="21"/>
+<wire x1="0.6" y1="-1.6" x2="-0.6" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="0.3" x2="-2.5" y2="-0.3" width="0.2032" layer="21"/>
+<smd name="1" x="-1.85" y="-1.15" dx="1.9" dy="1.1" layer="1"/>
+<smd name="2" x="1.85" y="-1.15" dx="1.9" dy="1.1" layer="1"/>
+<smd name="3" x="1.85" y="1.15" dx="1.9" dy="1.1" layer="1"/>
+<smd name="4" x="-1.85" y="1.15" dx="1.9" dy="1.1" layer="1"/>
+<text x="-2.54" y="1.905" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CH340G">
@@ -13920,6 +13952,25 @@ aka CD74HC4050PWR</description>
 <pin name="XO" x="-10.16" y="-10.16" length="short"/>
 <text x="-7.62" y="10.795" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="CRYSTAL-GND">
+<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="0" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.8" x2="0" y2="-1.6" width="0.1524" layer="94"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="GND" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
+<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
+<text x="2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -13957,120 +14008,32 @@ aka CD74HC4050PWR</description>
 </device>
 </devices>
 </deviceset>
-</devicesets>
-</library>
-<library name="SparkFun-Clocks" urn="urn:adsk.eagle:library:511">
-<description>&lt;h3&gt;SparkFun Clocks, Oscillators and Resonators&lt;/h3&gt;
-This library contains the real-time clocks, oscillators, resonators, and crystals we use. 
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="CRYSTAL-SMD-5X3.2-4PAD" urn="urn:adsk.eagle:footprint:37487/1" library_version="1">
-<description>&lt;h3&gt;5x3.2mm SMD Crystal&lt;/h3&gt;
-&lt;p&gt;Example: &lt;a href="https://www.sparkfun.com/products/94"&gt;16MHz SMD Crystal&lt;/a&gt; (&lt;a href="https://www.sparkfun.com/datasheets/Components/SPK-5032-16MHZ.pdf"&gt;Datasheet&lt;/a&gt;)&lt;/p&gt;</description>
-<wire x1="-0.6" y1="1.7" x2="0.6" y2="1.7" width="0.2032" layer="21"/>
-<wire x1="2.6" y1="0.3" x2="2.6" y2="-0.3" width="0.2032" layer="21"/>
-<wire x1="0.6" y1="-1.7" x2="-0.6" y2="-1.7" width="0.2032" layer="21"/>
-<wire x1="-2.6" y1="0.3" x2="-2.6" y2="-0.3" width="0.2032" layer="21"/>
-<wire x1="-2.5" y1="1.6" x2="-2.5" y2="-1.6" width="0.127" layer="51"/>
-<wire x1="-2.5" y1="-1.6" x2="2.5" y2="-1.6" width="0.127" layer="51"/>
-<wire x1="2.5" y1="-1.6" x2="2.5" y2="1.6" width="0.127" layer="51"/>
-<wire x1="2.5" y1="1.6" x2="-2.5" y2="1.6" width="0.127" layer="51"/>
-<smd name="1" x="-1.85" y="-1.15" dx="1.9" dy="1.1" layer="1"/>
-<smd name="3" x="1.85" y="1.15" dx="1.9" dy="1.1" layer="1"/>
-<smd name="4" x="-1.85" y="1.15" dx="1.9" dy="1.1" layer="1"/>
-<smd name="2" x="1.85" y="-1.15" dx="1.9" dy="1.1" layer="1"/>
-<text x="0" y="1.905" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.905" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<polygon width="0.127" layer="51">
-<vertex x="-2.5" y="1.6"/>
-<vertex x="-2.5" y="0.8"/>
-<vertex x="-1.3" y="0.8"/>
-<vertex x="-1.3" y="1.6"/>
-</polygon>
-<polygon width="0.127" layer="51">
-<vertex x="2.5" y="-1.6"/>
-<vertex x="2.5" y="-0.8"/>
-<vertex x="1.3" y="-0.8"/>
-<vertex x="1.3" y="-1.6"/>
-</polygon>
-<polygon width="0.127" layer="51">
-<vertex x="1.3" y="1.6"/>
-<vertex x="1.3" y="0.8"/>
-<vertex x="2.5" y="0.8"/>
-<vertex x="2.5" y="1.6"/>
-</polygon>
-<polygon width="0.127" layer="51">
-<vertex x="-1.3" y="-1.6"/>
-<vertex x="-1.3" y="-0.8"/>
-<vertex x="-2.5" y="-0.8"/>
-<vertex x="-2.5" y="-1.6"/>
-</polygon>
-</package>
-</packages>
-<packages3d>
-<package3d name="CRYSTAL-SMD-5X3.2-4PAD" urn="urn:adsk.eagle:package:37518/1" type="box" library_version="1">
-<description>5x3.2mm SMD Crystal
-Example: 16MHz SMD Crystal (Datasheet)</description>
-<packageinstances>
-<packageinstance name="CRYSTAL-SMD-5X3.2-4PAD"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="CRYSTAL" urn="urn:adsk.eagle:symbol:37480/1" library_version="1">
-<description>&lt;h3&gt;Crystal (no ground pin)&lt;/h3&gt;</description>
-<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
-<text x="0" y="2.032" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.032" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
-<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
-<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
-<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="CRYSTAL-12MHZ" urn="urn:adsk.eagle:component:37534/1" prefix="Y" uservalue="yes" library_version="1">
-<description>&lt;h3&gt;12.0MHz Crystal&lt;/h3&gt;
-&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 12.0MHz&lt;/li&gt;
-&lt;li&gt;Frequency Tolerance: &amp;plusmn;20ppm&lt;/li&gt;
-&lt;li&gt;Load Capacitance: 18pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12772”&gt;SparkFun Logomatic&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/9825”&gt;Pocket AVR Programmer&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
+<deviceset name="CRYSTAL-GROUNDED" prefix="Y">
+<description>Small, 3.2x2.5mm, SMD Crystal</description>
 <gates>
-<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+<gate name="Y1" symbol="CRYSTAL-GND" x="0" y="0"/>
 </gates>
 <devices>
-<device name="&quot;" package="CRYSTAL-SMD-5X3.2-4PAD">
+<device name="" package="CRYSTAL-SMD-5X3">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="Y1" pin="1" pad="3"/>
+<connect gate="Y1" pin="2" pad="1"/>
+<connect gate="Y1" pin="GND" pad="2 4"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:37518/1"/>
-</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3.2X2.5" package="CRYSTAL-SMD-3.2X2.5">
+<connects>
+<connect gate="Y1" pin="1" pad="1"/>
+<connect gate="Y1" pin="2" pad="3"/>
+<connect gate="Y1" pin="GND" pad="2 4"/>
+</connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="XTAL-08297"/>
-<attribute name="VALUE" value="12MHz"/>
+<attribute name="PROD_ID" value="XTAL-13518" constant="no"/>
+<attribute name="VALUE" value="12MHz" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -14198,7 +14161,7 @@ Example: 16MHz SMD Crystal (Datasheet)</description>
 <part name="LED2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:6240349/1"/>
 <part name="X_31" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="R18" library="darnok_common" deviceset="RESISTOR" device="R1206" value="100K"/>
-<part name="Y2" library="SparkFun-Clocks" library_urn="urn:adsk.eagle:library:511" deviceset="CRYSTAL-12MHZ" device="&quot;" package3d_urn="urn:adsk.eagle:package:37518/1" value="12MHz"/>
+<part name="Y2" library="Serial-Basic" deviceset="CRYSTAL-GROUNDED" device="3.2X2.5" value="12MHz"/>
 <part name="U1" library="Serial-Basic" deviceset="CH340G" device="SMD" value="CH340G"/>
 <part name="C12" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF" device="-1206-6.3V-20%" package3d_urn="urn:adsk.eagle:package:37426/1" value="10pF"/>
 <part name="C13" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF" device="-1206-6.3V-20%" package3d_urn="urn:adsk.eagle:package:37426/1" value="10pF"/>
@@ -14363,7 +14326,7 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="NAME" x="44.196" y="143.764" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="46.99" y="150.114" size="1.016" layer="96" rot="R90"/>
 </instance>
-<instance part="Y2" gate="G$1" x="86.36" y="96.52" smashed="yes" rot="R270">
+<instance part="Y2" gate="Y1" x="86.36" y="96.52" smashed="yes" rot="R270">
 <attribute name="VALUE" x="83.82" y="93.98" size="1.778" layer="96" rot="R270"/>
 <attribute name="NAME" x="88.9" y="93.98" size="1.778" layer="95" rot="R270"/>
 </instance>
@@ -14562,6 +14525,8 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="73.66" y1="101.6" x2="71.12" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="C13" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="91.44" x2="71.12" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="Y2" gate="Y1" pin="GND"/>
+<wire x1="81.28" y1="96.52" x2="71.12" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D0" class="0">
@@ -15047,7 +15012,7 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="U1" gate="U1" pin="XO"/>
 <wire x1="91.44" y1="99.06" x2="91.44" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="91.44" x2="86.36" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="Y2" gate="G$1" pin="2"/>
+<pinref part="Y2" gate="Y1" pin="2"/>
 <wire x1="86.36" y1="91.44" x2="86.36" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="C13" gate="G$1" pin="2"/>
 <wire x1="81.28" y1="91.44" x2="86.36" y2="91.44" width="0.1524" layer="91"/>
@@ -15070,7 +15035,7 @@ designed by Konrad Rzeszutek Wilk</text>
 <segment>
 <pinref part="U1" gate="U1" pin="XI"/>
 <wire x1="91.44" y1="101.6" x2="86.36" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="Y2" gate="G$1" pin="1"/>
+<pinref part="Y2" gate="Y1" pin="1"/>
 <wire x1="86.36" y1="99.06" x2="86.36" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="C12" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="101.6" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
