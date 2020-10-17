@@ -258,7 +258,7 @@ IR_E</text>
 </polygon>
 <circle x="8.636" y="38.862" radius="0.254" width="0.254" layer="25"/>
 <circle x="8.636" y="38.862" radius="0.567959375" width="0.1524" layer="25"/>
-<text x="32.004" y="5.842" size="1.778" layer="26" ratio="14" rot="MR0">v1.4-rc0</text>
+<text x="32.004" y="5.842" size="1.778" layer="26" ratio="14" rot="MR0">v1.4-rc1</text>
 <text x="54.356" y="18.796" size="1.016" layer="25" ratio="14">#
 [  ]
 [  ]
