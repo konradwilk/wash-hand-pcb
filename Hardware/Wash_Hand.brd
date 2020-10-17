@@ -279,10 +279,11 @@ ASBLY</text>
 <circle x="40.64" y="8.636" radius="0.567959375" width="0.1524" layer="25"/>
 <text x="14.478" y="6.604" size="0.762" layer="26" rot="MR0">VCC [   ]
 </text>
-<text x="23.876" y="27.178" size="0.635" layer="25" ratio="14">&lt;= if no 3.3V</text>
-<text x="17.78" y="30.226" size="0.6096" layer="51" ratio="14">5v [     ]
+<text x="23.876" y="26.67" size="0.635" layer="25" ratio="14">&lt;= Only if no 3.3V (VDD)
+     available</text>
+<text x="17.018" y="29.972" size="0.6096" layer="25" ratio="14">5v    [     ]
 
-3v [     ]</text>
+3.3v [     ]</text>
 <text x="5.08" y="18.034" size="1.778" layer="25" ratio="14">-
 -</text>
 <text x="21.59" y="19.812" size="1.524" layer="25" ratio="14" rot="R180">+
@@ -2042,11 +2043,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="0.762" y="20.32" size="0.6096" layer="25" rot="R90"/>
 <attribute name="VALUE" x="2.032" y="18.542" size="1.27" layer="27"/>
 </element>
-<element name="JP5" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" package="SMT-JUMPER_3_2-NC_PASTE_SILK" package3d_urn="urn:adsk.eagle:package:39294/1" value="3v_5v" x="20.066" y="31.242" smashed="yes" rot="R90">
+<element name="JP5" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" package="SMT-JUMPER_3_2-NC_PASTE_SILK" package3d_urn="urn:adsk.eagle:package:39294/1" value="3.3v_5v" x="20.066" y="31.242" smashed="yes" rot="R90">
 <attribute name="NAME" x="19.812" y="29.591" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="21.717" y="31.242" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
-<element name="JP6" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" package="SMT-JUMPER_3_2-NC_PASTE_SILK" package3d_urn="urn:adsk.eagle:package:39294/1" value="3V_5V" x="23.114" y="31.242" smashed="yes" rot="R270">
+<element name="JP6" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" package="SMT-JUMPER_3_2-NC_PASTE_SILK" package3d_urn="urn:adsk.eagle:package:39294/1" value="3.3V_5V" x="23.114" y="31.242" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.114" y="29.083" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="VALUE" x="24.765" y="31.242" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
