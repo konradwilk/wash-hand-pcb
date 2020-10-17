@@ -14177,6 +14177,8 @@ aka CD74HC4050PWR</description>
 <part name="C15" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF" device="-1206-6.3V-20%" package3d_urn="urn:adsk.eagle:package:37426/1" value="0.1uF"/>
 <part name="X_34" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_35" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="C16" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF" device="-1206-6.3V-20%" package3d_urn="urn:adsk.eagle:package:37426/1" value="0.1uF"/>
+<part name="X_36" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14384,6 +14386,11 @@ designed by Konrad Rzeszutek Wilk</text>
 </instance>
 <instance part="X_34" gate="G$1" x="45.72" y="83.82" smashed="yes"/>
 <instance part="X_35" gate="G$1" x="119.38" y="91.44" smashed="yes"/>
+<instance part="C16" gate="G$1" x="121.92" y="162.56" smashed="yes">
+<attribute name="NAME" x="123.444" y="165.481" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="123.444" y="160.401" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="X_36" gate="G$1" x="121.92" y="172.72" smashed="yes" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -14439,18 +14446,22 @@ designed by Konrad Rzeszutek Wilk</text>
 <label x="185.42" y="187.96" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<wire x1="137.16" y1="152.4" x2="134.62" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="147.32" x2="134.62" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="147.32" x2="134.62" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="149.86" x2="134.62" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="149.86" x2="134.62" y2="149.86" width="0.1524" layer="91"/>
-<junction x="134.62" y="149.86"/>
-<wire x1="134.62" y1="152.4" x2="132.08" y2="152.4" width="0.1524" layer="91"/>
-<junction x="134.62" y="152.4"/>
-<label x="132.08" y="152.4" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="137.16" y1="152.4" x2="121.92" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="152.4" x2="119.38" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="149.86" x2="119.38" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="149.86" x2="119.38" y2="149.86" width="0.1524" layer="91"/>
+<junction x="119.38" y="149.86"/>
+<wire x1="119.38" y1="152.4" x2="116.84" y2="152.4" width="0.1524" layer="91"/>
+<junction x="119.38" y="152.4"/>
+<label x="116.84" y="152.4" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="U2" gate="U$1" pin="VCC@4"/>
 <pinref part="U2" gate="U$1" pin="VCC@6"/>
 <pinref part="U2" gate="U$1" pin="AVCC"/>
+<pinref part="C16" gate="G$1" pin="2"/>
+<wire x1="121.92" y1="152.4" x2="121.92" y2="160.02" width="0.1524" layer="91"/>
+<junction x="121.92" y="152.4"/>
+<wire x1="119.38" y1="149.86" x2="119.38" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="147.32" x2="137.16" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R20" gate="G$1" pin="R_2"/>
@@ -14575,6 +14586,11 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="X_34" gate="G$1" pin="0"/>
 <pinref part="C14" gate="G$1" pin="2"/>
 <wire x1="45.72" y1="83.82" x2="45.72" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C16" gate="G$1" pin="1"/>
+<pinref part="X_36" gate="G$1" pin="0"/>
+<wire x1="121.92" y1="167.64" x2="121.92" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D0" class="0">
