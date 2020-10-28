@@ -31,9 +31,43 @@ void write(char d1, char d2, char d3, char d4, unsigned int sleep) {
   delay(sleep);
 }
 
-void setup(void) {
+#include <avr/sleep.h>
+#include <avr/wdt.h>
+
+#ifdef DEBUG_TIME
+volatile bool wdtFired;
+unsigned long startTime = 0;
+unsigned long endTime = 0;
+
+ISR (WDT_vect)
+{
+   wdt_disable();  // disable watchdog
+   wdtFired = true;
+}  // end of WDT_vect
+
+void setup ()
+{
+  noInterrupts ();           // timed sequence follows
+  MCUSR = 0;
+  // allow changes, disable reset
+  WDTCSR = bit (WDCE) | bit (WDE);
+  // set interrupt mode and an interval
+  WDTCSR = bit (WDIE);    // set WDIE, and 16 ms seconds delay
+  wdt_reset();  // pat the dog
+  wdtFired = false;
+  interrupts ();
+
+  startTime = micros ();
+  while (!wdtFired)
+    { }  // wait for watchdog
+  endTime = micros ();
 
 }
+#else
+void setup (void) {
+
+}
+#endif
 
 #define INIT  0
 
