@@ -142,6 +142,7 @@ void printk(const char *str) {
       _e = _s = millis();
       do {
         write(buf[0], buf[1], buf[2], buf[3], DELAY);
+        debug_end();
         _e = millis();
       } while ( (_e - _s ) < STR_DELAY);
 
