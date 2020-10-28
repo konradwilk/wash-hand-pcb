@@ -150,6 +150,29 @@ void printk(const char *str) {
       i = 0;
     }
   } while (*s != 0);
+
+}
+
+void printk(unsigned long val) {
+
+   char buf[8] = {};
+   char dst[8] = {};
+   unsigned int i = 0, j;
+   unsigned int v;
+
+   while (val > 0) {
+     v = val % 10;
+     buf[i]= '0' + v;
+     val /= 10;
+     if (val > 0)
+        i++;
+   }
+   for (j = 0; j <= i; j++) {
+     dst[j] = buf[i-j];
+   }
+   j++;
+   dst[j++]='\0';
+   printk(dst);
 }
 
 #define STR(x)  STRINGIFY(x)
