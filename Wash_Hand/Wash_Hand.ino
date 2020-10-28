@@ -185,10 +185,16 @@ void printk(unsigned long val) {
 unsigned int done = 0;
 void loop() {
   int sensor = 0;
+  unsigned long delta;
 
   if (debug_loop() && !done) {
     setupPorts();
     printk("DBG");
+#ifdef DEBUG_TIME
+    printk("TIME");
+    delta = (endTime - startTime);
+    printk(delta);
+#endif
     done = 1;
   }
 
