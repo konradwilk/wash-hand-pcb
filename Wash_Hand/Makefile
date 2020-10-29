@@ -1,38 +1,34 @@
+OBJDUMP		= avr-objdump
+CHIP		= atmega328p
+FQBN		= arduino:avr:uno
+EXTRA_FLAGS	= -DDEBUG
+BLOB		= Wash_Hand.ino.with_bootloader.hex
 
 all:
-	arduino-cli -v compile --warnings=all --fqbn  arduino:avr:uno --output-dir `pwd`
-
-usb:
-	arduino-cli -v compile --warnings=all --build-properties compiler.cpp.extra_flags=-DUSB --fqbn  arduino:avr:uno --output-dir `pwd`
-
-debug:
-	arduino-cli -v compile --warnings=all --build-properties compiler.cpp.extra_flags=-DDEBUG --fqbn  arduino:avr:uno --output-dir `pwd`
-
-nosd:
-	arduino-cli -v compile --warnings=all --build-properties compiler.cpp.extra_flags="-DDEBUG -DNOSD" --fqbn  arduino:avr:uno --output-dir `pwd`
+	arduino-cli -v compile --warnings=all --build-properties compiler.cpp.extra_flags="$(EXTRA_FLAGS)" --fqbn $(FQBN) --output-dir `pwd`
 
 clean:
 	rm -f *.ihex *.elf *.eep *.bin *.hex
 
 buspirate:
-	avrdude -C/etc/avrdude/avrdude.conf -v -cbuspirate -patmega328p -P/dev/ttyUSB0 -x ascii -b115200 -D -Uflash:w:Wash_Hand.ino.with_bootloader.hex:i
+	avrdude -C/etc/avrdude/avrdude.conf -v -cbuspirate -p$(CHIP) -P/dev/ttyUSB0 -x ascii -b115200 -D -Uflash:w:$(BLOB):i
 
 upload:
-	avrdude -C/etc/avrdude/avrdude.conf -v -carduino -patmega328p -P/dev/ttyACM0 -b115200 -D -Uflash:w:Wash_Hand.ino.hex:i
-
-upload-dip28:
-	avrdude -C/etc/avrdude/avrdude.conf -v -cstk500v1 -patmega328p -P/dev/ttyACM0 -b19200 -D -Uflash:w:Wash_Hand.ino.hex:i
+	avrdude -C/etc/avrdude/avrdude.conf -v -carduino -p$(CHIP) -P/dev/ttyACM0 -b115200 -D -Uflash:w:$(BLOB):i
 
 upload-tqfp:
-	 avrdude -C/etc/avrdude/avrdude.conf -v -patmega328 -cstk500v1 -P/dev/ttyACM0 -b19200 -D -Uflash:w:Wash_Hand.ino.hex:i
+	 avrdude -C/etc/avrdude/avrdude.conf -v -p$(CHIP) -cstk500v1 -P/dev/ttyACM0 -b19200 -D -Uflash:w:$(BLOB):i
 
-mini:
-	avrdude -C/etc/avrdude/avrdude.conf -vvvv -carduino -patmega328p -P/dev/ttyUSB0 -b57600 -D -Uflash:w:Wash_Hand.ino.hex:i
+usb:
+	avrdude -C/etc/avrdude/avrdude.conf -v -carduino -p$(CHIP) -P/dev/ttyUSB0 -b115200 -D -Uflash:w:$(BLOB):i
 
 usbasp:
-	avrdude -C/etc/avrdude/avrdude.conf -v -B 4 -cusbasp -pm328p -Uflash:w:Wash_Hand.ino.hex:i
+	avrdude -C/etc/avrdude/avrdude.conf -v -B 4 -cusbasp -p$(CHIP) -Uflash:w:$(BLOB):i
 
 setup:
 	arduino-cli core update-index
 	arduino-cli core install arduino:avr
+
+%.lst: %.elf
+	$(OBJDUMP) -h -S $< > $@
 
