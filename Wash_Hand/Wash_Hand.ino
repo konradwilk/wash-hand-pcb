@@ -3,6 +3,10 @@
 # SPDX-License-Identifier: CC-BY-4.0
 */
 
+#define DEBUG 1
+#define DEBUG_TIME 1
+#define NOSD 1
+
 #define STRINGIFY(x) #x
 #ifndef USB
 #include "func_gpio.h"
