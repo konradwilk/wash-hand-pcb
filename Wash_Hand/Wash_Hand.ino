@@ -4,7 +4,9 @@
 */
 
 #define DEBUG 1
+#ifndef ARDUINO_AVR_NG
 #define DEBUG_TIME 1
+#endif
 #define NOSD 1
 
 #define STRINGIFY(x) #x
@@ -189,7 +191,9 @@ void printk(unsigned long val) {
 unsigned int done = 0;
 void loop() {
   int sensor = 0;
+#ifdef DEBUG_TIME
   unsigned long delta;
+#endif
 
   if (debug_loop() && !done) {
     setupPorts();
