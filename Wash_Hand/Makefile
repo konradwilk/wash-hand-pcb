@@ -7,15 +7,18 @@ PROGRAM		= Wash_Hand
 
 EXTRA_FLAGS	= -DDEBUG
 AVRDUDE_CONF	= /etc/avrdude/avrdude.conf
+BOOTLOADERS	= /usr/share/arduino/hardware/arduino/avr/bootloaders/optiboot
 
 atmega328: TARGET = atmega328
 atmega328: FQBN = arduino:avr:uno
 atmega328: $(PROGRAM)_atmega328.lst
 atmega328: $(PROGRAM)_atmega328.hex
+atmega328: $(PROGRAM)_atmega328.bin
 
 atmega328_isp: atmega328
 atmega328_isp: CHIP = atmega328p
 atmega328_isp: TARGET = atmega328
+atmega328_isp: BOOTLOADER = optiboot_atmega328.hex
 atmega328_isp: HFUSE = 0xDE
 atmega328_isp: LFUSE = 0xFF
 atmega328_isp: EFUSE = 0xFD
@@ -25,10 +28,12 @@ atmega8: TARGET = atmega8
 atmega8: FQBN	= arduino:avr:atmegang:cpu=atmega8
 atmega8: $(PROGRAM)_atmega8.lst
 atmega8: $(PROGRAM)_atmega8.hex
+atmega8: $(PROGRAM)_atmega8.bin
 
 atmega8_isp: atmega8
 atmega8_isp: CHIP = atmega8
 atmega8_isp: TARGET = atmega8
+atmega8_isp: BOOTLOADER = optiboot_atmega8.hex
 atmega8_isp: HFUSE = 0xCA
 atmega8_isp: LFUSE = 0xDF
 atmega8_isp: isp_no_e flash
@@ -46,6 +51,7 @@ isp_no_e: $(TARGET)
 	$(ISPFUSES_NO_E)
 
 flash: $(TARGET)
+	avrdude -C$(AVRDUDE_CONF) -v -p$(CHIP) -cusbasp -Pusb -Uflash:w:$(BOOTLOADERS)/$(BOOTLOADER):i -Ulock:w:0x0F:m
 	avrdude -C$(AVRDUDE_CONF) -v -B 4 -cusbasp -p$(CHIP) -D -Uflash:w:$(PROGRAM)_$(TARGET).hex:i
 
 %.elf:
