@@ -1,8 +1,12 @@
 OBJDUMP		= $(GCCROOT)avr-objdump
 OBJCOPY		= $(GCCROOT)avr-objcopy
 
+# To be used with usbasp or usb targets..
 BLOB		= Wash_Hand.ino.with_bootloader.hex
 CHIP		= atmega328p
+#BLOB		= Wash_Hand_atmega8.hex
+#CHIP		= atmega8
+
 PROGRAM		= Wash_Hand
 
 EXTRA_FLAGS	= -DDEBUG
