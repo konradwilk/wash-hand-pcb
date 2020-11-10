@@ -15,6 +15,7 @@ BOOTLOADERS	= /usr/share/arduino/hardware/arduino/avr/bootloaders/optiboot
 
 atmega328: TARGET = atmega328
 atmega328: FQBN = arduino:avr:uno
+atmega328: $(PROGRAM)_atmega328.elf
 atmega328: $(PROGRAM)_atmega328.lst
 atmega328: $(PROGRAM)_atmega328.hex
 atmega328: $(PROGRAM)_atmega328.bin
@@ -33,6 +34,7 @@ atmega8: FQBN	= arduino:avr:atmegang:cpu=atmega8
 atmega8: $(PROGRAM)_atmega8.lst
 atmega8: $(PROGRAM)_atmega8.hex
 atmega8: $(PROGRAM)_atmega8.bin
+atmega8: $(PROGRAM)_atmega8.elf
 
 atmega8_isp: atmega8
 atmega8_isp: CHIP = atmega8
