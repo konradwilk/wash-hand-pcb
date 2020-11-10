@@ -14478,14 +14478,6 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="127" y1="86.36" x2="119.38" y2="86.36" width="0.1524" layer="91"/>
 <label x="119.38" y="86.36" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
-<segment>
-<pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="96.52" x2="35.56" y2="96.52" width="0.1524" layer="91"/>
-<label x="35.56" y="96.52" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP6" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="96.52" x2="45.72" y2="99.06" width="0.1524" layer="91"/>
-<junction x="45.72" y="96.52"/>
-</segment>
 </net>
 <net name="0" class="0">
 <segment>
@@ -14583,14 +14575,14 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="119.38" y1="91.44" x2="119.38" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X_34" gate="G$1" pin="0"/>
-<pinref part="C14" gate="G$1" pin="2"/>
-<wire x1="45.72" y1="83.82" x2="45.72" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="C16" gate="G$1" pin="1"/>
 <pinref part="X_36" gate="G$1" pin="0"/>
 <wire x1="121.92" y1="167.64" x2="121.92" y2="172.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X_34" gate="G$1" pin="0"/>
+<pinref part="C14" gate="G$1" pin="2"/>
+<wire x1="45.72" y1="83.82" x2="45.72" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D0" class="0">
@@ -15136,6 +15128,13 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="JP6" gate="G$1" pin="2"/>
 <pinref part="U1" gate="U1" pin="V3"/>
 <wire x1="50.8" y1="104.14" x2="83.82" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="C14" gate="G$1" pin="1"/>
+<pinref part="JP6" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="96.52" x2="45.72" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
