@@ -14841,13 +14841,13 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="U2" gate="U$1" pin="PD1(TXD)"/>
 </segment>
 <segment>
-<pinref part="U1" gate="U1" pin="TXD"/>
-<wire x1="83.82" y1="109.22" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
-<label x="60.96" y="109.22" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
-<wire x1="63.5" y1="109.22" x2="60.96" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="116.84" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
-<junction x="63.5" y="109.22"/>
+<pinref part="U1" gate="U1" pin="RXD"/>
+<wire x1="83.82" y1="106.68" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<wire x1="73.66" y1="106.68" x2="60.96" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="116.84" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
+<junction x="73.66" y="106.68"/>
+<label x="60.96" y="106.68" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RX" class="0">
@@ -14862,13 +14862,13 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="U2" gate="U$1" pin="PD0(RXD)"/>
 </segment>
 <segment>
-<pinref part="U1" gate="U1" pin="RXD"/>
-<wire x1="83.82" y1="106.68" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
-<label x="63.5" y="106.68" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="LED4" gate="G$1" pin="C"/>
-<wire x1="73.66" y1="106.68" x2="63.5" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="116.84" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
-<junction x="73.66" y="106.68"/>
+<pinref part="U1" gate="U1" pin="TXD"/>
+<wire x1="83.82" y1="109.22" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="LED3" gate="G$1" pin="C"/>
+<wire x1="63.5" y1="109.22" x2="60.96" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="116.84" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
+<junction x="63.5" y="109.22"/>
+<label x="60.96" y="109.22" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="AREF" class="0">
