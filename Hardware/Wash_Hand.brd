@@ -331,6 +331,8 @@ ASBLY</text>
 <wire x1="70.866" y1="11.684" x2="59.944" y2="11.684" width="0.1524" layer="25"/>
 <wire x1="59.944" y1="11.684" x2="59.69" y2="11.938" width="0.1524" layer="25"/>
 <text x="64.008" y="17.78" size="0.6604" layer="25" ratio="17">Line sensor</text>
+<circle x="5.842" y="16.256" radius="0.254" width="0.1524" layer="25"/>
+<circle x="12.7" y="9.906" radius="0.254" width="0.1524" layer="25"/>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors" urn="urn:adsk.eagle:library:510">
