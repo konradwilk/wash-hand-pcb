@@ -15051,7 +15051,7 @@ designed by Konrad Rzeszutek Wilk</text>
 <label x="78.74" y="99.06" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$21" class="0">
+<net name="X0" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="XO"/>
 <wire x1="83.82" y1="93.98" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
@@ -15061,6 +15061,7 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="C13" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="86.36" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
 <junction x="78.74" y="86.36"/>
+<label x="81.28" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CTS" class="0">
@@ -15075,7 +15076,7 @@ designed by Konrad Rzeszutek Wilk</text>
 <label x="109.22" y="93.98" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="XI" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="XI"/>
 <wire x1="83.82" y1="96.52" x2="78.74" y2="96.52" width="0.1524" layer="91"/>
@@ -15084,6 +15085,7 @@ designed by Konrad Rzeszutek Wilk</text>
 <pinref part="C12" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="96.52" x2="73.66" y2="96.52" width="0.1524" layer="91"/>
 <junction x="78.74" y="96.52"/>
+<label x="81.28" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -15100,7 +15102,7 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="63.5" y1="124.46" x2="63.5" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="VCC_JP5" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="VCC"/>
 <pinref part="JP5" gate="G$1" pin="2"/>
@@ -15109,6 +15111,7 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="119.38" y1="111.76" x2="121.92" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="104.14" x2="119.38" y2="111.76" width="0.1524" layer="91"/>
 <junction x="119.38" y="111.76"/>
+<label x="109.22" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VDD" class="0">
@@ -15123,11 +15126,12 @@ designed by Konrad Rzeszutek Wilk</text>
 <label x="45.72" y="111.76" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="V3" class="0">
 <segment>
 <pinref part="JP6" gate="G$1" pin="2"/>
 <pinref part="U1" gate="U1" pin="V3"/>
 <wire x1="50.8" y1="104.14" x2="83.82" y2="104.14" width="0.1524" layer="91"/>
+<label x="63.5" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$17" class="0">
