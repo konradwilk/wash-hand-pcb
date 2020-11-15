@@ -14169,8 +14169,8 @@ aka CD74HC4050PWR</description>
 <part name="X_33" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="R19" library="darnok_common" deviceset="RESISTOR" device="R1206" value="1K"/>
 <part name="R20" library="darnok_common" deviceset="RESISTOR" device="R1206" value="330"/>
-<part name="LED3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:6240349/1" value="RED"/>
-<part name="LED4" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:6240349/1" value="GREEN"/>
+<part name="RX" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:6240349/1" value="RED"/>
+<part name="TX" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:6240349/1" value="GREEN"/>
 <part name="JP5" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_3_2-NC_PASTE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39294/1" value="3.3v_5v"/>
 <part name="JP6" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_3_2-NC_PASTE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39294/1" value="3.3V_5V"/>
 <part name="C14" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF" device="-1206-6.3V-20%" package3d_urn="urn:adsk.eagle:package:37426/1" value="10nF"/>
@@ -14360,11 +14360,11 @@ designed by Konrad Rzeszutek Wilk</text>
 <attribute name="NAME" x="61.976" y="131.064" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="64.77" y="137.414" size="1.016" layer="96" rot="R90"/>
 </instance>
-<instance part="LED3" gate="G$1" x="63.5" y="121.92" smashed="yes">
+<instance part="RX" gate="G$1" x="63.5" y="121.92" smashed="yes">
 <attribute name="NAME" x="67.056" y="117.348" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="69.215" y="117.348" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="LED4" gate="G$1" x="73.66" y="121.92" smashed="yes">
+<instance part="TX" gate="G$1" x="73.66" y="121.92" smashed="yes">
 <attribute name="NAME" x="77.216" y="117.348" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="79.375" y="117.348" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -14843,7 +14843,7 @@ designed by Konrad Rzeszutek Wilk</text>
 <segment>
 <pinref part="U1" gate="U1" pin="RXD"/>
 <wire x1="83.82" y1="106.68" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="TX" gate="G$1" pin="C"/>
 <wire x1="73.66" y1="106.68" x2="60.96" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="116.84" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
 <junction x="73.66" y="106.68"/>
@@ -14864,7 +14864,7 @@ designed by Konrad Rzeszutek Wilk</text>
 <segment>
 <pinref part="U1" gate="U1" pin="TXD"/>
 <wire x1="83.82" y1="109.22" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="RX" gate="G$1" pin="C"/>
 <wire x1="63.5" y1="109.22" x2="60.96" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="116.84" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
 <junction x="63.5" y="109.22"/>
@@ -15090,14 +15090,14 @@ designed by Konrad Rzeszutek Wilk</text>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="TX" gate="G$1" pin="A"/>
 <pinref part="R19" gate="G$1" pin="R_1"/>
 <wire x1="73.66" y1="124.46" x2="73.66" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="RX" gate="G$1" pin="A"/>
 <pinref part="R20" gate="G$1" pin="R_1"/>
 <wire x1="63.5" y1="124.46" x2="63.5" y2="127" width="0.1524" layer="91"/>
 </segment>
