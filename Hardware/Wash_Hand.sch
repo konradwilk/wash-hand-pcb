@@ -14179,6 +14179,7 @@ aka CD74HC4050PWR</description>
 <part name="X_35" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="C16" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF" device="-1206-6.3V-20%" package3d_urn="urn:adsk.eagle:package:37426/1" value="0.1uF"/>
 <part name="X_36" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="J7" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="" package3d_urn="urn:adsk.eagle:package:38063/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -15193,9 +15194,9 @@ By default USB is used.</text>
 <attribute name="NAME" x="193.04" y="135.255" size="1.778" layer="95"/>
 <attribute name="VALUE" x="193.04" y="127" size="1.778" layer="96"/>
 </instance>
-<instance part="TM1" gate="G$1" x="177.8" y="129.54" smashed="yes">
-<attribute name="NAME" x="171.831" y="125.73" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="173.99" y="125.73" size="1.778" layer="96" rot="R90"/>
+<instance part="TM1" gate="G$1" x="177.8" y="132.08" smashed="yes">
+<attribute name="NAME" x="171.831" y="128.27" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="173.99" y="128.27" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="E" gate="G$1" x="154.94" y="137.16" smashed="yes" rot="R270">
 <attribute name="NAME" x="158.75" y="142.24" size="1.27" layer="95" rot="R270"/>
@@ -15329,9 +15330,9 @@ By default USB is used.</text>
 </instance>
 <instance part="IC1" gate="P" x="190.5" y="132.08" smashed="yes"/>
 <instance part="X_1" gate="G$1" x="190.5" y="124.46" smashed="yes"/>
-<instance part="IC1" gate="B" x="215.9" y="144.78" smashed="yes">
-<attribute name="NAME" x="218.44" y="147.955" size="1.778" layer="95"/>
-<attribute name="VALUE" x="218.44" y="139.7" size="1.778" layer="96"/>
+<instance part="IC1" gate="B" x="215.9" y="144.78" smashed="yes" rot="R180">
+<attribute name="NAME" x="213.36" y="141.605" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="213.36" y="149.86" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R17" gate="G$1" x="200.66" y="139.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="199.136" y="138.684" size="1.27" layer="95" rot="R90"/>
@@ -15345,6 +15346,10 @@ By default USB is used.</text>
 <instance part="R18" gate="G$1" x="58.42" y="182.88" smashed="yes">
 <attribute name="NAME" x="57.404" y="184.404" size="1.27" layer="95"/>
 <attribute name="VALUE" x="63.754" y="181.61" size="1.016" layer="96"/>
+</instance>
+<instance part="J7" gate="J$1" x="236.22" y="142.24" smashed="yes" rot="R180">
+<attribute name="VALUE" x="238.76" y="149.606" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="238.76" y="136.652" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -15397,6 +15402,7 @@ By default USB is used.</text>
 <segment>
 <pinref part="TM1" gate="G$1" pin="A"/>
 <pinref part="X_16" gate="G$1" pin="0"/>
+<wire x1="177.8" y1="127" x2="177.8" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X_14" gate="G$1" pin="0"/>
@@ -15541,7 +15547,7 @@ By default USB is used.</text>
 <label x="218.44" y="132.08" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="V_POS" class="0">
 <segment>
 <pinref part="JP4" gate="G$1" pin="2"/>
 <pinref part="R15" gate="G$1" pin="R_2"/>
@@ -15549,7 +15555,7 @@ By default USB is used.</text>
 <wire x1="154.94" y1="170.18" x2="167.64" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="170.18" x2="167.64" y2="167.894" width="0.1524" layer="91"/>
 <pinref part="TM1" gate="G$1" pin="E"/>
-<wire x1="177.8" y1="134.62" x2="177.8" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="137.16" x2="177.8" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="170.18" x2="167.64" y2="170.18" width="0.1524" layer="91"/>
 <junction x="167.64" y="170.18"/>
 <pinref part="R14" gate="G$1" pin="R_2"/>
@@ -15559,15 +15565,17 @@ By default USB is used.</text>
 <wire x1="190.5" y1="139.7" x2="190.5" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="170.18" x2="177.8" y2="170.18" width="0.1524" layer="91"/>
 <junction x="177.8" y="170.18"/>
+<label x="190.5" y="149.86" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="NEG_IN" class="0">
 <segment>
 <pinref part="TM1" gate="G$1" pin="S"/>
 <pinref part="IC1" gate="A" pin="-IN"/>
+<wire x1="182.88" y1="132.08" x2="182.88" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="POS_IN" class="0">
 <segment>
 <wire x1="182.88" y1="152.4" x2="182.88" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="+IN"/>
@@ -15579,6 +15587,7 @@ By default USB is used.</text>
 <pinref part="TP3" gate="G$1" pin="1"/>
 <wire x1="182.88" y1="152.4" x2="182.88" y2="157.48" width="0.1524" layer="91"/>
 <junction x="182.88" y="152.4"/>
+<label x="182.88" y="137.16" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -15810,6 +15819,29 @@ By default USB is used.</text>
 <pinref part="U$4" gate="G$1" pin="D-"/>
 <wire x1="165.1" y1="53.34" x2="170.18" y2="53.34" width="0.1524" layer="91"/>
 <label x="170.18" y="53.34" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="IC1" gate="B" pin="OUT"/>
+<wire x1="208.28" y1="144.78" x2="208.28" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="J7" gate="J$1" pin="3"/>
+<wire x1="208.28" y1="139.7" x2="228.6" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="IC1" gate="B" pin="+IN"/>
+<pinref part="J7" gate="J$1" pin="2"/>
+<wire x1="223.52" y1="142.24" x2="228.6" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="IC1" gate="B" pin="-IN"/>
+<pinref part="J7" gate="J$1" pin="1"/>
+<wire x1="223.52" y1="147.32" x2="223.52" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="144.78" x2="228.6" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
