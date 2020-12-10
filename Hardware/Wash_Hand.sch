@@ -15405,9 +15405,9 @@ By default USB is used.</text>
 <attribute name="NAME" x="199.136" y="138.684" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="201.93" y="145.034" size="1.016" layer="96" rot="R90"/>
 </instance>
-<instance part="LED2" gate="G$1" x="200.66" y="162.56" smashed="yes">
-<attribute name="NAME" x="204.216" y="157.988" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="206.375" y="157.988" size="1.778" layer="96" rot="R90"/>
+<instance part="LED2" gate="G$1" x="200.66" y="160.02" smashed="yes" rot="R180">
+<attribute name="NAME" x="197.104" y="164.592" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="194.945" y="164.592" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="X_31" gate="G$1" x="200.66" y="170.18" smashed="yes" rot="R180"/>
 <instance part="R18" gate="G$1" x="58.42" y="182.88" smashed="yes">
@@ -15590,14 +15590,14 @@ By default USB is used.</text>
 <pinref part="X_1" gate="G$1" pin="0"/>
 </segment>
 <segment>
-<pinref part="X_31" gate="G$1" pin="0"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="200.66" y1="170.18" x2="200.66" y2="165.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="R15" gate="G$1" pin="R_1"/>
 <pinref part="X_15" gate="G$1" pin="0"/>
 <wire x1="167.64" y1="127" x2="167.64" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="X_31" gate="G$1" pin="0"/>
+<wire x1="200.66" y1="165.1" x2="200.66" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D0" class="0">
@@ -15864,14 +15864,6 @@ By default USB is used.</text>
 <junction x="78.74" y="172.72"/>
 </segment>
 </net>
-<net name="INT_LED" class="0">
-<segment>
-<pinref part="LED2" gate="G$1" pin="C"/>
-<pinref part="R17" gate="G$1" pin="R_2"/>
-<wire x1="200.66" y1="157.48" x2="200.66" y2="150.114" width="0.1524" layer="91"/>
-<label x="200.66" y="154.94" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="TP8" gate="G$1" pin="1"/>
@@ -15929,6 +15921,13 @@ By default USB is used.</text>
 <pinref part="T1" gate="A" pin="B"/>
 <wire x1="137.16" y1="154.94" x2="132.08" y2="154.94" width="0.1524" layer="91"/>
 <label x="132.08" y="154.94" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="R17" gate="G$1" pin="R_2"/>
+<wire x1="200.66" y1="157.48" x2="200.66" y2="150.114" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
