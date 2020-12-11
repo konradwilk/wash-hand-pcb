@@ -14519,6 +14519,7 @@ http://www.zetex.com&lt;p&gt;
 <part name="J7" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="" package3d_urn="urn:adsk.eagle:package:38063/1"/>
 <part name="T1" library="zetex" library_urn="urn:adsk.eagle:library:418" deviceset="PNPSOT23" device="" package3d_urn="urn:adsk.eagle:package:30981/1" value="PNP"/>
 <part name="J8" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_06X2" device="PTH_FEMALE" package3d_urn="urn:adsk.eagle:package:38277/1" value="2X6 FEMALE"/>
+<part name="R12" library="darnok_common" deviceset="RESISTOR" device="R1206" value="1.2K"/>
 </parts>
 <sheets>
 <sheet>
@@ -15759,6 +15760,10 @@ By default USB is used.</text>
 <attribute name="NAME" x="134.62" y="157.48" size="1.778" layer="95"/>
 <attribute name="VALUE" x="129.54" y="160.02" size="1.778" layer="96"/>
 </instance>
+<instance part="R12" gate="G$1" x="137.16" y="162.56" smashed="yes" rot="R180">
+<attribute name="NAME" x="138.176" y="161.036" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="131.826" y="163.83" size="1.016" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -15771,14 +15776,6 @@ By default USB is used.</text>
 <wire x1="220.98" y1="91.44" x2="205.74" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="91.44" x2="205.74" y2="96.52" width="0.1524" layer="91"/>
 <label x="205.74" y="96.52" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="JP4" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="170.18" x2="134.62" y2="170.18" width="0.1524" layer="91"/>
-<label x="134.62" y="170.18" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="T1" gate="A" pin="E"/>
-<wire x1="142.24" y1="160.02" x2="134.62" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="160.02" x2="134.62" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="VIN"/>
@@ -15801,6 +15798,16 @@ By default USB is used.</text>
 <pinref part="R18" gate="G$1" pin="R_1"/>
 <wire x1="53.34" y1="182.88" x2="48.26" y2="182.88" width="0.1524" layer="91"/>
 <label x="48.26" y="182.88" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="1"/>
+<wire x1="137.16" y1="170.18" x2="127" y2="170.18" width="0.1524" layer="91"/>
+<label x="124.46" y="170.18" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="R12" gate="G$1" pin="R_2"/>
+<wire x1="127" y1="170.18" x2="124.46" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="126.746" y1="162.56" x2="127" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="127" y1="162.56" x2="127" y2="170.18" width="0.1524" layer="91"/>
+<junction x="127" y="170.18"/>
 </segment>
 </net>
 <net name="0" class="0">
@@ -16265,6 +16272,15 @@ By default USB is used.</text>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <pinref part="R17" gate="G$1" pin="R_2"/>
 <wire x1="200.66" y1="157.48" x2="200.66" y2="150.114" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="T1" gate="A" pin="E"/>
+<wire x1="142.24" y1="160.02" x2="142.494" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="R_1"/>
+<wire x1="142.24" y1="162.56" x2="142.24" y2="160.02" width="0.1524" layer="91"/>
+<junction x="142.24" y="160.02"/>
 </segment>
 </net>
 </nets>
