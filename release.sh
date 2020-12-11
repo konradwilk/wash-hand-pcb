@@ -87,10 +87,13 @@ function release()
      convert -flip -rotate 180 $DIR/b-negative.png $DIR/b-flip-negative.png
      convert -negate $DIR/t-negative.png $rev/t-$rev.png
      convert -negate $DIR/b-flip-negative.png $rev/b-$rev.png
+     convert $rev/b-$rev.png -resize 3300x2550 -units 'PixelsPerInch' -density 300 $DIR/4.pdf
+     convert $rev/t-$rev.png -resize 3300x2550 -units 'PixelsPerInch' -density 300 $DIR/5.pdf
+
      rm -f $DIR/t-negative.png
      rm -f $DIR/b-negative.png
      rm -f $DIR/b-flip-negative.png
-     pdfunite $DIR/1.pdf $DIR/2.pdf $DIR/3.pdf $name.pdf
+     pdfunite $DIR/1.pdf $DIR/2.pdf $DIR/3.pdf $DIR/4.pdf $DIR/5.pdf $name.pdf
      rm $DIR/?.pdf
      echo "Run CAM"
      cp release.cam $rev/
