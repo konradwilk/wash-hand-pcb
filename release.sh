@@ -104,6 +104,13 @@ function release()
        (cd $rev;zip -9r ${name}_${rev}_${time}.zip CAMOutputs)
        cp -f $rev/CAMOutputs/Assembly/${name}.txt $rev/BOM.txt
      fi
+     git add $rev/BOM.txt
+     git add $rev/*.png
+     git $name.pdf
+     git add $DIR/${name}.brd
+     git add $DIR/${name}.sch
+     rev=`echo $rev | sed s/v//`
+     git commit -s -m "RELEASE-${rev}"
 }
 
 case "$1" in
