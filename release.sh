@@ -106,7 +106,7 @@ function release()
      fi
      git add $rev/BOM.txt
      git add $rev/*.png
-     git $name.pdf
+     git add $name.pdf
      git add $DIR/${name}.brd
      git add $DIR/${name}.sch
      rev=`echo $rev | sed s/v//`
