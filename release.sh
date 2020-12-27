@@ -87,12 +87,16 @@ function release()
      convert -flip -rotate 180 $DIR/b-negative.png $DIR/b-flip-negative.png
      convert -negate $DIR/t-negative.png $rev/t-$rev.png
      convert -negate $DIR/b-flip-negative.png $rev/b-$rev.png
+     convert -negate $DIR/h-negative.bmp $rev/h-$rev.bmp
+     potrace -s -r 300 $rev/h-$rev.bmp -o $rev/h-$rev.svg
      convert $rev/b-$rev.png -resize 3300x2550 -units 'PixelsPerInch' -density 300 $DIR/4.pdf
      convert $rev/t-$rev.png -resize 3300x2550 -units 'PixelsPerInch' -density 300 $DIR/5.pdf
 
      rm -f $DIR/t-negative.png
      rm -f $DIR/b-negative.png
      rm -f $DIR/b-flip-negative.png
+     rm -f $DIR/h-$rev.bmp
+     rm -f $DIR/h-negative.bmp
      pdfunite $DIR/1.pdf $DIR/2.pdf $DIR/3.pdf $DIR/4.pdf $DIR/5.pdf $name.pdf
      rm $DIR/?.pdf
      echo "Run CAM"
@@ -106,6 +110,7 @@ function release()
      fi
      git add $rev/BOM.txt
      git add $rev/*.png
+     git add $rev/*.svg
      git add $name.pdf
      git add $DIR/${name}.brd
      git add $DIR/${name}.sch
