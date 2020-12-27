@@ -18,6 +18,7 @@ The project is under Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
  - SparkFun-IC-Microcontroller
  - SparkFun-IC-Power
  - SparkFun-Jumpers
+ - Serial-Basic (https://github.com/sparkfun/Serial_Basic_Breakout-CH340G.git)
 
 # Purpose
 
