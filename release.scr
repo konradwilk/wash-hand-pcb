@@ -3,5 +3,5 @@ export image t-negative 300
 display none bNames bValues bStop   bDocu dimension bTest
 export image b-negative 300
 display none dimension housing
-export image h-negative.bmp 300
+export image h-negative.bmp monochrome 300
 script ./print.scr

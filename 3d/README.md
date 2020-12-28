@@ -20,11 +20,13 @@ The sequence is as follow:
 
 - Select All
 
+- Object|Ungroup
+
 - Extensions|Generate from Path|Paths to OpenSCAD
 - Output file Wash_Hand_dim.scad, keep the defaults, let it rip
 
-- In OpenSCAD, load it, edit it (change height, etc) and render it and export as STL.
-  (Wash_Hand_dim.stl)
+- In OpenSCAD, load it, edit it (change height, etc) and render (F6) it,
+  and Export as STL (F7) as Wash_Hand_dim.stl
 
 - Then you have a 3D-ish presentation of what outline of the board
   and can use it to create boxes for the board.
