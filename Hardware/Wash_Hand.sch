@@ -8705,7 +8705,7 @@ CONN_06x2
 &lt;h3&gt;Also known as "Arduino Serial Program Header".&lt;/h3&gt;
 &lt;p&gt;&lt;/p&gt;
 
-This is used on a design to provide a 6-pin connection point for serial communication usually from a USB cable (D+/D-) to these headers (RX/TX). It also has the rev1.4-rc0ing pins necessary for programming in the Arduino evironment (DTR, GND, and sometimes VCC).
+This is used on a design to provide a 6-pin connection point for serial communication usually from a USB cable (D+/D-) to these headers (RX/TX). It also has the remaining pins necessary for programming in the Arduino evironment (DTR, GND, and sometimes VCC).
 
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Note, this device has "CABLE" in the name.&lt;/b&gt;  It is intended to be used on a design that usually lives on the end of your USB cable and prvides the converter chip (FTDI232 or FTDI231x) to commnicate serial RX/TX.
