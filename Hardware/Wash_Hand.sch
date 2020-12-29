@@ -9,6 +9,20 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -14495,7 +14509,7 @@ http://www.zetex.com&lt;p&gt;
 <part name="LED1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:6240349/1" value="RED"/>
 <part name="R16" library="darnok_common" deviceset="RESISTOR" device="R1206" value="1K"/>
 <part name="R17" library="darnok_common" deviceset="RESISTOR" device="R1206" value="470"/>
-<part name="LED2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:6240349/1"/>
+<part name="LED2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:6240349/1" value="ORANGE"/>
 <part name="X_31" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="R18" library="darnok_common" deviceset="RESISTOR" device="R1206" value="100K"/>
 <part name="Y2" library="Serial-Basic" deviceset="CRYSTAL-GROUNDED" device="3.2X2.5" value="12MHz"/>
@@ -14516,7 +14530,7 @@ http://www.zetex.com&lt;p&gt;
 <part name="X_35" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="C16" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF" device="-1206-6.3V-20%" package3d_urn="urn:adsk.eagle:package:37426/1" value="0.1uF"/>
 <part name="X_36" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="J7" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="" package3d_urn="urn:adsk.eagle:package:38063/1"/>
+<part name="J7" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="" package3d_urn="urn:adsk.eagle:package:38063/1" value="OP_B"/>
 <part name="T1" library="zetex" library_urn="urn:adsk.eagle:library:418" deviceset="PNPSOT23" device="" package3d_urn="urn:adsk.eagle:package:30981/1" value="PNP"/>
 <part name="J8" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_06X2" device="PTH_FEMALE" package3d_urn="urn:adsk.eagle:package:38277/1" value="2X6 FEMALE"/>
 <part name="R12" library="darnok_common" deviceset="RESISTOR" device="R1206" value="1.2K"/>
@@ -16285,8 +16299,6 @@ By default USB is used.</text>
 </sheet>
 </sheets>
 <errors>
-<approved hash="202,1,190.5,68.58,U$5,CATHODE_DP,,,,"/>
-<approved hash="104,2,190.5,139.7,IC1P,V+,N$15,,,"/>
 <approved hash="104,2,190.5,124.46,IC1P,V-,0,,,"/>
 <approved hash="104,2,93.98,68.58,IC3P,VSS,0,,,"/>
 <approved hash="104,2,81.28,144.78,MICROSD,VSS,0,,,"/>
@@ -16305,7 +16317,6 @@ By default USB is used.</text>
 <approved hash="208,2,205.74,154.94,0,sup,,,,"/>
 <approved hash="208,2,177.8,124.46,0,sup,,,,"/>
 <approved hash="208,2,154.94,124.46,0,sup,,,,"/>
-<approved hash="208,2,167.64,124.46,0,sup,,,,"/>
 <approved hash="208,2,149.86,83.82,0,sup,,,,"/>
 <approved hash="208,2,177.8,88.9,0,sup,,,,"/>
 <approved hash="208,2,187.96,88.9,0,sup,,,,"/>
@@ -16323,6 +16334,7 @@ By default USB is used.</text>
 <approved hash="208,2,170.18,78.74,0,sup,,,,"/>
 <approved hash="208,2,142.24,83.82,0,sup,,,,"/>
 <approved hash="208,2,190.5,124.46,0,sup,,,,"/>
+<approved hash="208,2,167.64,124.46,0,sup,,,,"/>
 </errors>
 </schematic>
 </drawing>
