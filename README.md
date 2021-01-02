@@ -25,6 +25,10 @@ The project is under Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
 Quite simply it is to have a count-down timer for 20 seconds for washing hands.
 It is activated by a line sensor (which has infrared light) that plugs in the board.
 
+<img src="wash_hand.gif"></img>
+
+Video (speed up) of text printed.
+
 # PCB
 
 The _main_ branch is for development and changes often.
