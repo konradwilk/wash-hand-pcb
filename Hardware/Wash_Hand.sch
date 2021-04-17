@@ -14350,25 +14350,25 @@ http://www.zetex.com&lt;p&gt;
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="PNP" urn="urn:adsk.eagle:symbol:30945/1" library_version="5">
-<wire x1="2.286" y1="1.778" x2="1.778" y2="2.794" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="2.794" x2="1.016" y2="1.778" width="0.1524" layer="94"/>
-<wire x1="1.016" y1="1.778" x2="2.286" y2="1.778" width="0.1524" layer="94"/>
+<symbol name="NPN" urn="urn:adsk.eagle:symbol:30947/1" library_version="5">
 <wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="-2.54" x2="0.508" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
 <text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
 <rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
 <pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="E" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="C" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PNPSOT23" urn="urn:adsk.eagle:component:30998/2" prefix="T" uservalue="yes" library_version="5">
-<description>&lt;b&gt;PNP TRANSISTOR&lt;/b&gt;</description>
+<deviceset name="NPNSOT23" urn="urn:adsk.eagle:component:30999/2" prefix="T" uservalue="yes" library_version="5">
+<description>&lt;b&gt;NPN TRANSISTOR&lt;/b&gt;</description>
 <gates>
-<gate name="A" symbol="PNP" x="0" y="0"/>
+<gate name="A" symbol="NPN" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOT-23">
@@ -14383,9 +14383,9 @@ http://www.zetex.com&lt;p&gt;
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="DSS20200L-7" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="25R4554" constant="no"/>
+<attribute name="MPN" value="DSS20201L-7" constant="no"/>
+<attribute name="OC_FARNELL" value="1710688" constant="no"/>
+<attribute name="OC_NEWARK" value="25R4555" constant="no"/>
 <attribute name="POPULARITY" value="0" constant="no"/>
 </technology>
 </technologies>
@@ -14615,7 +14615,6 @@ Copyright 2020 by Konrad Rzeszutek Wilk &lt;konrad@darnok.org&gt;</description>
 <part name="U$5" library="darnok_led" deviceset="HDSP-B04E" device="" package3d_urn="urn:adsk.eagle:package:21769930/1"/>
 <part name="R9" library="darnok_common" deviceset="RESISTOR" device="R1206" value="10K"/>
 <part name="X_3" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="X_4" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="J" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="" package3d_urn="urn:adsk.eagle:package:38063/1" value="D0    GND  VCC  ,"/>
 <part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1" value="I2C"/>
 <part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03X2" device="FEMALE" package3d_urn="urn:adsk.eagle:package:38016/1" value="ICSP"/>
@@ -14662,13 +14661,10 @@ Copyright 2020 by Konrad Rzeszutek Wilk &lt;konrad@darnok.org&gt;</description>
 <part name="JP3" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_2_NC_PASTE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39282/1" value="ENA_INT_D0"/>
 <part name="JP4" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_2_NC_PASTE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39282/1" value="ENA_INT_SENSOR"/>
 <part name="R15" library="darnok_common" deviceset="RESISTOR" device="R1206" value="10K"/>
-<part name="X_14" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="X_15" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="LM358" device="D" package3d_urn="urn:adsk.eagle:package:16404/2"/>
 <part name="TM1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="TRIMPOT" device="TC33X" package3d_urn="urn:adsk.eagle:package:6240639/1" value="10K"/>
 <part name="E" library="darnok_sensors" deviceset="LTE-302" device=""/>
 <part name="D" library="darnok_sensors" deviceset="LTR-301" device=""/>
-<part name="X_16" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="R14" library="darnok_common" deviceset="RESISTOR" device="R1206" value="220"/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device="">
 <attribute name="REVISION" value="v1.4-rc4"/>
@@ -14700,7 +14696,6 @@ Copyright 2020 by Konrad Rzeszutek Wilk &lt;konrad@darnok.org&gt;</description>
 <part name="X_27" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="MICROSD" library="darnok_microsd" deviceset="114-00841-68" device=""/>
 <part name="U2" library="SparkFun-IC-Microcontroller" library_urn="urn:adsk.eagle:library:525" deviceset="ATMEGA328P_TQFP" device="" package3d_urn="urn:adsk.eagle:package:38945/1" value="ATMEGA328P_TQFP"/>
-<part name="X_1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="R13" library="darnok_common" deviceset="RESISTOR" device="R1206" value="1M"/>
 <part name="Y1" library="darnok_common" deviceset="RESONATOR" device="MU" value="16MHZ"/>
 <part name="X_29" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
@@ -14713,7 +14708,6 @@ Copyright 2020 by Konrad Rzeszutek Wilk &lt;konrad@darnok.org&gt;</description>
 <part name="R16" library="darnok_common" deviceset="RESISTOR" device="R1206" value="1K"/>
 <part name="R17" library="darnok_common" deviceset="RESISTOR" device="R1206" value="470"/>
 <part name="LED2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:6240349/1" value="ORANGE"/>
-<part name="X_31" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="R18" library="darnok_common" deviceset="RESISTOR" device="R1206" value="100K"/>
 <part name="Y2" library="Serial-Basic" deviceset="CRYSTAL-GROUNDED" device="3.2X2.5" value="12MHz"/>
 <part name="U1" library="Serial-Basic" deviceset="CH340G" device="SMD" value="CH340G"/>
@@ -14734,10 +14728,12 @@ Copyright 2020 by Konrad Rzeszutek Wilk &lt;konrad@darnok.org&gt;</description>
 <part name="C16" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF" device="-1206-6.3V-20%" package3d_urn="urn:adsk.eagle:package:37426/1" value="0.1uF"/>
 <part name="X_36" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="J7" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="" package3d_urn="urn:adsk.eagle:package:38063/1" value="OP_B"/>
-<part name="T1" library="zetex" library_urn="urn:adsk.eagle:library:418" deviceset="PNPSOT23" device="" package3d_urn="urn:adsk.eagle:package:30981/1" value="PNP"/>
+<part name="T1" library="zetex" library_urn="urn:adsk.eagle:library:418" deviceset="NPNSOT23" device="" package3d_urn="urn:adsk.eagle:package:30981/1" value="NPN"/>
 <part name="J8" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_06X2" device="PTH_FEMALE" package3d_urn="urn:adsk.eagle:package:38277/1" value="2X6 FEMALE"/>
 <part name="R12" library="darnok_common" deviceset="RESISTOR" device="R1206" value="1.2K"/>
 <part name="LOGO2" library="darnok_logo" deviceset="HAPPY_FACE_LOGO" device=""/>
+<part name="X_1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="X_4" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15752,7 +15748,7 @@ designed by Konrad Rzeszutek Wilk</text>
 <wire x1="45.72" y1="96.52" x2="45.72" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="ON_OFF_PNP" class="0">
+<net name="ON_OFF_SWT" class="0">
 <segment>
 <pinref part="U2" gate="U$1" pin="ADC7"/>
 <wire x1="185.42" y1="139.7" x2="187.96" y2="139.7" width="0.1524" layer="91"/>
@@ -15795,7 +15791,6 @@ By default USB is used.</text>
 <attribute name="SHEET" x="233.68" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="165.1" y="19.05" size="2.54" layer="94"/>
 </instance>
-<instance part="X_4" gate="G$1" x="205.74" y="154.94" smashed="yes"/>
 <instance part="J" gate="J$1" x="231.14" y="157.48" smashed="yes" rot="R180">
 <attribute name="VALUE" x="233.68" y="164.846" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="233.68" y="151.892" size="1.778" layer="95" font="vector" rot="R180"/>
@@ -15812,8 +15807,6 @@ By default USB is used.</text>
 <attribute name="NAME" x="166.116" y="131.064" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="168.91" y="137.414" size="1.016" layer="96" rot="R90"/>
 </instance>
-<instance part="X_14" gate="G$1" x="154.94" y="124.46" smashed="yes"/>
-<instance part="X_15" gate="G$1" x="167.64" y="124.46" smashed="yes"/>
 <instance part="IC1" gate="A" x="190.5" y="132.08" smashed="yes">
 <attribute name="NAME" x="193.04" y="135.255" size="1.778" layer="95"/>
 <attribute name="VALUE" x="193.04" y="127" size="1.778" layer="96"/>
@@ -15828,7 +15821,6 @@ By default USB is used.</text>
 <instance part="D" gate="G$1" x="167.64" y="157.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="166.37" y="148.59" size="1.27" layer="95" rot="R90"/>
 </instance>
-<instance part="X_16" gate="G$1" x="177.8" y="124.46" smashed="yes"/>
 <instance part="R14" gate="G$1" x="154.94" y="157.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="153.416" y="156.464" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="156.21" y="162.814" size="1.016" layer="96" rot="R90"/>
@@ -15953,7 +15945,6 @@ By default USB is used.</text>
 <attribute name="VALUE" x="93.98" y="127" size="1.778" layer="96"/>
 </instance>
 <instance part="IC1" gate="P" x="190.5" y="132.08" smashed="yes"/>
-<instance part="X_1" gate="G$1" x="190.5" y="124.46" smashed="yes"/>
 <instance part="IC1" gate="B" x="215.9" y="144.78" smashed="yes" rot="R180">
 <attribute name="NAME" x="213.36" y="141.605" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="213.36" y="149.86" size="1.778" layer="96" rot="R180"/>
@@ -15962,11 +15953,10 @@ By default USB is used.</text>
 <attribute name="NAME" x="199.136" y="138.684" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="201.93" y="145.034" size="1.016" layer="96" rot="R90"/>
 </instance>
-<instance part="LED2" gate="G$1" x="200.66" y="160.02" smashed="yes" rot="R180">
-<attribute name="NAME" x="197.104" y="164.592" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="194.945" y="164.592" size="1.778" layer="96" rot="R270"/>
+<instance part="LED2" gate="G$1" x="200.66" y="154.94" smashed="yes" rot="R180">
+<attribute name="NAME" x="197.104" y="159.512" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="194.945" y="159.512" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="X_31" gate="G$1" x="200.66" y="170.18" smashed="yes" rot="R180"/>
 <instance part="R18" gate="G$1" x="58.42" y="182.88" smashed="yes">
 <attribute name="NAME" x="57.404" y="184.404" size="1.27" layer="95"/>
 <attribute name="VALUE" x="63.754" y="181.61" size="1.016" layer="96"/>
@@ -15975,14 +15965,16 @@ By default USB is used.</text>
 <attribute name="VALUE" x="238.76" y="149.606" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="238.76" y="136.652" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="T1" gate="A" x="139.7" y="154.94" smashed="yes">
-<attribute name="NAME" x="134.62" y="157.48" size="1.778" layer="95"/>
-<attribute name="VALUE" x="129.54" y="160.02" size="1.778" layer="96"/>
+<instance part="T1" gate="A" x="142.24" y="127" smashed="yes" rot="R270">
+<attribute name="NAME" x="144.78" y="132.08" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="147.32" y="137.16" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R12" gate="G$1" x="132.08" y="149.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="133.604" y="150.876" size="1.27" layer="95" rot="R270"/>
-<attribute name="VALUE" x="130.81" y="144.526" size="1.016" layer="96" rot="R270"/>
+<instance part="R12" gate="G$1" x="142.24" y="144.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="140.716" y="143.764" size="1.27" layer="95" rot="R90"/>
+<attribute name="VALUE" x="143.51" y="150.114" size="1.016" layer="96" rot="R90"/>
 </instance>
+<instance part="X_1" gate="G$1" x="137.16" y="121.92" smashed="yes"/>
+<instance part="X_4" gate="G$1" x="195.58" y="165.1" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -16020,32 +16012,11 @@ By default USB is used.</text>
 </segment>
 <segment>
 <pinref part="JP4" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="170.18" x2="134.62" y2="170.18" width="0.1524" layer="91"/>
 <label x="124.46" y="170.18" size="1.778" layer="95" rot="R90" xref="yes"/>
-<pinref part="T1" gate="A" pin="E"/>
-<wire x1="134.62" y1="170.18" x2="124.46" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="160.02" x2="134.62" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="160.02" x2="134.62" y2="170.18" width="0.1524" layer="91"/>
-<junction x="134.62" y="170.18"/>
+<wire x1="137.16" y1="170.18" x2="124.46" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="0" class="0">
-<segment>
-<pinref part="J" gate="J$1" pin="2"/>
-<wire x1="223.52" y1="157.48" x2="205.74" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="X_4" gate="G$1" pin="0"/>
-<wire x1="205.74" y1="157.48" x2="205.74" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="TM1" gate="G$1" pin="A"/>
-<pinref part="X_16" gate="G$1" pin="0"/>
-<wire x1="177.8" y1="127" x2="177.8" y2="124.46" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X_14" gate="G$1" pin="0"/>
-<pinref part="E" gate="G$1" pin="K$1"/>
-<wire x1="154.94" y1="124.46" x2="154.94" y2="130.81" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="GND"/>
 <pinref part="X_2" gate="G$1" pin="0"/>
@@ -16149,18 +16120,22 @@ By default USB is used.</text>
 <pinref part="X_9" gate="G$1" pin="0"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="P" pin="V-"/>
+<pinref part="T1" gate="A" pin="E"/>
 <pinref part="X_1" gate="G$1" pin="0"/>
+<wire x1="137.16" y1="124.46" x2="137.16" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R15" gate="G$1" pin="R_1"/>
-<pinref part="X_15" gate="G$1" pin="0"/>
-<wire x1="167.64" y1="127" x2="167.64" y2="124.46" width="0.1524" layer="91"/>
-</segment>
-<segment>
+<pinref part="X_4" gate="G$1" pin="0"/>
+<wire x1="195.58" y1="165.1" x2="195.58" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
-<pinref part="X_31" gate="G$1" pin="0"/>
-<wire x1="200.66" y1="165.1" x2="200.66" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="167.64" x2="200.66" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="167.64" x2="200.66" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="J" gate="J$1" pin="2"/>
+<wire x1="200.66" y1="162.56" x2="200.66" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="157.48" x2="205.74" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="157.48" x2="205.74" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="162.56" x2="200.66" y2="162.56" width="0.1524" layer="91"/>
+<junction x="200.66" y="162.56"/>
 </segment>
 </net>
 <net name="D0" class="0">
@@ -16187,8 +16162,7 @@ By default USB is used.</text>
 <net name="V_POS" class="0">
 <segment>
 <pinref part="JP4" gate="G$1" pin="2"/>
-<wire x1="147.32" y1="170.18" x2="149.86" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="170.18" x2="154.94" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="170.18" x2="154.94" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="170.18" x2="167.64" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="TM1" gate="G$1" pin="E"/>
 <wire x1="167.64" y1="170.18" x2="177.8" y2="170.18" width="0.1524" layer="91"/>
@@ -16204,10 +16178,6 @@ By default USB is used.</text>
 <pinref part="D" gate="G$1" pin="C$1"/>
 <wire x1="167.64" y1="167.386" x2="167.64" y2="170.18" width="0.1524" layer="91"/>
 <junction x="167.64" y="170.18"/>
-<pinref part="T1" gate="A" pin="C"/>
-<wire x1="142.24" y1="149.86" x2="149.86" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="149.86" x2="149.86" y2="170.18" width="0.1524" layer="91"/>
-<junction x="149.86" y="170.18"/>
 </segment>
 </net>
 <net name="NEG_IN" class="0">
@@ -16483,21 +16453,41 @@ By default USB is used.</text>
 <segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <pinref part="R17" gate="G$1" pin="R_2"/>
-<wire x1="200.66" y1="157.48" x2="200.66" y2="150.114" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="152.4" x2="200.66" y2="150.114" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ON_OFF_SWT" class="0">
+<segment>
+<pinref part="R12" gate="G$1" pin="R_2"/>
+<wire x1="142.24" y1="155.194" x2="142.24" y2="160.02" width="0.1524" layer="91"/>
+<label x="142.24" y="160.02" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="NPN_COLLECTOR" class="0">
+<segment>
+<pinref part="IC1" gate="P" pin="V-"/>
+<pinref part="TM1" gate="G$1" pin="A"/>
+<wire x1="177.8" y1="127" x2="177.8" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="124.46" x2="177.8" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="R_1"/>
+<wire x1="167.64" y1="127" x2="167.64" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="124.46" x2="167.64" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="124.46" x2="167.64" y2="124.46" width="0.1524" layer="91"/>
+<junction x="177.8" y="124.46"/>
+<junction x="167.64" y="124.46"/>
+<pinref part="E" gate="G$1" pin="K$1"/>
+<wire x1="154.94" y1="130.81" x2="154.94" y2="124.46" width="0.1524" layer="91"/>
+<junction x="154.94" y="124.46"/>
+<pinref part="T1" gate="A" pin="C"/>
+<wire x1="147.32" y1="124.46" x2="154.94" y2="124.46" width="0.1524" layer="91"/>
+<label x="157.48" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="T1" gate="A" pin="B"/>
 <pinref part="R12" gate="G$1" pin="R_1"/>
-<wire x1="137.16" y1="154.94" x2="132.08" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ON_OFF_PNP" class="0">
-<segment>
-<pinref part="R12" gate="G$1" pin="R_2"/>
-<wire x1="132.08" y1="139.446" x2="132.08" y2="137.16" width="0.1524" layer="91"/>
-<label x="132.08" y="137.16" size="1.778" layer="95" rot="R270" xref="yes"/>
+<wire x1="142.24" y1="129.54" x2="142.24" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
