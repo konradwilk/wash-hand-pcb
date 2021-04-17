@@ -14890,7 +14890,6 @@ Copyright 2020 by Konrad Rzeszutek Wilk &lt;konrad@darnok.org&gt;</description>
 <part name="R12" library="darnok_common" deviceset="RESISTOR" device="R1206" value="1.2K"/>
 <part name="LOGO2" library="darnok_logo" deviceset="HAPPY_FACE_LOGO" device=""/>
 <part name="X_1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="X_4" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="JP7" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1" value="BYPASS_SWT"/>
 </parts>
 <sheets>
@@ -15953,9 +15952,9 @@ By default USB is used.</text>
 <attribute name="VALUE" x="233.68" y="164.846" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="233.68" y="151.892" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="JP3" gate="G$1" x="208.28" y="132.08" smashed="yes">
-<attribute name="NAME" x="205.74" y="134.62" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="205.74" y="129.54" size="1.778" layer="96" font="vector" align="top-left"/>
+<instance part="JP3" gate="G$1" x="215.9" y="132.08" smashed="yes">
+<attribute name="NAME" x="213.36" y="134.62" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="213.36" y="129.54" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
 <instance part="JP4" gate="G$1" x="142.24" y="170.18" smashed="yes">
 <attribute name="NAME" x="139.7" y="172.72" size="1.778" layer="95" font="vector"/>
@@ -16132,7 +16131,6 @@ By default USB is used.</text>
 <attribute name="VALUE" x="143.51" y="150.114" size="1.016" layer="96" rot="R90"/>
 </instance>
 <instance part="X_1" gate="G$1" x="137.16" y="119.38" smashed="yes"/>
-<instance part="X_4" gate="G$1" x="195.58" y="165.1" smashed="yes"/>
 <instance part="JP7" gate="G$1" x="147.32" y="121.92" smashed="yes">
 <attribute name="NAME" x="144.78" y="124.46" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="144.78" y="119.38" size="1.778" layer="96" font="vector" align="top-left"/>
@@ -16290,19 +16288,6 @@ By default USB is used.</text>
 <wire x1="142.24" y1="121.92" x2="137.16" y2="121.92" width="0.1524" layer="91"/>
 <junction x="137.16" y="121.92"/>
 </segment>
-<segment>
-<pinref part="X_4" gate="G$1" pin="0"/>
-<wire x1="195.58" y1="165.1" x2="195.58" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="LED2" gate="G$1" pin="C"/>
-<wire x1="195.58" y1="167.64" x2="200.66" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="167.64" x2="200.66" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="J" gate="J$1" pin="2"/>
-<wire x1="200.66" y1="162.56" x2="200.66" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="157.48" x2="205.74" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="157.48" x2="205.74" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="162.56" x2="200.66" y2="162.56" width="0.1524" layer="91"/>
-<junction x="200.66" y="162.56"/>
-</segment>
 </net>
 <net name="D0" class="0">
 <segment>
@@ -16315,14 +16300,14 @@ By default USB is used.</text>
 <pinref part="IC1" gate="A" pin="OUT"/>
 <wire x1="198.12" y1="132.08" x2="200.66" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="R_1"/>
-<wire x1="200.66" y1="132.08" x2="203.2" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="132.08" x2="210.82" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="132.08" x2="200.66" y2="134.62" width="0.1524" layer="91"/>
 <junction x="200.66" y="132.08"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="213.36" y1="132.08" x2="218.44" y2="132.08" width="0.1524" layer="91"/>
-<label x="218.44" y="132.08" size="1.778" layer="95" xref="yes"/>
+<wire x1="220.98" y1="132.08" x2="226.06" y2="132.08" width="0.1524" layer="91"/>
+<label x="226.06" y="132.08" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="V_POS" class="0">
@@ -16650,6 +16635,16 @@ By default USB is used.</text>
 <pinref part="JP7" gate="G$1" pin="2"/>
 <wire x1="152.4" y1="121.92" x2="154.94" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="121.92" x2="154.94" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="J" gate="J$1" pin="2"/>
+<wire x1="200.66" y1="162.56" x2="200.66" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="157.48" x2="205.74" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="157.48" x2="205.74" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="162.56" x2="200.66" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="157.48" x2="205.74" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="124.46" x2="190.5" y2="124.46" width="0.1524" layer="91"/>
+<junction x="205.74" y="157.48"/>
+<junction x="190.5" y="124.46"/>
 </segment>
 </net>
 <net name="N$16" class="0">
