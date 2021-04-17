@@ -14885,7 +14885,7 @@ Copyright 2020 by Konrad Rzeszutek Wilk &lt;konrad@darnok.org&gt;</description>
 <part name="C16" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF" device="-1206-6.3V-20%" package3d_urn="urn:adsk.eagle:package:37426/1" value="0.1uF"/>
 <part name="X_36" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="J7" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="" package3d_urn="urn:adsk.eagle:package:38063/1" value="OP_B"/>
-<part name="T1" library="zetex" library_urn="urn:adsk.eagle:library:418" deviceset="NPNSOT23" device="" package3d_urn="urn:adsk.eagle:package:30981/1" value="NPN"/>
+<part name="T1" library="zetex" library_urn="urn:adsk.eagle:library:418" deviceset="NPNSOT23" device="" package3d_urn="urn:adsk.eagle:package:30981/1" value="MMBT3904"/>
 <part name="J8" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_06X2" device="PTH_FEMALE" package3d_urn="urn:adsk.eagle:package:38277/1" value="2X6 FEMALE"/>
 <part name="R12" library="darnok_common" deviceset="RESISTOR" device="R1206" value="1.2K"/>
 <part name="LOGO2" library="darnok_logo" deviceset="HAPPY_FACE_LOGO" device=""/>
