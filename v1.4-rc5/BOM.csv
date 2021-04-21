@@ -15,7 +15,7 @@ Item,Name,Qty,Manufacturer,Mfg Part #,Descriptor/Value,Package/Footprint,Instruc
 14,TM1,1,Bourns Inc.,‎TC33X-2-103E‎,TRIMMER 10K OHM 0.1W J LEAD TOP,3 SMD,
 15,IC1,1,Texas Instruments,LM358DR,IC OPAMP GP 2 CIRCUIT 8SOIC,SMD 8-SOIC,
 16,R17,1,Yageo,RE1206FRE07470RL,RES SMD 470 OHM 1% 1/4W 1206,SMD 1206,
-17,U2,1,Microchip Technology,‎ATMEGA328PB-AU‎,IC MCU 8BIT 32KB FLASH 32TQFP,32TQFP,
+17,U2,1,Microchip Technology,ATMEGA8U2-AUR,IC MCU 8BIT 8KB FLASH 32TQFP,32TQFP,
 18,LED2,1,American Opto Plus LED,L152L-QOC-TR,1206 ORANGE SMD LED,SMD 1206,Cathode goes up (towards – sign); Anode goes down (toward + sign)
 19,T1,1,Diodes Incorporated,‎MMBT3904-7-F‎,TRANS NPN 40V 0.2A SMD SOT23-3,SMD 1206,
 20,U1,1,DreamCity Innovations,CH340G,A simple USB 2.0 to Serial IC,SO016,
