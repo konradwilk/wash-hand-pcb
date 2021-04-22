@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import pandas as pd
+import subprocess
 
 def fetch_pnp(designators, file, side, output, jlpcb):
     df = pd.read_csv(file, header=None);
@@ -87,13 +88,16 @@ def create_pnp(names, version, jlpcb):
     output = fetch_pnp(l,front_str,'Top',output, jlpcb)
 
     pnp_str="%s/PnP-%s.csv" % (version, postfix)
+    print("Writing ", pnp_str);
     output.to_csv(pnp_str, index=False)
 
     return output
 
 
 l = fetch_data()
-version="v1.4-rc5"
+
+result = subprocess.run(["./release.sh","get"], stdout=subprocess.PIPE, universal_newlines=True)
+version=result.stdout.rstrip()
 
 bom_str="%s/BOM.csv" % (version)
 
