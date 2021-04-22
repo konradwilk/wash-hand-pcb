@@ -108,7 +108,8 @@ function release()
        (cd $rev;zip -9r ${name}_${rev}_${time}.zip CAMOutputs)
        cp BOM.csv $rev/BOM.csv
      fi
-     git add $rev/BOM.csv
+     ./create_pnp.py
+     git add $rev/*.csv
      git add $rev/*.png
      git add $rev/*.svg
      git add $name.pdf
