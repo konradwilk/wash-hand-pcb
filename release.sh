@@ -106,9 +106,9 @@ function release()
      eagle -X -dCAMJOB -j$rev/release.cam  -o"$(pwd)/$rev" $DIR/${name}.brd
      if [ $? -eq 0 ]; then
        (cd $rev;zip -9r ${name}_${rev}_${time}.zip CAMOutputs)
-       cp -f $rev/CAMOutputs/Assembly/${name}.txt $rev/BOM.txt
+       cp BOM.csv $rev/BOM.csv
      fi
-     git add $rev/BOM.txt
+     git add $rev/BOM.csv
      git add $rev/*.png
      git add $rev/*.svg
      git add $name.pdf
