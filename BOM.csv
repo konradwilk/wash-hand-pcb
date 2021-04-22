@@ -17,5 +17,5 @@ Item,Name,Qty,Manufacturer,Mfg Part #,Descriptor/Value,Package/Footprint,Instruc
 16,U2,1,Microchip Technology,ATMEGA8U2-AUR,IC MCU 8BIT 32KB FLASH 32TQFP,32TQFP,
 17,LED2,1,American Opto Plus LED,L152L-QOC-TR,1206 ORANGE SMD LED,SMD 1206,Cathode goes up (towards – sign); Anode goes down (toward + sign)
 18,T1,1,Diodes Incorporated,‎MMBT3904-7-F‎,TRANS NPN 40V 0.2A SMD SOT23-3,SMD 1206,
-19,U1,1,DreamCity Innovations,CH340G,A simple USB 2.0 to Serial IC,SO016,
+19,U1,1,Jiangsu Qin Heng,CH340G,A simple USB 2.0 to Serial IC,SO016,
 20,U$4,1,Amphenol ICC (FCI),10118194-0001LF,CONN RCPT USB2.0 MICRO B SMD R/A,Micro USB B,
