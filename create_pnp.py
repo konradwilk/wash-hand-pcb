@@ -2,17 +2,25 @@
 
 import pandas as pd
 
-def fetch_pnp(designators, file, side, output):
+def fetch_pnp(designators, file, side, output, jlpcb):
     df = pd.read_csv(file, header=None);
     for row_index,row in df.iterrows():
         for item in designators:
             if (row[0] == item):
-                values = {'Designator': row[0],
-                          'Footprint' : row[5],
-                          'PosX'      : row[1],
-                          'PosY'      : row[2],
-                          'Side'      : side,
-                          'Rotation'  : row[3]}
+                if (jlpcb == False):
+                    values = {'Designator': row[0],
+                              'Footprint' : row[5],
+                              'PosX'      : row[1],
+                              'PosY'      : row[2],
+                              'Side'      : side,
+                              'Rotation'  : row[3]}
+                else:
+                    values = {'Designator': row[0],
+                              'MidX'      : row[1],
+                              'MidY'      : row[2],
+                              'Layer'     : side,
+                              'Rotation'  : row[3]}
+
                 #print(values)
                 new_row = pd.Series(values, name=row[0]);
                 output = output.append(new_row, ignore_index=False);
@@ -60,22 +68,37 @@ def fetch_data():
     fp.close()
     return designators
 
-l = fetch_data()
-#print(l)
-# Designator Footprint PosX PosY Side Rot
-output =  pd.DataFrame(columns=['Designator','Footprint','PosX','PosY','Side','Rotation'])
-# R8  24.64  44.45  270.0         100K                           1206
+def create_pnp(names, version, jlpcb):
 
+    back_str="%s/CAMOutputs/Assembly/PnP_Wash_Hand_back.csv" % (version)
+    front_str="%s/CAMOutputs/Assembly/PnP_Wash_Hand_front.csv" % (version)
+
+    # PCBWay:
+    # Designator Footprint PosX PosY Side Rot
+    if (jlpcb == False):
+        postfix = "PCBWay"
+        output =  pd.DataFrame(columns=['Designator','Footprint','PosX','PosY','Side','Rotation'])
+    else:
+        output = pd.DataFrame(columns=['Designator','MidX','MidY','Layer','Rotation'])
+        postfix = "JLPCB"
+    print("Creating PnP for ",postfix)
+    # R8  24.64  44.45  270.0         100K                           1206
+    output = fetch_pnp(l,back_str,'Bottom', output, jlpcb)
+    output = fetch_pnp(l,front_str,'Top',output, jlpcb)
+
+    pnp_str="%s/PnP-%s.csv" % (version, postfix)
+    output.to_csv(pnp_str, index=False)
+
+    return output
+
+
+l = fetch_data()
 version="v1.4-rc5"
 
-back_str="%s/CAMOutputs/Assembly/PnP_Wash_Hand_back.csv" % (version)
-front_str="%s/CAMOutputs/Assembly/PnP_Wash_Hand_front.csv" % (version)
-
-output = fetch_pnp(l,back_str,'Bottom', output)
-output = fetch_pnp(l,front_str,'Top',output)
-
-pnp_str="%s/PnP.csv" % (version)
 bom_str="%s/BOM.csv" % (version)
 
-output.to_csv(pnp_str, index=False)
-fetch_bom(bom_str, output)
+pcbway_pnp = create_pnp(l, version, jlpcb=False)
+fetch_bom(bom_str, pcbway_pnp)
+
+jlpcb = create_pnp(l, version, jlpcb=True)
+fetch_bom(bom_str, jlpcb)
