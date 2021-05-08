@@ -3,7 +3,7 @@ Item,Name,Qty,Manufacturer,Mfg Part #,Descriptor/Value,Package/Footprint,Instruc
 2,C14,1,KEMET,C1206C103K5RAC7210,CAP CER 10000PF 50V X7R 1206,SMD 1206,
 3,"C12,C13",2,KEMET,C1206C100K3HAC7800,CAP CER 1206 10PF 25V ULTRA STAB,SMD 1206,
 4,Y2,1,TXC CORPORATION,7V-12.000MAHE-T,CRYSTAL 12.0000MHZ 12PF SMD,4-SMD,
-5,LED1,RX,2,Everlight Electronics Co Ltd,PT11-21C/L41/TR8,LED RED CLEAR 1206 SMD,SMD 1206,Anode next to edge;cathode next to minus sign
+5,"LED1,RX",2,Everlight Electronics Co Ltd,PT11-21C/L41/TR8,LED RED CLEAR 1206 SMD,SMD 1206,Anode next to edge;cathode next to minus sign
 6,TX,1,EVERLIGHT ELEC,15-21SYGC/S530-E2/TR8,Light Emitting Diodes (LED) Green-yellow 573nm 21mcd@20mA Top View 1206 RoHS,SMD 1206,Anode next to edge;cathode next to minus sign
 7,R20,1,Yageo,‎RC1206FR-07330RL‎,RES SMD 330 OHM 1% 1/4W 1206,SMD 1206,
 8,"R19,R16",2,Stackpole Electronics Inc,‎RMCF1206FT1K00‎,RES 1K OHM 1% 1/4W 1206,SMD 1206,
