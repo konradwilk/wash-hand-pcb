@@ -32,6 +32,7 @@ def fetch_bom(file, pnp):
     """
     Item,Name,Qty,Manufacturer,Mfg Part #,Descriptor/Value,Package/Footprint,Instructions
     """
+    print("Reading BOM ", file);
     df = pd.read_csv(file);
     count = 0
     new_count = 0
